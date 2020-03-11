@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/spsc/Desktop/Projeto/Rastros/git/dados.c" "/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o"
+  "/home/spsc/Desktop/Projeto/Rastros/git/interface.c" "/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o"
+  "/home/spsc/Desktop/Projeto/Rastros/git/logica.c" "/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o"
   "/home/spsc/Desktop/Projeto/Rastros/git/main.c" "/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

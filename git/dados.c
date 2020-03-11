@@ -1,21 +1,31 @@
-typedef enum {VAZIO, BRANCA, PRETA} CASA;
 
-typedef struct
-{ int coluna;
-  int linha; }
-  COORDENADA;
+#include <stdlib.h>
+#include "dados.h"
 
-typedef struct
-{ COORDENADA jogador1;
-  COORDENADA jogador2; }
-  JOGADA;
+ESTADO *inicializar_estado() {
+    ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
+    e->jogador_atual = 1;
+    e->num_jogadas = 0;
+    int l,c;
+    for (l = 0; l <= 7; l++) {
+        for (c = 0; c<=7; c++) {
+            e->tab[l][c]= VAZIO;
+        }
+    }
+    e->tab[3][4]=BRANCA;
+    e->ultima_jogada.linha = 3;
+    e->ultima_jogada.coluna = 4;
+    return e;
+}
 
-typedef JOGADA JOGADAS[32];
-
-typedef struct
-{ CASA tab[8][8]; // armazena informação sobre o tabuleiro;
-  COORDENADA ultima_jogada; // a coordenada da última jogada;
-  JOGADAS jogadas; // armazena informação sobre as jogadas;
-  int num_jogadas; //indica quantas jogadas foram efetuadas;
-  int jogador_atual; } //indica qual é o jogador a jogar;
-  ESTADO;
+int obter_jogador_atual(ESTADO *estado) {
+    return (*estado).jogador_atual;
+}
+int obter_numero_de_jogadas(ESTADO *estado) {
+    return (*estado).num_jogadas;
+}
+int obter_estado_casa(ESTADO *e, COORDENADA c) {
+    int lin = c.linha;
+    int col = c.coluna;
+    return (*e).tab[lin][col];
+}

@@ -84,6 +84,18 @@
 		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/dados.h">
 			<Option target="LIProject"/>
 		</Unit>
+		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/interface.c">
+			<Option target="LIProject"/>
+		</Unit>
+		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/interface.h">
+			<Option target="LIProject"/>
+		</Unit>
+		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/logica.c">
+			<Option target="LIProject"/>
+		</Unit>
+		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/logica.h">
+			<Option target="LIProject"/>
+		</Unit>
 		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/main.c">
 			<Option target="LIProject"/>
 		</Unit>

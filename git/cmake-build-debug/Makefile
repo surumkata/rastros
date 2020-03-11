@@ -150,6 +150,60 @@ dados.c.s:
 	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/dados.c.s
 .PHONY : dados.c.s
 
+interface.o: interface.c.o
+
+.PHONY : interface.o
+
+# target to build an object file
+interface.c.o:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/interface.c.o
+.PHONY : interface.c.o
+
+interface.i: interface.c.i
+
+.PHONY : interface.i
+
+# target to preprocess a source file
+interface.c.i:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/interface.c.i
+.PHONY : interface.c.i
+
+interface.s: interface.c.s
+
+.PHONY : interface.s
+
+# target to generate assembly for a file
+interface.c.s:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/interface.c.s
+.PHONY : interface.c.s
+
+logica.o: logica.c.o
+
+.PHONY : logica.o
+
+# target to build an object file
+logica.c.o:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/logica.c.o
+.PHONY : logica.c.o
+
+logica.i: logica.c.i
+
+.PHONY : logica.i
+
+# target to preprocess a source file
+logica.c.i:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/logica.c.i
+.PHONY : logica.c.i
+
+logica.s: logica.c.s
+
+.PHONY : logica.s
+
+# target to generate assembly for a file
+logica.c.s:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/logica.c.s
+.PHONY : logica.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -189,6 +243,12 @@ help:
 	@echo "... dados.o"
 	@echo "... dados.i"
 	@echo "... dados.s"
+	@echo "... interface.o"
+	@echo "... interface.i"
+	@echo "... interface.s"
+	@echo "... logica.o"
+	@echo "... logica.i"
+	@echo "... logica.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
