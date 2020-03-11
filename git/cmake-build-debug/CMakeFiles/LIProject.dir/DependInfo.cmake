@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/geremias/CLionProjects/LIProject/dados.c" "/home/geremias/CLionProjects/LIProject/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o"
-  "/home/geremias/CLionProjects/LIProject/main.c" "/home/geremias/CLionProjects/LIProject/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o"
+  "/home/geremias/Desktop/LI2/git/dados.c" "/home/geremias/Desktop/LI2/git/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o"
+  "/home/geremias/Desktop/LI2/git/main.c" "/home/geremias/Desktop/LI2/git/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
