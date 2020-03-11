@@ -22,14 +22,15 @@ void mostrar_tabuleiro(ESTADO estado) {
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];
+
     mostrar_tabuleiro(*e);
     while (acabar(e)==0) {
-        if(fgets(linha, BUF_SIZE, stdin) == NULL) {
-            return 0; }
+        if(fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
         if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
             COORDENADA coord = {*col - 'a', '8' - *lin};
             jogar(e, coord);
-            mostrar_tabuleiro(*e); }
+            mostrar_tabuleiro(*e);
+        }
     }
     return 1;
 }
