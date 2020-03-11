@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geremias/CLionProjects/LIProject/dados.h
+
+/home/geremias/CLionProjects/LIProject/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dados.h
+/home/geremias/CLionProjects/LIProject/dados.h
+
