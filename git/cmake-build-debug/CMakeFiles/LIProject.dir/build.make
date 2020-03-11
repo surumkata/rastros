@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/geremias/Transferências/clion-2019.3.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/geremias/Transferências/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/geremias/Desktop/LI2/git
+CMAKE_SOURCE_DIR = /home/spsc/Desktop/Projeto/Rastros/git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/geremias/Desktop/LI2/git/cmake-build-debug
+CMAKE_BINARY_DIR = /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LIProject.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/LIProject.dir/flags.make
 
 CMakeFiles/LIProject.dir/main.c.o: CMakeFiles/LIProject.dir/flags.make
 CMakeFiles/LIProject.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/geremias/Desktop/LI2/git/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LIProject.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIProject.dir/main.c.o   -c /home/geremias/Desktop/LI2/git/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LIProject.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIProject.dir/main.c.o   -c /home/spsc/Desktop/Projeto/Rastros/git/main.c
 
 CMakeFiles/LIProject.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LIProject.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/geremias/Desktop/LI2/git/main.c > CMakeFiles/LIProject.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spsc/Desktop/Projeto/Rastros/git/main.c > CMakeFiles/LIProject.dir/main.c.i
 
 CMakeFiles/LIProject.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LIProject.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/geremias/Desktop/LI2/git/main.c -o CMakeFiles/LIProject.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spsc/Desktop/Projeto/Rastros/git/main.c -o CMakeFiles/LIProject.dir/main.c.s
 
 CMakeFiles/LIProject.dir/dados.c.o: CMakeFiles/LIProject.dir/flags.make
 CMakeFiles/LIProject.dir/dados.c.o: ../dados.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/geremias/Desktop/LI2/git/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LIProject.dir/dados.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIProject.dir/dados.c.o   -c /home/geremias/Desktop/LI2/git/dados.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LIProject.dir/dados.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIProject.dir/dados.c.o   -c /home/spsc/Desktop/Projeto/Rastros/git/dados.c
 
 CMakeFiles/LIProject.dir/dados.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LIProject.dir/dados.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/geremias/Desktop/LI2/git/dados.c > CMakeFiles/LIProject.dir/dados.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spsc/Desktop/Projeto/Rastros/git/dados.c > CMakeFiles/LIProject.dir/dados.c.i
 
 CMakeFiles/LIProject.dir/dados.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LIProject.dir/dados.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/geremias/Desktop/LI2/git/dados.c -o CMakeFiles/LIProject.dir/dados.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spsc/Desktop/Projeto/Rastros/git/dados.c -o CMakeFiles/LIProject.dir/dados.c.s
 
 # Object files for target LIProject
 LIProject_OBJECTS = \
@@ -95,7 +95,7 @@ LIProject: CMakeFiles/LIProject.dir/main.c.o
 LIProject: CMakeFiles/LIProject.dir/dados.c.o
 LIProject: CMakeFiles/LIProject.dir/build.make
 LIProject: CMakeFiles/LIProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/geremias/Desktop/LI2/git/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable LIProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable LIProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/LIProject.dir/clean:
 .PHONY : CMakeFiles/LIProject.dir/clean
 
 CMakeFiles/LIProject.dir/depend:
-	cd /home/geremias/Desktop/LI2/git/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/geremias/Desktop/LI2/git /home/geremias/Desktop/LI2/git /home/geremias/Desktop/LI2/git/cmake-build-debug /home/geremias/Desktop/LI2/git/cmake-build-debug /home/geremias/Desktop/LI2/git/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spsc/Desktop/Projeto/Rastros/git /home/spsc/Desktop/Projeto/Rastros/git /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LIProject.dir/depend
 

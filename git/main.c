@@ -6,6 +6,8 @@
 #define BUF_SIZE 1024
 
 
+//teste spsc
+
 // teste23
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
