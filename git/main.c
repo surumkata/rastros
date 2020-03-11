@@ -5,6 +5,8 @@
 
 #define BUF_SIZE 1024
 
+
+ //teste
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
     e->jogador_atual = 1;
