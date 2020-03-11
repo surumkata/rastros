@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geremias/Desktop/LI2/git/dados.c
+stdlib.h
+-
+dados.h
+/home/geremias/Desktop/LI2/git/dados.h
+
+/home/geremias/Desktop/LI2/git/dados.h
+
