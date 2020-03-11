@@ -90,10 +90,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="teste" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1583931102177">
+    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1583932427923">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1583931102177" />
+    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1583932427923" />
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583782509720">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -114,14 +114,22 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state width="1277" height="175" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1583784892194" />
+    <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
+      <screen x="43" y="27" width="1323" height="741" />
+    </state>
+    <state x="165" y="85" width="1058" height="622" key="MergeDialog/43.27.1323.741@43.27.1323.741" timestamp="1583932375587" />
+    <state x="409" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1583932437590">
+      <screen x="43" y="27" width="1323" height="741" />
+    </state>
+    <state x="409" y="114" width="580" height="564" key="MultipleFileMergeDialog/43.27.1323.741@43.27.1323.741" timestamp="1583932437590" />
     <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583929095867">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1583929095867" />
-    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583932330084">
+    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583932432808">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1583932330084" />
+    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1583932432808" />
     <state x="368" y="175" key="run.anything.popup" timestamp="1583607727682">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
