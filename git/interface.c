@@ -16,7 +16,7 @@ void mostrar_tabuleiro(ESTADO estado) {
             else if (estado.tab[l][c]==PRETA) putchar ('#') ;
             else putchar ('.');
         }
-        printf("|%d\n",8-l);
+        printf("| %d\n",8-l);
     }
     printf("==========\n ABCDEFGH\n");
 }

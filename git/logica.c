@@ -9,6 +9,7 @@ int acabar (ESTADO *e) {
 
 int jogada_possivel (ESTADO *e, COORDENADA c){
     if (e->tab[c.linha][c.coluna]==PRETA) return 0;
+    if (e->tab[c.linha][c.coluna]==BRANCA) return 0;
     int diflinha = e->ultima_jogada.linha - c.linha;
     int difcoluna = e->ultima_jogada.coluna - c.coluna;
     if ((abs(diflinha) > 1) || (abs(difcoluna) > 1)) return 0;

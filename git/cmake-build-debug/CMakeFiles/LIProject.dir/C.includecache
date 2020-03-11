@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/geremias/Desktop/LI2/git/dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
 
-/home/geremias/Desktop/LI2/git/interface.c
+/home/spsc/Desktop/Projeto/Rastros/git/interface.c
 stdio.h
 -
 string.h
 -
 logica.h
-/home/geremias/Desktop/LI2/git/logica.h
+/home/spsc/Desktop/Projeto/Rastros/git/logica.h
 dados.h
-/home/geremias/Desktop/LI2/git/dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
 
-/home/geremias/Desktop/LI2/git/logica.h
+/home/spsc/Desktop/Projeto/Rastros/git/logica.h
 dados.h
-/home/geremias/Desktop/LI2/git/dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
 
