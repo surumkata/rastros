@@ -6,7 +6,9 @@
 #include "dados.h"
 
 void mostrar_tabuleiro(ESTADO estado) {
+    printf("==========\n");
     for (int l = 0; l <= 7; l++) {
+        printf("|");
         for (int c = 0; c <= 7; c++) {
             if (estado.tab[l][c]==BRANCA) putchar ('*') ;
             else if (c==7 && l==0) putchar ('2');
@@ -16,7 +18,7 @@ void mostrar_tabuleiro(ESTADO estado) {
         }
         printf("|%d\n",8-l);
     }
-    printf("=========\nABCDEFGH\n");
+    printf("==========\n ABCDEFGH\n");
 }
 
 int interpretador(ESTADO *e) {
