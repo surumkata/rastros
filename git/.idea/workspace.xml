@@ -12,6 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,45 +76,18 @@
       <workItem from="1583783067809" duration="2283000" />
       <workItem from="1583926471752" duration="599000" />
       <workItem from="1583928094037" duration="459000" />
-      <workItem from="1583929094989" duration="2444000" />
+      <workItem from="1583932992991" duration="243000" />
     </task>
-    <task id="LOCAL-00001" summary="teste">
-      <created>1583930593665</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1583930593665</updated>
-    </task>
-    <task id="LOCAL-00002" summary="teste">
-      <created>1583931102557</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1583931102558</updated>
-    </task>
-    <task id="LOCAL-00003" summary="teste2">
-      <created>1583932462807</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1583932462807</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="teste" />
-    <MESSAGE value="teste2" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste2" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1583932462370">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1583933224007">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1583932462370" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583933224007" />
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583782509720">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -122,22 +108,18 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state width="1277" height="175" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1583784892194" />
-    <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
+    <state x="698" y="268" width="580" height="568" key="MultipleFileMergeDialog" timestamp="1583933181705">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="698" y="268" width="580" height="568" key="MultipleFileMergeDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583933181705" />
+    <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583928092955">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="165" y="85" width="1058" height="622" key="MergeDialog/43.27.1323.741@43.27.1323.741" timestamp="1583932375587" />
-    <state x="409" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1583932437590">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1583928092955" />
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583933143032">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="409" y="114" width="580" height="564" key="MultipleFileMergeDialog/43.27.1323.741@43.27.1323.741" timestamp="1583932437590" />
-    <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583929095867">
-      <screen x="43" y="27" width="1323" height="741" />
-    </state>
-    <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1583929095867" />
-    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583932432808">
-      <screen x="43" y="27" width="1323" height="741" />
-    </state>
-    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1583932432808" />
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583933143032" />
     <state x="368" y="175" key="run.anything.popup" timestamp="1583607727682">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
