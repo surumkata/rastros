@@ -1,3 +1,4 @@
-ToolSet: 1.0 (local)Options: 
+ToolSet: Ubuntu 18.04.2 LTS (local)@C:\Users\adeli\AppData\Local\Microsoft\WindowsApps\ubuntu.exe
+Options: 
 
 Options:
