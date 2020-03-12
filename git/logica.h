@@ -6,5 +6,6 @@
 int jogar(ESTADO *e, COORDENADA c); //Função que realiza cada jogada;
 int jogada_possivel (ESTADO *e, COORDENADA c);
 int acabar (ESTADO *e);             //Função boleana que verifica se o jogo acabou.
+int jogadas_possiveis (ESTADO *e);
 
 #endif //___LOGICA_H___

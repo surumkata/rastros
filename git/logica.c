@@ -2,19 +2,51 @@
 #include <stdlib.h>
 #include "dados.h"
 
-int acabar (ESTADO *e) {
-    if (e->tab[0][7]==BRANCA) return -1;
-    if (e->tab[7][0]==BRANCA) return 1;
-    else return 0;
-}
+
 
 int jogada_possivel (ESTADO *e, COORDENADA c){
     if (e->tab[c.linha][c.coluna]==PRETA) return 0;
     if (e->tab[c.linha][c.coluna]==BRANCA) return 0;
+
     int diflinha = e->ultima_jogada.linha - c.linha;
     int difcoluna = e->ultima_jogada.coluna - c.coluna;
+
     if ((abs(diflinha) > 1) || (abs(difcoluna) > 1)) return 0;
     return 1;
+}
+
+int jogadas_possiveis (ESTADO *e){
+    COORDENADA c = e->ultima_jogada;
+    c.linha+=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.coluna+=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.linha-=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.linha-=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.coluna-=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.coluna-=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.linha+=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+    c.linha+=1;
+    if (jogada_possivel(e,c) == 1 ) return 1;
+
+    return 0;
+
+}
+
+int acabar (ESTADO *e) {
+    if (jogadas_possiveis(e) == 1){
+        if (e->tab[0][7]==BRANCA) return -1;
+        if (e->tab[7][0]==BRANCA) return 1;
+        else return 0;
+    }
+    else if (e->jogador_atual == 1)
+        return -1;
+    else return 1;
 }
 
 int jogar(ESTADO *e, COORDENADA c) {
