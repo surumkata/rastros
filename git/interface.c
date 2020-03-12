@@ -26,7 +26,10 @@ int interpretador(ESTADO *e) {
     char col[2], lin[2];
 
     mostrar_tabuleiro(*e);
+
     while (acabar(e)==0) {
+        int n = obter_jogador_atual(e);
+        printf("Vez do jogador %d\n",n);
         if(fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
         if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
             COORDENADA coord = {*col - 'a', '8' - *lin};
@@ -34,6 +37,12 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(*e);
         }
     }
+
+    if (acabar(e) == 1)
+        printf("Parabéns, jogador 1, és o grande vencedor!");
+    else
+        printf("Parabéns, jogador 2, és o grande vencedor!");
+
     return 1;
 }
 
