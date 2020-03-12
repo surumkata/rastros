@@ -39,10 +39,12 @@ int interpretador(ESTADO *e) {
     }
 
     if (acabar(e) == 1)
-        printf("Parabéns, jogador 1, és o grande vencedor!");
-    else
-        printf("Parabéns, jogador 2, és o grande vencedor!");
-
+        printf("Parabéns jogador 1, és o grande vencedor!");
+    else if (acabar(e) == -1)
+        printf("Parabéns jogador 2, és o grande vencedor!");
+    else if (acabar(e)== -2)
+        printf("Parabéns jogador 2, o jogador 1 ficou sem jogadas. ");
+    else printf("Parabéns jogador 1, o jogador 2 ficou sem jogadas. ");
     return 1;
 }
 

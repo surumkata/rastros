@@ -13,16 +13,31 @@
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/logica.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +98,7 @@
       <workItem from="1583943746571" duration="373000" />
       <workItem from="1583944129004" duration="932000" />
       <workItem from="1584009196697" duration="3342000" />
+      <workItem from="1584013446710" duration="909000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1583930593665</created>
@@ -157,25 +173,25 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1583782509720" />
-    <state width="1807" height="2" key="GridCell.Tab.0.bottom" timestamp="1584011997019">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1277" height="128" key="GridCell.Tab.0.bottom" timestamp="1584014368137">
+      <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="212" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1583942752671" />
+    <state width="1277" height="128" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1584014368137" />
     <state width="1807" height="2" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584011997019" />
-    <state width="1807" height="2" key="GridCell.Tab.0.center" timestamp="1584011997019">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1277" height="128" key="GridCell.Tab.0.center" timestamp="1584014368134">
+      <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="212" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1583942752645" />
+    <state width="1277" height="128" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1584014368134" />
     <state width="1807" height="2" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584011997019" />
-    <state width="1807" height="2" key="GridCell.Tab.0.left" timestamp="1584011997019">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1277" height="128" key="GridCell.Tab.0.left" timestamp="1584014368131">
+      <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="212" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1583942752640" />
+    <state width="1277" height="128" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1584014368131" />
     <state width="1807" height="2" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584011997019" />
-    <state width="1807" height="2" key="GridCell.Tab.0.right" timestamp="1584011997019">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1277" height="128" key="GridCell.Tab.0.right" timestamp="1584014368136">
+      <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="212" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1583942752648" />
+    <state width="1277" height="128" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584014368136" />
     <state width="1807" height="2" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584011997019" />
     <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
       <screen x="43" y="27" width="1323" height="741" />
@@ -185,10 +201,10 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="409" y="114" width="580" height="564" key="MultipleFileMergeDialog/43.27.1323.741@43.27.1323.741" timestamp="1583932437590" />
-    <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583929095867">
+    <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1584013450704">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1583929095867" />
+    <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1584013450704" />
     <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583943719050">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
