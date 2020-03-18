@@ -1,8 +1,11 @@
 # Rastros
 
-Laboratórios de informática II
+- ALaboratórios de informática II
 
-PL4 
+Turno: PL4
+Grupo 1
 
 Elementos do grupo: 
-- A
+- 78778 Adélio José Ferreira Fernandes
+- 93277 Tiago Luís Dias da Silva
+- 93262 Simão Pedro Sá Cunha
