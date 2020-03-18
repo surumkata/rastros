@@ -1,6 +1,6 @@
 # Rastros
 
-- ALaboratórios de informática II
+- Laboratórios de informática II
 
 Turno: PL4
 Grupo 1
