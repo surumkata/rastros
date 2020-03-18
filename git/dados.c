@@ -45,7 +45,6 @@ void altera_para_preta (ESTADO *e, COORDENADA c) {
 
 void atualiza_ultima_jogada (ESTADO *e, COORDENADA c) {
     e->ultima_jogada = c;
-
 }
 
 void atualiza_jog_atual (ESTADO *e) {

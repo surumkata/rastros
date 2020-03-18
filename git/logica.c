@@ -8,6 +8,7 @@ int jogada_invalida (ESTADO *e, COORDENADA c){
     if (c.linha >= 0 && c.linha <= 7 && c.coluna >= 0 && c.coluna <= 7 ) {
         if (obter_estado_casa(e,c)==PRETA) return 1;
         if (obter_estado_casa(e,c)==BRANCA) return 1;
+
         COORDENADA uj = obter_ultima_jogada(e);
         int diflinha = uj.linha - c.linha;
         int difcoluna = uj.coluna - c.coluna;
