@@ -24,8 +24,32 @@ int obter_jogador_atual(ESTADO *estado) {
 int obter_numero_de_jogadas(ESTADO *estado) {
     return (*estado).num_jogadas;
 }
-int obter_estado_casa(ESTADO *e, COORDENADA c) {
+CASA obter_estado_casa(ESTADO *e, COORDENADA c) {
     int lin = c.linha;
     int col = c.coluna;
-    return (*e).tab[lin][col];
+    CASA casa = e->tab[lin][col];
+    return casa;
+}
+
+COORDENADA obter_ultima_jogada(ESTADO *e) {
+    return e->ultima_jogada;
+}
+
+void altera_para_branca (ESTADO *e, COORDENADA c) {
+    e->tab[c.linha][c.coluna]=BRANCA;
+}
+
+void altera_para_preta (ESTADO *e, COORDENADA c) {
+    e->tab[c.linha][c.coluna]=PRETA;
+}
+
+void atualiza_ultima_jogada (ESTADO *e, COORDENADA c) {
+    e->ultima_jogada = c;
+
+}
+
+void atualiza_jog_atual (ESTADO *e) {
+    int n = obter_jogador_atual(e);
+    if (n == 1) e->jogador_atual = 2;
+    else e->jogador_atual = 1;
 }

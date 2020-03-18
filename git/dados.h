@@ -28,9 +28,16 @@ typedef struct
   int jogador_atual; }      // indica qual é o jogador a jogar.
   ESTADO;
 
-ESTADO *inicializar_estado();                   //Função que inicializa o estado do jogo;
+//Função que inicializa o estado do jogo;
+ESTADO *inicializar_estado();
+
 int obter_jogador_atual(ESTADO *estado);        //Função que obtém o jogador atual;
 int obter_numero_de_jogadas(ESTADO *estado);    //Função que obtém o numero de jogadas;
-int obter_estado_casa(ESTADO *e, COORDENADA c); //Função que obtém o estado de uma casa de uma coordenada do tabuleiro.
+CASA obter_estado_casa(ESTADO *e, COORDENADA c); //Função que obtém o estado de uma casa de uma coordenada do tabuleiro.
+COORDENADA obter_ultima_jogada(ESTADO *e);
+void altera_para_branca (ESTADO *e, COORDENADA c);
+void altera_para_preta (ESTADO *e, COORDENADA c);
+void atualiza_ultima_jogada (ESTADO *e, COORDENADA c);
+void atualiza_jog_atual (ESTADO *e);
 
 #endif //__DADOS_H___

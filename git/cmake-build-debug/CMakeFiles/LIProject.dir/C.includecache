@@ -8,6 +8,18 @@
 
 /home/geremias/Desktop/LI2/git/dados.h
 
+/home/geremias/Desktop/LI2/git/interface.c
+stdio.h
+-
+string.h
+-
+logica.h
+/home/geremias/Desktop/LI2/git/logica.h
+dados.h
+/home/geremias/Desktop/LI2/git/dados.h
+
+/home/geremias/Desktop/LI2/git/interface.h
+
 /home/geremias/Desktop/LI2/git/logica.c
 stdio.h
 -
@@ -15,4 +27,16 @@ stdlib.h
 -
 dados.h
 /home/geremias/Desktop/LI2/git/dados.h
+
+/home/geremias/Desktop/LI2/git/logica.h
+dados.h
+/home/geremias/Desktop/LI2/git/dados.h
+
+/home/geremias/Desktop/LI2/git/main.c
+dados.h
+/home/geremias/Desktop/LI2/git/dados.h
+interface.h
+/home/geremias/Desktop/LI2/git/interface.h
+logica.h
+/home/geremias/Desktop/LI2/git/logica.h
 
