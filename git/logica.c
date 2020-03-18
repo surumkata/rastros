@@ -8,7 +8,7 @@ int jogada_invalida (ESTADO *e, COORDENADA c){
     if (c.linha >= 0 && c.linha <= 7 && c.coluna >= 0 && c.coluna <= 7 ) {
         if (obter_estado_casa(e,c)==PRETA) return 1;
         if (obter_estado_casa(e,c)==BRANCA) return 1;
-        COORDENADA uj;
+        COORDENADA uj = obter_ultima_jogada(e);
         int diflinha = uj.linha - c.linha;
         int difcoluna = uj.coluna - c.coluna;
 
@@ -56,15 +56,16 @@ int quem_ganhou (ESTADO *e) {
     if (obter_estado_casa(e,c)==BRANCA) return 2;
     c.linha = 7; c.coluna = 0;
     if (obter_estado_casa(e,c)==BRANCA) return 1;
-    return obter_jogador_atual(e);
+    if (obter_jogador_atual(e)==1) return 2;
+    else return 1;
 }
 
 
 int jogar(ESTADO *e, COORDENADA c) {
     if (jogada_invalida(e,c) != 1) {
         altera_para_branca(e,c);
-        COORDENADA uj;
-        altera_para_preta(e,c);
+        COORDENADA uj = obter_ultima_jogada(e);
+        altera_para_preta(e,uj);
         atualiza_ultima_jogada(e,c);
         atualiza_jog_atual(e);
     }

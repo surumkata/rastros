@@ -30,7 +30,7 @@ int interpretador(ESTADO *e) {
 
     mostrar_tabuleiro(*e);
 
-    while (acabou(e) != 0) {
+    while (acabou(e) != 1) {
         int n = obter_jogador_atual(e);
         printf("Vez do jogador %d\n",n);
         if(fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
