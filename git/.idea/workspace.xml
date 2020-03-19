@@ -13,24 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +78,7 @@
       <workItem from="1584525513940" duration="604000" />
       <workItem from="1584526495960" duration="3931000" />
       <workItem from="1584554438037" duration="1266000" />
-      <workItem from="1584628466822" duration="3910000" />
+      <workItem from="1584628466822" duration="4100000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1583930593665</created>
@@ -168,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584555381807</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update comandos interpretador">
+      <created>1584632587981</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584632587981</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,37 +172,38 @@
     <MESSAGE value="corrigi funçao acabar/jogadas_possiveis/jogada_invalida;" />
     <MESSAGE value="correçao de erros do guiao 5." />
     <MESSAGE value="update comentarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="update comentarios" />
+    <MESSAGE value="update comandos interpretador" />
+    <option name="LAST_COMMIT_MESSAGE" value="update comandos interpretador" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1001" y="27" width="865" height="912" key="CommitChangelistDialog2" timestamp="1584555380957">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="269" y="27" width="865" height="912" key="CommitChangelistDialog2" timestamp="1584632586239">
+      <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1584529828763" />
+    <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1584632586239" />
     <state x="1001" y="27" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1584555380957" />
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583782509720">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1583782509720" />
-    <state width="1277" height="2" key="GridCell.Tab.0.bottom" timestamp="1584632403449">
+    <state width="1277" height="33" key="GridCell.Tab.0.bottom" timestamp="1584632601206">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="2" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1584632403449" />
+    <state width="1277" height="33" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1584632601206" />
     <state width="1807" height="511" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724677" />
-    <state width="1277" height="2" key="GridCell.Tab.0.center" timestamp="1584632403447">
+    <state width="1277" height="33" key="GridCell.Tab.0.center" timestamp="1584632601202">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="2" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1584632403447" />
+    <state width="1277" height="33" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1584632601202" />
     <state width="1807" height="511" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724676" />
-    <state width="1277" height="2" key="GridCell.Tab.0.left" timestamp="1584632403438">
+    <state width="1277" height="33" key="GridCell.Tab.0.left" timestamp="1584632601195">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="2" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1584632403438" />
+    <state width="1277" height="33" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1584632601195" />
     <state width="1807" height="511" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724676" />
-    <state width="1277" height="2" key="GridCell.Tab.0.right" timestamp="1584632403448">
+    <state width="1277" height="33" key="GridCell.Tab.0.right" timestamp="1584632601203">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state width="1277" height="2" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584632403448" />
+    <state width="1277" height="33" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584632601203" />
     <state width="1807" height="511" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724676" />
     <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
       <screen x="43" y="27" width="1323" height="741" />
@@ -223,14 +213,14 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="409" y="114" width="580" height="564" key="MultipleFileMergeDialog/43.27.1323.741@43.27.1323.741" timestamp="1583932437590" />
-    <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1584628468037">
+    <state x="360" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1584633141440">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1584628468037" />
-    <state x="472" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584525870793">
+    <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1584633141440" />
+    <state x="472" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584633301471">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1584525870793" />
+    <state x="472" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1584633301471" />
     <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583943719050" />
     <state x="368" y="175" key="run.anything.popup" timestamp="1583607727682">
       <screen x="43" y="27" width="1323" height="741" />
