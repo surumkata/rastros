@@ -6,6 +6,8 @@ Definição da interface do jogo e das funções que o manipulam
 #ifndef ___INTERFACE_H___
 #define ___INTERFACE_H___
 
+#include <bits/types/FILE.h>
+
 /**
 \brief Função que desenvolve o jogo;
 */
@@ -25,4 +27,7 @@ void mostrar_tabuleiro(ESTADO estado);
    -Desenhamos com um "1" e com o "2" nas casas onde os seus jogadores querem chegar para ganhar a partida;
    */
 
+void gravar_tabuleiro(ESTADO *e,FILE *filename);
+void gravar (ESTADO *e, const char *filename, const char *mode);
+void ler (ESTADO *e, const char *filename, const char *mode);
 #endif //___INTERFACE_H___

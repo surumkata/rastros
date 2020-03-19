@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug"/>
+				<Option working_dir="/home/geremias/Desktop/LI2/git/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug"/>
+				<Option working_dir="/home/geremias/Desktop/LI2/git/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LIProject">
-				<Option output="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/LIProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug"/>
+				<Option output="/home/geremias/Desktop/LI2/git/cmake-build-debug/LIProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geremias/Desktop/LI2/git/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIProject"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIProject"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LIProject/fast">
-				<Option output="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/LIProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug"/>
+				<Option output="/home/geremias/Desktop/LI2/git/cmake-build-debug/LIProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geremias/Desktop/LI2/git/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,45 +61,45 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIProject/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIProject/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug"/>
+				<Option working_dir="/home/geremias/Desktop/LI2/git/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/geremias/Desktop/LI2/git/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/dados.c">
+		<Unit filename="/home/geremias/Desktop/LI2/git/dados.c">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/dados.h">
+		<Unit filename="/home/geremias/Desktop/LI2/git/dados.h">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/interface.c">
+		<Unit filename="/home/geremias/Desktop/LI2/git/interface.c">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/interface.h">
+		<Unit filename="/home/geremias/Desktop/LI2/git/interface.h">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/logica.c">
+		<Unit filename="/home/geremias/Desktop/LI2/git/logica.c">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/logica.h">
+		<Unit filename="/home/geremias/Desktop/LI2/git/logica.h">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/main.c">
+		<Unit filename="/home/geremias/Desktop/LI2/git/main.c">
 			<Option target="LIProject"/>
 		</Unit>
-		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/CMakeLists.txt">
+		<Unit filename="/home/geremias/Desktop/LI2/git/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
