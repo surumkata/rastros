@@ -1,0 +1,57 @@
+\hypertarget{logica_8h}{}\section{logica.\+h File Reference}
+\label{logica_8h}\index{logica.\+h@{logica.\+h}}
+{\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+Include dependency graph for logica.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}\label{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}} 
+int \hyperlink{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}{jogar} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Função que realiza cada jogada;. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}\label{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}} 
+int \hyperlink{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}{jogada\+\_\+invalida} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Função que verifica todas as formas consideradas como jogadas inválidas. \end{DoxyCompactList}\item 
+int \hyperlink{logica_8h_adc151dff7d3b44007c0dce9f341d3705}{acabou} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função boleana que verifica se o jogo acabou. \end{DoxyCompactList}\item 
+int \hyperlink{logica_8h_ad40643b3522449fe5969d38a3b490a99}{ha\+\_\+jogadas\+\_\+possiveis} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que verifica se existem jogadas possiveis. \end{DoxyCompactList}\item 
+int \hyperlink{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}{quem\+\_\+ganhou} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que nos indica quem ganhou. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição da lógica do jogo e das funções que o manipulam 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{logica_8h_adc151dff7d3b44007c0dce9f341d3705}\label{logica_8h_adc151dff7d3b44007c0dce9f341d3705}} 
+\index{logica.\+h@{logica.\+h}!acabou@{acabou}}
+\index{acabou@{acabou}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{acabou()}{acabou()}}
+{\footnotesize\ttfamily int acabou (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função boleana que verifica se o jogo acabou. 
+
+Nesta função, o jogador só pode jogar em casas do tabuleiro (linhas 1 a 8 e colunas A a H); e só pode jogar na casa imediatamente a seguir em todas as direções. \mbox{\Hypertarget{logica_8h_ad40643b3522449fe5969d38a3b490a99}\label{logica_8h_ad40643b3522449fe5969d38a3b490a99}} 
+\index{logica.\+h@{logica.\+h}!ha\+\_\+jogadas\+\_\+possiveis@{ha\+\_\+jogadas\+\_\+possiveis}}
+\index{ha\+\_\+jogadas\+\_\+possiveis@{ha\+\_\+jogadas\+\_\+possiveis}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{ha\+\_\+jogadas\+\_\+possiveis()}{ha\_jogadas\_possiveis()}}
+{\footnotesize\ttfamily int ha\+\_\+jogadas\+\_\+possiveis (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que verifica se existem jogadas possiveis. 
+
+Nesta função, verificamos se algum dos jogadores chega à casa a1 ou h8 (sem determinar quem ganha. \mbox{\Hypertarget{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}\label{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}} 
+\index{logica.\+h@{logica.\+h}!quem\+\_\+ganhou@{quem\+\_\+ganhou}}
+\index{quem\+\_\+ganhou@{quem\+\_\+ganhou}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{quem\+\_\+ganhou()}{quem\_ganhou()}}
+{\footnotesize\ttfamily int quem\+\_\+ganhou (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que nos indica quem ganhou. 
+
+Nesta função, verificamos se é possivel avançar uma casa em qualquer das direções. Caso falhe todas as condições da função \char`\"{}ha\+\_\+jogadas\+\_\+possiveis\char`\"{}, o jogo acaba e ganhará o adversário. 

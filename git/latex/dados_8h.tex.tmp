@@ -1,0 +1,83 @@
+\hypertarget{dados_8h}{}\section{dados.\+h File Reference}
+\label{dados_8h}\index{dados.\+h@{dados.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}
+\begin{DoxyCompactList}\small\item\em Refere-\/se às coordenadas de uma casa do tabuleiro. \end{DoxyCompactList}\item 
+struct \hyperlink{structJOGADA}{J\+O\+G\+A\+DA}
+\begin{DoxyCompactList}\small\item\em Referem-\/se à jogada feita pelo jogador1 e pelo jogador2. \end{DoxyCompactList}\item 
+struct \hyperlink{structESTADO}{E\+S\+T\+A\+DO}
+\begin{DoxyCompactList}\small\item\em Referem-\/se ao Estado do jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dados_8h_a94c221d29a1760f008b7834093259b7d}\label{dados_8h_a94c221d29a1760f008b7834093259b7d}} 
+typedef \hyperlink{structJOGADA}{J\+O\+G\+A\+DA} \hyperlink{dados_8h_a94c221d29a1760f008b7834093259b7d}{J\+O\+G\+A\+D\+AS}\mbox{[}32\mbox{]}
+\begin{DoxyCompactList}\small\item\em Referem-\/se às jogadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dados_8h_aba91601f16d4c485b2d9b8c429f27039}\label{dados_8h_aba91601f16d4c485b2d9b8c429f27039}} 
+enum \hyperlink{dados_8h_aba91601f16d4c485b2d9b8c429f27039}{C\+A\+SA} \{ {\bfseries V\+A\+Z\+IO}, 
+{\bfseries B\+R\+A\+N\+CA}, 
+{\bfseries P\+R\+E\+TA}
+ \}\begin{DoxyCompactList}\small\item\em Refere-\/se ao tipo de uma casa do tabuleiro. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}\label{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}} 
+\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$ \hyperlink{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}{inicializar\+\_\+estado} ()
+\begin{DoxyCompactList}\small\item\em Função que inicializa o estado do jogo. \end{DoxyCompactList}\item 
+int \hyperlink{dados_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\+\_\+jogador\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
+\begin{DoxyCompactList}\small\item\em Função que obtém o jogador atual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_a6cd0b387bdee9e18003c78852394aa63}\label{dados_8h_a6cd0b387bdee9e18003c78852394aa63}} 
+int \hyperlink{dados_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\+\_\+numero\+\_\+de\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
+\begin{DoxyCompactList}\small\item\em Função que obtém o numero de jogadas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_a6faa68373203923729ed38657aa0f768}\label{dados_8h_a6faa68373203923729ed38657aa0f768}} 
+\hyperlink{dados_8h_aba91601f16d4c485b2d9b8c429f27039}{C\+A\+SA} \hyperlink{dados_8h_a6faa68373203923729ed38657aa0f768}{obter\+\_\+estado\+\_\+casa} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Função que obtém o estado de uma casa de uma coordenada do tabuleiro. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{dados_8h_a40555aff97afc67bd1866f2785111310}{obter\+\_\+ultima\+\_\+jogada} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que obtém a ultima jogada efetuada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_ab974dc49b63aad6277920854e65de3c8}\label{dados_8h_ab974dc49b63aad6277920854e65de3c8}} 
+void \hyperlink{dados_8h_ab974dc49b63aad6277920854e65de3c8}{altera\+\_\+para\+\_\+branca} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Função que altera uma casa para a cor branca. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_a7c9818b423bbaec72b31af578a774f1b}\label{dados_8h_a7c9818b423bbaec72b31af578a774f1b}} 
+void \hyperlink{dados_8h_a7c9818b423bbaec72b31af578a774f1b}{altera\+\_\+para\+\_\+preta} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Função que altera uma casa para a cor preta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}\label{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}} 
+void \hyperlink{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}{atualiza\+\_\+ultima\+\_\+jogada} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Função que atualiza uma jogada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}\label{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}} 
+void \hyperlink{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}{atualiza\+\_\+jog\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que atualiza um jogador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição do estado e das funções que o manipulam 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{dados_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}\label{dados_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}} 
+\index{dados.\+h@{dados.\+h}!obter\+\_\+jogador\+\_\+atual@{obter\+\_\+jogador\+\_\+atual}}
+\index{obter\+\_\+jogador\+\_\+atual@{obter\+\_\+jogador\+\_\+atual}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{obter\+\_\+jogador\+\_\+atual()}{obter\_jogador\_atual()}}
+{\footnotesize\ttfamily int obter\+\_\+jogador\+\_\+atual (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado }\end{DoxyParamCaption})}
+
+
+
+Função que obtém o jogador atual. 
+
+Nesta função, tornamos todas as casas do tabuleiro como sendo \char`\"{}vazias\char`\"{} no inicio do jogo. O jogador1 encontra-\/se na casa e5 e é ele quem começa a jogar. \mbox{\Hypertarget{dados_8h_a40555aff97afc67bd1866f2785111310}\label{dados_8h_a40555aff97afc67bd1866f2785111310}} 
+\index{dados.\+h@{dados.\+h}!obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}}
+\index{obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{obter\+\_\+ultima\+\_\+jogada()}{obter\_ultima\_jogada()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} obter\+\_\+ultima\+\_\+jogada (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que obtém a ultima jogada efetuada. 
+
+Nesta função, conseguimos obter uma casa através da sua linha e da sua coluna. 

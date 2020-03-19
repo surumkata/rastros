@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/LIProject.dir/main.c.o CMakeFiles/LIProject.dir/interface.c.o CMakeFiles/LIProject.dir/logica.c.o CMakeFiles/LIProject.dir/dados.c.o  -o LIProject 
