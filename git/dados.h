@@ -40,7 +40,8 @@ typedef struct
   COORDENADA ultima_jogada; /**! a coordenada da última jogada;*/
   JOGADAS jogadas;          /**! armazena informação sobre as jogadas;*/
   int num_jogadas;          /**! indica quantas jogadas foram efetuadas;*/
-  int jogador_atual; }      /**! indica qual é o jogador a jogar.*/
+  int jogador_atual;
+  int num_comandos;}      /**! indica qual é o jogador a jogar.*/
   ESTADO;
 
 /**
@@ -81,6 +82,9 @@ void altera_para_branca (ESTADO *e, COORDENADA c);
 */
 void altera_para_preta (ESTADO *e, COORDENADA c);
 
+
+void altera_para_vazio (ESTADO *e, COORDENADA c);
+
 /**
 \brief Função que atualiza uma jogada.
 */
@@ -92,5 +96,15 @@ void atualiza_ultima_jogada (ESTADO *e, COORDENADA c);
 void atualiza_jog_atual (ESTADO *e);
 /*! Nesta função, determinamos qual foi o jogador anterior a jogar.
    Se foi o jogador1, entao é o jogador2 a jogar (ou vice-versa). */
+
+int obter_num_comandos(ESTADO *e);
+
+void adic_num_jogadas (ESTADO *e);
+
+void adic_num_comandos (ESTADO *e);
+
+void altera_prompt (ESTADO *e, int nc, int nj, int ja);
+
+void altera_tabuleiro (ESTADO *e, char d, COORDENADA cord);
 
 #endif //__DADOS_H___

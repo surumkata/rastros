@@ -30,4 +30,6 @@ void mostrar_tabuleiro(ESTADO estado);
 void gravar_tabuleiro(ESTADO *e,FILE *filename);
 void gravar (ESTADO *e, const char *filename, const char *mode);
 void ler (ESTADO *e, const char *filename, const char *mode);
+void mostrar_prompt (ESTADO *e);
+void gravar_prompt (ESTADO *e,FILE *filename);
 #endif //___INTERFACE_H___
