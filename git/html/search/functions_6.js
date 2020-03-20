@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quem_5fganhou',['quem_ganhou',['../logica_8h.html#a9c92ce22bf35165171ed5c423f0f1c80',1,'logica.c']]]
+  ['mostrar_5fprompt',['mostrar_prompt',['../interface_8h.html#a1fd532d3d252ff42d406a15757e2a401',1,'interface.c']]],
+  ['mostrar_5ftabuleiro',['mostrar_tabuleiro',['../interface_8h.html#a9fc929f0b191b7d58d9fd8685d16a4af',1,'interface.c']]]
 ];

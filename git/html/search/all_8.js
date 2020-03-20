@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mostrar_5ftabuleiro',['mostrar_tabuleiro',['../interface_8h.html#a85f7f36b715982954cde07c637d038ee',1,'interface.c']]]
+  ['ler',['ler',['../interface_8h.html#a049a847bc63620235b4fc3ff8e1723a2',1,'interface.c']]],
+  ['logica_2eh',['logica.h',['../logica_8h.html',1,'']]]
 ];

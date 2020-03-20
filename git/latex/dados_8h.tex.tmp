@@ -48,12 +48,29 @@ void \hyperlink{dados_8h_ab974dc49b63aad6277920854e65de3c8}{altera\+\_\+para\+\_
 \mbox{\Hypertarget{dados_8h_a7c9818b423bbaec72b31af578a774f1b}\label{dados_8h_a7c9818b423bbaec72b31af578a774f1b}} 
 void \hyperlink{dados_8h_a7c9818b423bbaec72b31af578a774f1b}{altera\+\_\+para\+\_\+preta} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
 \begin{DoxyCompactList}\small\item\em Função que altera uma casa para a cor preta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dados_8h_a367053e634b44f9f2470b63d73bb8291}\label{dados_8h_a367053e634b44f9f2470b63d73bb8291}} 
+void {\bfseries altera\+\_\+para\+\_\+vazio} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\item 
 \mbox{\Hypertarget{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}\label{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}} 
 void \hyperlink{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}{atualiza\+\_\+ultima\+\_\+jogada} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
 \begin{DoxyCompactList}\small\item\em Função que atualiza uma jogada. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}\label{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}} 
 void \hyperlink{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}{atualiza\+\_\+jog\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Função que atualiza um jogador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Função que atualiza um jogador. \end{DoxyCompactList}\item 
+int \hyperlink{dados_8h_a38d349b0eab9c1249c89d3d03c6e1269}{obter\+\_\+num\+\_\+comandos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\item 
+\mbox{\Hypertarget{dados_8h_adf016fda6e3978dd7f9e21105b32fdd2}\label{dados_8h_adf016fda6e3978dd7f9e21105b32fdd2}} 
+void {\bfseries adic\+\_\+num\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\item 
+\mbox{\Hypertarget{dados_8h_a529201cee83a853ad0cde90636b502ca}\label{dados_8h_a529201cee83a853ad0cde90636b502ca}} 
+void {\bfseries adic\+\_\+num\+\_\+comandos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\item 
+\mbox{\Hypertarget{dados_8h_a2d40d1243c5ac1599f97749ebbde79c4}\label{dados_8h_a2d40d1243c5ac1599f97749ebbde79c4}} 
+void {\bfseries altera\+\_\+prompt} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int nc, int nj, int ja)
+\item 
+\mbox{\Hypertarget{dados_8h_a8b79b64e344c02f2ae96ceb9f0916825}\label{dados_8h_a8b79b64e344c02f2ae96ceb9f0916825}} 
+void {\bfseries altera\+\_\+tabuleiro} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, char d, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} cord)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -70,7 +87,13 @@ Definição do estado e das funções que o manipulam
 
 Função que obtém o jogador atual. 
 
-Nesta função, tornamos todas as casas do tabuleiro como sendo \char`\"{}vazias\char`\"{} no inicio do jogo. O jogador1 encontra-\/se na casa e5 e é ele quem começa a jogar. \mbox{\Hypertarget{dados_8h_a40555aff97afc67bd1866f2785111310}\label{dados_8h_a40555aff97afc67bd1866f2785111310}} 
+Nesta função, tornamos todas as casas do tabuleiro como sendo \char`\"{}vazias\char`\"{} no inicio do jogo. O jogador1 encontra-\/se na casa e5 e é ele quem começa a jogar. \mbox{\Hypertarget{dados_8h_a38d349b0eab9c1249c89d3d03c6e1269}\label{dados_8h_a38d349b0eab9c1249c89d3d03c6e1269}} 
+\index{dados.\+h@{dados.\+h}!obter\+\_\+num\+\_\+comandos@{obter\+\_\+num\+\_\+comandos}}
+\index{obter\+\_\+num\+\_\+comandos@{obter\+\_\+num\+\_\+comandos}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{obter\+\_\+num\+\_\+comandos()}{obter\_num\_comandos()}}
+{\footnotesize\ttfamily int obter\+\_\+num\+\_\+comandos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Nesta função, determinamos qual foi o jogador anterior a jogar. Se foi o jogador1, entao é o jogador2 a jogar (ou vice-\/versa). \mbox{\Hypertarget{dados_8h_a40555aff97afc67bd1866f2785111310}\label{dados_8h_a40555aff97afc67bd1866f2785111310}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}}
 \index{obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}!dados.\+h@{dados.\+h}}
 \subsubsection{\texorpdfstring{obter\+\_\+ultima\+\_\+jogada()}{obter\_ultima\_jogada()}}

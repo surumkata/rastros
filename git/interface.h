@@ -1,35 +1,66 @@
 /**
 @file interface.h
-Definição da interface do jogo e das funções que o manipulam
+Módulo da interface do jogo e das funções que o manipulam
 */
 
 #ifndef ___INTERFACE_H___
 #define ___INTERFACE_H___
 
 #include <bits/types/FILE.h>
+#include <sched.h>
 
 /**
-\brief Função que desenvolve o jogo;
-*/
+ * \brief Função que desenvolve o jogo.
+ * Esta função adiciona comandos que auxiliam os jogadores no que toca ao desenvolvimento do jogo.
+ * @param e Apontador para o estado
+ */
 int interpretador(ESTADO *e);
-/*! Nesta função, tornámos o jogo mais interativo,
-   onde aparecem mensagens a indicar a vez de um jogador e de parabenização. */
 
 /**
-\brief Função que mostra o tabuleiro com o estado atual.
-*/
-void mostrar_tabuleiro(ESTADO estado);
-/*! Nesta função, desenhamos o tabuleiro.
-   -Começamos por desenhar as partes de cima e de baixo do tabuleiro;
-   -Desenhamos uma linha com as letras das colunas e uma coluna com a numeração de linhas;
-   -Sempre que movemos a peça branca, esse proxima casa fica com o símbolo "*";
-   -A casa preta fica com o símbolo "#";
-   -Desenhamos com um "1" e com o "2" nas casas onde os seus jogadores querem chegar para ganhar a partida;
-   */
+ * \brief Função que mostra o tabuleiro.
+ * Esta função recebe um estado do jogo e desenha no terminal o tabuleiro.
+ * Desenha um '#' para casas pretas, um '*' para casas brancas, um '.' para casas vazias e o numero de jogador nas respetivas casas de vitória.
+ * @param e Apontador para o estado
+ */
+void mostrar_tabuleiro(ESTADO e);
 
-void gravar_tabuleiro(ESTADO *e,FILE *filename);
-void gravar (ESTADO *e, const char *filename, const char *mode);
-void ler (ESTADO *e, const char *filename, const char *mode);
+/**
+ * \brief Função que mostra o prompt.
+ * Esta função recebe um estado do jogo e desenha no terminal o prompt.
+ * Desenha # (numero de comandos efetuados) JOG(jogador atual) N(numero de jogadas efetuadas)
+ * @param e Apontador para o estado
+ */
 void mostrar_prompt (ESTADO *e);
-void gravar_prompt (ESTADO *e,FILE *filename);
+
+/**
+ * \brief Função que grava o tabuleiro num ficheiro txt.
+ * @param e Apontador para o estado
+ * @param f Nome do ficheiro
+ */
+void gravar_tabuleiro(ESTADO *e,FILE *f);
+
+/**
+ * \brief Função que grava o prompt num ficheiro txt.
+ * @param e Apontador para o estado
+ * @param f Nome do ficheiro
+ */
+void gravar_prompt (ESTADO *e,FILE *f);
+
+/**
+ * \brief Função que grava um estado do jogo num ficheiro txt.
+ * @param e Apontador para o estado
+ * @param f Nome do ficheiro
+ * @param mode Permissões do ficheiro
+ */
+void gravar (ESTADO *e, const char *f, const char *mode);
+
+/**
+ * \brief Função que lê o último estado gravado do jogo de um ficheiro txt.
+ * Esta função lê o tabuleiro e o prompt de um ficheiro e atualiza o estado atual com isso.
+ * @param e Apontador para o estado
+ * @param f Nome do ficheiro
+ * @param mode Permissões do ficheiro
+ */
+void ler (ESTADO *e, const char *f, const char *mode);
+
 #endif //___INTERFACE_H___

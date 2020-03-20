@@ -1,6 +1,6 @@
 /**
 @file logica.h
-Definição da lógica do jogo e das funções que o manipulam
+Módulo da lógica do jogo e das funções que o manipulam
 */
 
 #ifndef ___LOGICA_H___
@@ -9,35 +9,41 @@ Definição da lógica do jogo e das funções que o manipulam
 #include "dados.h"
 
 /**
-\brief Função que realiza cada jogada;
+ * \brief Função que realiza cada jogada;
+ * @param e Apontador para o estado
+ * @param c Coordenada da jogada
  */
 int jogar(ESTADO *e, COORDENADA c);
 
 /**
-\brief Função que verifica todas as formas consideradas como jogadas inválidas.
-*/
+ * \brief Função boleana que verifica se uma jogada é inválida.
+ * @param e Apontador para o estado
+ * @param c Coordenada da jogada
+ * @return 1 se verdadeiro ou 0 se falso
+ */
 int jogada_invalida (ESTADO *e, COORDENADA c);
-/*! Nesta função, o jogador só pode jogar em casas do tabuleiro (linhas 1 a 8 e colunas A a H);
-                         e só pode jogar na casa imediatamente a seguir em todas as direções. */
 
 /**
-\brief Função boleana que verifica se o jogo acabou.
-*/
+ * \brief Função boleana que verifica se o jogo acabou.
+ * Testa se algum jogador ficou preso, senão testa se algum dos jogadores já chegou às casas a1 ou h8.
+ * @param e Apontador para o estado
+ * @return 1 se verdadeiro ou 0 se falso
+ */
 int acabou (ESTADO *e);
-/*! Nesta função, verificamos se algum dos jogadores chega à casa a1 ou h8 (sem determinar quem ganha.*/
 
 /**
-\brief Função que verifica se existem jogadas possiveis.
-*/
+ * \brief Função boleana que verifica se existem jogadas possíveis.
+ * @param e Apontador para o estado
+ * @return 1 se verdadeiro ou 0 se falso
+ */
 int ha_jogadas_possiveis (ESTADO *e);
-/*! Nesta função, verificamos se é possivel avançar uma casa em qualquer das direções.
-  Caso falhe todas as condições da função "ha_jogadas_possiveis", o jogo acaba e ganhará o adversário. */
 
 /**
-\brief Função que nos indica quem ganhou.
+ * \brief Função que nos indica que jogador ganhou a partida.
+ * Esta função só é chamada tendo a certeza que o jogo acabou.
+ * @param e Apontador para o estado
+ * @return O vencedor
  */
 int quem_ganhou (ESTADO *e);
-/*! Nesta função, verificamos se o jogador chega à casa a1 (ganha o jogador1),
-                          ou se o jogador chega à casa h8 (ganha o jogador2). */
 
 #endif //___LOGICA_H___

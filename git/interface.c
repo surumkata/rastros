@@ -4,7 +4,8 @@
 #include <string.h>
 #include "logica.h"
 #include "dados.h"
-char rastros [] = "/home/geremias/Desktop/LI2/git/rastros.txt";//
+char rastros [] = "/home/spsc/Desktop/Projeto/Rastros/git/rastros.txt";
+//char rastros [] = "/home/geremias/Desktop/LI2/git/rastros.txt";
 //char rastros [] = "rastros.txt";
 
 void mostrar_prompt (ESTADO *e){

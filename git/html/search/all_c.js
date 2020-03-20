@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rastros',['Rastros',['../md_README.html',1,'']]]
+  ['quem_5fganhou',['quem_ganhou',['../logica_8h.html#a9c92ce22bf35165171ed5c423f0f1c80',1,'logica.c']]]
 ];

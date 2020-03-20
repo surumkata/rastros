@@ -12,7 +12,7 @@ Definição do estado e das funções que o manipulam
 typedef enum {VAZIO, BRANCA, PRETA} CASA;
 
 /**
-\brief Refere-se às coordenadas de uma casa do tabuleiro.
+ * \brief Refere-se às coordenadas de uma casa do tabuleiro.
  */
 typedef struct
 { int coluna;
@@ -20,91 +20,139 @@ typedef struct
   COORDENADA;
 
 /**
-\brief Referem-se à jogada feita pelo jogador1 e pelo jogador2.
-*/
+ * \brief Referem-se à jogada feita pelo jogador1 e pelo jogador2.
+ */
 typedef struct
 { COORDENADA jogador1;
   COORDENADA jogador2; }
   JOGADA;
 
 /**
-\brief Referem-se às jogadas.
-*/
+ * \brief Referem-se às jogadas.
+ */
 typedef JOGADA JOGADAS[32];
 
 /**
-\brief Referem-se ao Estado do jogo.
-*/
+ * \brief Refere-se ao estado do jogo.
+ */
 typedef struct
-{ CASA tab[8][8];           /**! armazena informação sobre o tabuleiro;*/
-  COORDENADA ultima_jogada; /**! a coordenada da última jogada;*/
-  JOGADAS jogadas;          /**! armazena informação sobre as jogadas;*/
-  int num_jogadas;          /**! indica quantas jogadas foram efetuadas;*/
+{ /** armazena informação sobre o tabuleiro;*/
+  CASA tab[8][8];
+  /** a coordenada da última jogada;*/
+  COORDENADA ultima_jogada;
+  /** armazena informação sobre as jogadas;*/
+  JOGADAS jogadas;
+  /** indica quantas jogadas foram efetuadas;*/
+  int num_jogadas;
+  /** indica qual é o jogador a jogar.*/
   int jogador_atual;
-  int num_comandos;}      /**! indica qual é o jogador a jogar.*/
+  /** indica quantos comandos foram efetuados.*/
+  int num_comandos;}
   ESTADO;
 
 /**
-\brief Função que inicializa o estado do jogo.
-*/
+ * \brief Função que inicializa o estado do jogo.
+ * @return Estado inicial do jogo
+ */
 ESTADO *inicializar_estado();
-/*! Nesta função, tornamos todas as casas do tabuleiro como sendo "vazias" no inicio do jogo.
-   O jogador1 encontra-se na casa e5 e é ele quem começa a jogar.*/
 
 /**
-\brief Função que obtém o jogador atual.
-*/
-int obter_jogador_atual(ESTADO *estado);
+ * \brief Função que obtém o jogador atual.
+ * @param e Apontador para o estado
+ * @return Jogador atual
+ */
+int obter_jogador_atual(ESTADO *e);
 
 /**
-\brief Função que obtém o numero de jogadas.
-*/
-int obter_numero_de_jogadas(ESTADO *estado);
+ * \brief Função que obtém o numero de jogadas.
+ * @param e Apontador para o estado
+ * @return Numero de jogadas
+ */
+int obter_numero_de_jogadas(ESTADO *e);
 
 /**
-\brief Função que obtém o estado de uma casa de uma coordenada do tabuleiro.
-*/
+ * \brief Função que obtém o estado da casa de uma coordenada.
+ * @param e Apontador para o estado
+ * @param c Coordenada de uma casa
+ * @return Estado da casa
+ */
 CASA obter_estado_casa(ESTADO *e, COORDENADA c);
-/*! Nesta função, conseguimos obter uma casa através da sua linha e da sua coluna. */
 
 /**
-\brief Função que obtém a ultima jogada efetuada.
-*/
+ * \brief Função que obtém a ultima jogada efetuada.
+ * @param e Apontador para o estado
+ * @return Coordenada da ultima jogada efetuada
+ */
 COORDENADA obter_ultima_jogada(ESTADO *e);
 
 /**
-\brief Função que altera uma casa para a cor branca.
-*/
+ * \brief Função que altera o estado de uma casa de uma coordena para branca.
+ * @param e Apontador para o estado
+ * @param c Coordenada de uma casa
+ */
 void altera_para_branca (ESTADO *e, COORDENADA c);
 
 /**
-\brief Função que altera uma casa para a cor preta.
-*/
+ * \brief Função que altera o estado de uma casa de uma coordena para preta.
+ * @param e Apontador para o estado
+ * @param c Coordenada de uma casa
+ */
 void altera_para_preta (ESTADO *e, COORDENADA c);
 
-
+/**
+ * \brief Função que altera o estado de uma casa de uma coordena para vazio.
+ * @param e Apontador para o estado
+ * @param c Coordenada de uma casa
+ */
 void altera_para_vazio (ESTADO *e, COORDENADA c);
 
 /**
-\brief Função que atualiza uma jogada.
-*/
+ * \brief Função que atualiza a ultima jogada efetuada.
+ * @param e Apontador para o estado
+ * @param c Coordenada de uma casa
+ */
 void atualiza_ultima_jogada (ESTADO *e, COORDENADA c);
 
 /**
-\brief Função que atualiza um jogador.
-*/
+ * \brief Função que atualiza o jogador atual.
+ * @param e Apontador para o estado
+ */
 void atualiza_jog_atual (ESTADO *e);
-/*! Nesta função, determinamos qual foi o jogador anterior a jogar.
-   Se foi o jogador1, entao é o jogador2 a jogar (ou vice-versa). */
 
+/**
+ * \brief Função que obtém o numero de comandos efetuados.
+ * @param e Apontador para o estado
+ * @return Numero de comandos efetuados
+ */
 int obter_num_comandos(ESTADO *e);
 
+/**
+ * \brief Função que adiciona 1 ao numero de jogadas efetuadas
+ * @param e Apontador para o estado
+ */
 void adic_num_jogadas (ESTADO *e);
 
+/**
+ * \brief Função que adiciona 1 ao numero de comandos efetuadas
+ * @param e Apontador para o estado
+ */
 void adic_num_comandos (ESTADO *e);
 
+/**
+ * \brief Função que altera o prompt do jogo.
+ * @param e Apontador para o estado
+ * @param nc Numero de comandos efetuados
+ * @param nj Numero de jogadas efetuadas
+ * @param ja Jogador atual
+ */
 void altera_prompt (ESTADO *e, int nc, int nj, int ja);
 
+/**
+ * \brief Função que altera o tabuleiro do jogo
+ * @param e Apontador para o estado
+ * @param d Caractere que verifica o estado de uma casa
+ * @param cord Coordenada de uma casa
+ */
 void altera_tabuleiro (ESTADO *e, char d, COORDENADA cord);
 
 #endif //__DADOS_H___

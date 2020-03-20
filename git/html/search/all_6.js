@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['jogada',['JOGADA',['../structJOGADA.html',1,'']]],
-  ['jogada_5finvalida',['jogada_invalida',['../logica_8h.html#ad6e795244d42549abf6ce7677c4eeae4',1,'logica.c']]],
-  ['jogadas',['jogadas',['../structESTADO.html#afae43b87a488fad0f2b56a18bad31d18',1,'ESTADO::jogadas()'],['../dados_8h.html#a94c221d29a1760f008b7834093259b7d',1,'JOGADAS():&#160;dados.h']]],
-  ['jogador_5fatual',['jogador_atual',['../structESTADO.html#a5dd28e2e68b7aef2b6b7ea88e02eff58',1,'ESTADO']]],
-  ['jogar',['jogar',['../logica_8h.html#ac313d7e553b1e2b5f266acb9bfff8141',1,'logica.c']]]
+  ['inicializar_5festado',['inicializar_estado',['../dados_8h.html#a7e0c7e26fb685d9ab501e19b05e6954f',1,'dados.c']]],
+  ['interface_2eh',['interface.h',['../interface_8h.html',1,'']]],
+  ['interpretador',['interpretador',['../interface_8h.html#a24da95ebeede4a540e37790ce8be359b',1,'interface.c']]]
 ];

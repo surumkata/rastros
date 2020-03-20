@@ -13,14 +13,58 @@
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="identaçao e comentarios de dados.h (camada de dados)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/logica.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/interface_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/structESTADO-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/structESTADO.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/dados_8h.tex.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h.tex.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/interface_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/interface_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/structESTADO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/structESTADO.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/logica.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +131,7 @@
       <workItem from="1584526495960" duration="3931000" />
       <workItem from="1584554438037" duration="1266000" />
       <workItem from="1584628466822" duration="3910000" />
+      <workItem from="1584720414490" duration="4958000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1583930593665</created>
@@ -186,26 +231,26 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1583782509720" />
-    <state width="1277" height="270" key="GridCell.Tab.0.bottom" timestamp="1584720051848">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state width="1807" height="76" key="GridCell.Tab.0.bottom" timestamp="1584725438704">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1584720051848" />
-    <state width="1807" height="511" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724677" />
-    <state width="1277" height="270" key="GridCell.Tab.0.center" timestamp="1584720051846">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state width="1807" height="76" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584725438704" />
+    <state width="1807" height="76" key="GridCell.Tab.0.center" timestamp="1584725438703">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1584720051846" />
-    <state width="1807" height="511" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724676" />
-    <state width="1277" height="270" key="GridCell.Tab.0.left" timestamp="1584720051833">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state width="1807" height="76" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584725438703" />
+    <state width="1807" height="76" key="GridCell.Tab.0.left" timestamp="1584725438703">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1584720051830" />
-    <state width="1807" height="511" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724676" />
-    <state width="1277" height="270" key="GridCell.Tab.0.right" timestamp="1584720051847">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state width="1807" height="76" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584725438703" />
+    <state width="1807" height="76" key="GridCell.Tab.0.right" timestamp="1584725438704">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584720051847" />
-    <state width="1807" height="511" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584551724676" />
+    <state width="1807" height="76" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584725438704" />
     <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -227,9 +272,9 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1583607727682" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1584549060222">
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1584724073085">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1584549060222" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1584724073085" />
   </component>
 </project>

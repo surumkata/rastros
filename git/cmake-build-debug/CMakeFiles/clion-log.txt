@@ -1,4 +1,4 @@
-/home/geremias/Transferências/clion-2019.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/geremias/Desktop/LI2/git
+/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/spsc/Desktop/Projeto/Rastros/git
 -- The C compiler identification is GNU 7.5.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -8,4 +8,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/geremias/Desktop/LI2/git/cmake-build-debug
+-- Build files have been written to: /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug
