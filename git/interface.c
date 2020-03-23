@@ -34,9 +34,7 @@ void mostrar_tabuleiro(ESTADO e) {
     printf("==========\n ABCDEFGH\n");
 }
 void gravar_tabuleiro(ESTADO e,FILE *filename) {
-    fprintf(filename,"==========\n");
     for (int lin = 0; lin <= 7; lin++) {
-        fprintf(filename,"|");
         for (int col = 0; col <= 7; col++) {
             COORDENADA c;
             c.linha = lin;
@@ -47,47 +45,33 @@ void gravar_tabuleiro(ESTADO e,FILE *filename) {
             else if (obter_estado_casa(&e,c)==PRETA) fprintf (filename,"#") ;
             else fprintf (filename,".");
         }
-        fprintf(filename,"| %d\n",8-lin);
+        fprintf(filename, "\n");
     }
-    fprintf(filename,"==========\n ABCDEFGH\n");
 }
 
-void gravar_prompt (ESTADO *e,FILE *filename){
-    int num_comandos = obter_num_comandos(e);
-    int num_jogadas = obter_numero_de_jogadas(e);
-    int jogador = obter_jogador_atual(e);
-    fprintf(filename,"# %d JOG%d N%d\n",num_comandos,jogador,num_jogadas);
-}
 
 void gravar (ESTADO e, const char *filename, const char *mode){
     FILE *ficheiro;
     ficheiro = fopen(filename,mode);
     gravar_tabuleiro(e,ficheiro);
-    gravar_prompt(&e,ficheiro);
     fclose(ficheiro);
 }
 
 void ler (ESTADO *e, const char *filename, const char *mode) {
     FILE *ficheiro;
     ficheiro = fopen(filename,mode);
-    fscanf(ficheiro,"==========\n");
     char d;
     COORDENADA cord;
     for (int lin = 0; lin <=7 ; lin++ ) {
         cord.linha=lin;
-        for (int col = 0; col <=12 ; col++) {
-            cord.coluna = col-1;
+        for (int col = 0; col <=8 ; col++) {
+            cord.coluna = col;
             fscanf(ficheiro,"%c",&d);
-            if ((d == '.' || d == '#' || d == '2' || d == '1' || d == '*') && col <= 8) {
+            if (d != '\n') {
                    altera_tabuleiro(e,d,cord);
             }
         }
     }
-    int nc,nj,ja;
-    fscanf(ficheiro,"==========\n");
-    fscanf(ficheiro," ABCDEFGH\n");
-    fscanf(ficheiro,"# %d JOG%d N%d",&nc,&ja,&nj);
-    altera_prompt (e,nc,nj,ja);
     mostrar_tabuleiro(*e);
     mostrar_prompt(e);
     fclose(ficheiro);

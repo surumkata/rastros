@@ -40,13 +40,6 @@ void mostrar_prompt (ESTADO *e);
 void gravar_tabuleiro(ESTADO *e,FILE *f);
 
 /**
- * \brief Função que grava o prompt num ficheiro txt.
- * @param e Apontador para o estado
- * @param f Nome do ficheiro
- */
-void gravar_prompt (ESTADO *e,FILE *f);
-
-/**
  * \brief Função que grava um estado do jogo num ficheiro txt.
  * @param e Apontador para o estado
  * @param f Nome do ficheiro
