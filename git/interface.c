@@ -4,9 +4,6 @@
 #include <string.h>
 #include "logica.h"
 #include "dados.h"
-char rastros [] = "/home/spsc/Desktop/Projeto/Rastros/git/rastros.txt";
-//char rastros [] = "/home/geremias/Desktop/LI2/git/rastros.txt";
-//char rastros [] = "rastros.txt";
 
 void mostrar_prompt (ESTADO *e){
     int num_comandos = obter_num_comandos(e);
@@ -49,7 +46,6 @@ void gravar_tabuleiro(ESTADO e,FILE *filename) {
     }
 }
 
-
 void gravar (ESTADO e, const char *filename, const char *mode){
     FILE *ficheiro;
     ficheiro = fopen(filename,mode);
@@ -79,7 +75,8 @@ void ler (ESTADO *e, const char *filename, const char *mode) {
 
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
-    char col[2], lin[2], a, b, c;
+    char col[2], lin[2], a, b, c, d;
+    char filename[50];
     mostrar_tabuleiro(*e);
     mostrar_prompt(e);
     while (acabou(e) != 1) {
@@ -91,13 +88,13 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(*e);
             mostrar_prompt(e);
         }
-        else if (strlen(linha) == 3 && sscanf(linha,"%c%c",&a,&b)==2 && a == 'g' && b == 'r') {
-            gravar(*e,rastros,"w+");
+        else if (sscanf(linha,"%c%c%c%s",&a,&b,&c,&filename)==4 && a == 'g' && b == 'r' && c == ' ') {
+            gravar(*e,filename,"w+");
             printf("Gravado com sucesso.\n");
             adic_num_comandos(e);
         }
-        else if (strlen(linha) == 4 && sscanf(linha,"%c%c%c",&a,&b,&c)==3 && a == 'l' && b == 'e' && c == 'r'){
-            ler(e,rastros,"r");
+        else if (sscanf(linha,"%c%c%c%c%s",&a,&b,&c,&d,&filename)==5 && a == 'l' && b == 'e' && c == 'r' && d == ' '){
+            ler(e,filename,"r");
             adic_num_comandos(e);
         }
         else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
@@ -109,6 +106,4 @@ int interpretador(ESTADO *e) {
         printf("Parabéns jogador 2, és o grande vencedor!");
     return 1;
 }
-
-
 
