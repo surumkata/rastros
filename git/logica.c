@@ -68,10 +68,11 @@ int jogar(ESTADO *e, COORDENADA c) {
         COORDENADA uj = obter_ultima_jogada(e);
         altera_para_preta(e,uj);
         atualiza_ultima_jogada(e,c);
-        atualiza_jog_atual(e);
+        adic_jogadas(e,c);
         adic_num_jogadas(e);
+        atualiza_jog_atual(e);
     }
-    else printf ("Jogada invalida\n");
+    else printf ("Jogada inválida, tenta outra vez!\n");
     return 1;
 }
 

@@ -56,4 +56,6 @@ void gravar (ESTADO *e, const char *f, const char *mode);
  */
 void ler (ESTADO *e, const char *f, const char *mode);
 
+void gravar_movs (ESTADO *e, FILE *filename);
+
 #endif //___INTERFACE_H___

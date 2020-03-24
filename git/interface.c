@@ -30,26 +30,71 @@ void mostrar_tabuleiro(ESTADO e) {
     }
     printf("==========\n ABCDEFGH\n");
 }
-void gravar_tabuleiro(ESTADO e,FILE *filename) {
+
+void movs (ESTADO *e){
+    int n = obter_numero_de_jogadas(e);
+    int j = obter_jogador_atual(e);
+    for (int i = 0; i<n; i++){
+        JOGADA jgd = obter_jogada(e,i);
+        COORDENADA c1 = jgd.jogador1;
+        COORDENADA c2 = jgd.jogador2;
+        int a = 97;
+        char col1 = (char) (a + c1.coluna);
+        char col2 = (char) (a + c2.coluna);
+        if (i < 9) printf("0%d: %c%d %c%d\n", i+1, col1, (8 - c1.linha), col2, (8 - c2.linha));
+        else printf("%d: %c%d %c%d\n", i+1, col1, (8 - c1.linha), col2, (8 - c2.linha));
+    }
+    if (j == 2) {
+        JOGADA jgd = obter_jogada(e, n);
+        COORDENADA c1 = jgd.jogador1;
+        if (n < 9) printf("0%d: %c%d \n", n+1, (char) (97+c1.coluna), (8 - c1.linha));
+        else printf("%d: %c%d \n", n+1, (char) (97+c1.coluna), (8 - c1.linha));
+    }
+}
+
+void gravar_movs (ESTADO *e, FILE *filename){
+    int n = obter_numero_de_jogadas(e);
+    int j = obter_jogador_atual(e);
+    for (int i = 0; i<n; i++){
+        JOGADA jgd = obter_jogada(e,i);
+        COORDENADA c1 = jgd.jogador1;
+        COORDENADA c2 = jgd.jogador2;
+        int a = 97;
+        char col1 = (char) (a + c1.coluna);
+        char col2 = (char) (a + c2.coluna);
+        if (i < 9) fprintf(filename,"0%d: %c%d %c%d\n", i+1, col1, (8 - c1.linha), col2, (8 - c2.linha));
+        else fprintf(filename,"%d: %c%d %c%d\n", i+1, col1, (8 - c1.linha), col2, (8 - c2.linha));
+    }
+    if (j == 2) {
+        JOGADA jgd = obter_jogada(e, n);
+        COORDENADA c1 = jgd.jogador1;
+        if (n < 9) fprintf(filename,"0%d: %c%d \n", n+1, (char) (97+c1.coluna), (8 - c1.linha));
+        else fprintf(filename,"%d: %c%d \n", n+1, (char) (97+c1.coluna), (8 - c1.linha));
+    }
+}
+
+void gravar_tabuleiro(ESTADO *e,FILE *filename) {
     for (int lin = 0; lin <= 7; lin++) {
         for (int col = 0; col <= 7; col++) {
             COORDENADA c;
             c.linha = lin;
             c.coluna = col;
-            if (obter_estado_casa(&e,c)==BRANCA) fprintf (filename,"*") ;
+            if (obter_estado_casa(e,c)==BRANCA) fprintf (filename,"*") ;
             else if (col==7 && lin==0) fprintf (filename,"2");
             else if (col==0 && lin==7) fprintf (filename,"1");
-            else if (obter_estado_casa(&e,c)==PRETA) fprintf (filename,"#") ;
+            else if (obter_estado_casa(e,c)==PRETA) fprintf (filename,"#") ;
             else fprintf (filename,".");
         }
         fprintf(filename, "\n");
     }
+    fprintf(filename, "\n");
 }
 
-void gravar (ESTADO e, const char *filename, const char *mode){
+void gravar (ESTADO *e, const char *filename, const char *mode){
     FILE *ficheiro;
     ficheiro = fopen(filename,mode);
     gravar_tabuleiro(e,ficheiro);
+    gravar_movs (e,ficheiro);
     fclose(ficheiro);
 }
 
@@ -89,13 +134,16 @@ int interpretador(ESTADO *e) {
             mostrar_prompt(e);
         }
         else if (sscanf(linha,"%c%c%c%s",&a,&b,&c,&filename)==4 && a == 'g' && b == 'r' && c == ' ') {
-            gravar(*e,filename,"w+");
+            gravar(e,filename,"w+");
             printf("Gravado com sucesso.\n");
             adic_num_comandos(e);
         }
         else if (sscanf(linha,"%c%c%c%c%s",&a,&b,&c,&d,&filename)==5 && a == 'l' && b == 'e' && c == 'r' && d == ' '){
             ler(e,filename,"r");
             adic_num_comandos(e);
+        }
+        else if (strlen(linha) == 5 && sscanf(linha,"%c%c%c%c",&a,&b,&c,&d)==4 && a == 'm' && b == 'o' && c == 'v' && d == 's'){
+            movs(e);
         }
         else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
     }

@@ -139,20 +139,15 @@ void adic_num_jogadas (ESTADO *e);
 void adic_num_comandos (ESTADO *e);
 
 /**
- * \brief Função que altera o prompt do jogo.
- * @param e Apontador para o estado
- * @param nc Numero de comandos efetuados
- * @param nj Numero de jogadas efetuadas
- * @param ja Jogador atual
- */
-void altera_prompt (ESTADO *e, int nc, int nj, int ja);
-
-/**
  * \brief Função que altera o tabuleiro do jogo
  * @param e Apontador para o estado
  * @param d Caractere que verifica o estado de uma casa
  * @param cord Coordenada de uma casa
  */
 void altera_tabuleiro (ESTADO *e, char d, COORDENADA cord);
+
+void adic_jogadas (ESTADO *e, COORDENADA c);
+
+JOGADA obter_jogada (ESTADO *e, int i);
 
 #endif //__DADOS_H___
