@@ -114,7 +114,8 @@ void ler (ESTADO *e, const char *filename, const char *mode) {
         }
     }
     mostrar_tabuleiro(*e);
-    mostrar_prompt(e);
+    //mostrar_prompt(e);
+    movs (e);
     fclose(ficheiro);
 }
 
