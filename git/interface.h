@@ -56,6 +56,11 @@ void gravar (ESTADO *e, const char *f, const char *mode);
  */
 void ler (ESTADO *e, const char *f, const char *mode);
 
+/**
+ * \brief Função que grava os movimentos feitos pelos jogadores no ficheiro .txt.
+ * @param e Apontador para o estado
+ * @param filename Nome do ficheiro
+ */
 void gravar_movs (ESTADO *e, FILE *filename);
 
 #endif //___INTERFACE_H___

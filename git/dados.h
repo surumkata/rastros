@@ -146,12 +146,31 @@ void adic_num_comandos (ESTADO *e);
  */
 void altera_tabuleiro (ESTADO *e, char d, COORDENADA cord);
 
+/**
+ * \brief Função que adiciona um movimento às jogadas de cada jogador
+ * @param e Apontador para o estado
+ * @param c Coordenada de uma casa
+ */
 void adic_jogadas (ESTADO *e, COORDENADA c);
 
+/**
+ * \brief Função que dá uma jogada
+ * @param e Apontador para o estado
+ * @param i indice do numero de jogadas
+ * @return Jogada de um jogador
+ */
 JOGADA obter_jogada (ESTADO *e, int i);
 
+/**
+ * \brief Função que indica que o primeiro jogador a jogar é o jogador1
+ * @param e Apontador para o estado
+ */
 void start_jogador (ESTADO *e);
 
+/**
+ * \brief Função que indica que o numero de jogadas efetuadas no inicio do jogo é 0
+ * @param e Apontador para o estado
+ */
 void start_num_jogadas (ESTADO *e);
 
 #endif //__DADOS_H___
