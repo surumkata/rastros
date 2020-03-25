@@ -67,7 +67,8 @@ void adic_num_comandos (ESTADO *e) {
 }
 
 void adic_num_jogadas (ESTADO *e) {
-    e->num_jogadas += 1;
+    int j = obter_jogador_atual(e);
+    if (j == 2) e->num_jogadas += 1;
 }
 
 void altera_prompt (ESTADO *e, int nc, int nj, int ja) {
@@ -84,4 +85,23 @@ void altera_tabuleiro (ESTADO *e, char d, COORDENADA cord) {
         atualiza_ultima_jogada(e,cord);
     }
     else altera_para_vazio(e,cord);
+}
+
+void adic_jogadas (ESTADO *e, COORDENADA c){
+    int n = obter_numero_de_jogadas(e);
+    int j = obter_jogador_atual(e);
+    if (j == 1) e->jogadas[n].jogador1 = c;
+    else e->jogadas[n].jogador2 = c;
+}
+
+JOGADA obter_jogada (ESTADO *e, int i){
+    return e->jogadas[i];
+}
+
+void start_jogador (ESTADO *e){
+    e->jogador_atual=1;
+}
+
+void start_num_jogadas (ESTADO *e){
+    e->num_jogadas=0;
 }
