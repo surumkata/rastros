@@ -150,4 +150,8 @@ void adic_jogadas (ESTADO *e, COORDENADA c);
 
 JOGADA obter_jogada (ESTADO *e, int i);
 
+void start_jogador (ESTADO *e);
+
+void start_num_jogadas (ESTADO *e);
+
 #endif //__DADOS_H___

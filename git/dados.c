@@ -97,3 +97,11 @@ void adic_jogadas (ESTADO *e, COORDENADA c){
 JOGADA obter_jogada (ESTADO *e, int i){
     return e->jogadas[i];
 }
+
+void start_jogador (ESTADO *e){
+    e->jogador_atual=1;
+}
+
+void start_num_jogadas (ESTADO *e){
+    e->num_jogadas=0;
+}
