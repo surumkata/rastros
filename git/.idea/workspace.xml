@@ -13,10 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="comando movs (ainda falta ler o ficheiro com o comando movs)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +32,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -92,7 +97,10 @@
       <workItem from="1585072305929" duration="199000" />
       <workItem from="1585072685294" duration="10866000" />
       <workItem from="1585126142329" duration="3176000" />
+<<<<<<< HEAD
       <workItem from="1585164394704" duration="616000" />
+=======
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1583930593665</created>
@@ -208,6 +216,7 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1583782509720" />
+<<<<<<< HEAD
     <state width="1807" height="721" key="GridCell.Tab.0.bottom" timestamp="1585164385019">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -228,6 +237,28 @@
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584720051847" />
     <state width="1807" height="721" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585164385019" />
+=======
+    <state width="1807" height="758" key="GridCell.Tab.0.bottom" timestamp="1585130423028">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1277" height="270" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1584720051848" />
+    <state width="1807" height="758" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585130423028" />
+    <state width="1807" height="758" key="GridCell.Tab.0.center" timestamp="1585130423028">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1277" height="270" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1584720051846" />
+    <state width="1807" height="758" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585130423028" />
+    <state width="1807" height="758" key="GridCell.Tab.0.left" timestamp="1585130423027">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1277" height="270" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1584720051830" />
+    <state width="1807" height="758" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585130423027" />
+    <state width="1807" height="758" key="GridCell.Tab.0.right" timestamp="1585130423028">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1277" height="270" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584720051847" />
+    <state width="1807" height="758" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585130423028" />
+>>>>>>> origin/master
     <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -244,11 +275,19 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1584964354589" />
+<<<<<<< HEAD
     <state x="668" y="438" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585164404670">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1584525870793" />
     <state x="668" y="438" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585164404670" />
+=======
+    <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585085120112">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1584525870793" />
+    <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585085120112" />
+>>>>>>> origin/master
     <state x="368" y="175" key="run.anything.popup" timestamp="1583607727682">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
