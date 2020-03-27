@@ -1,4 +1,4 @@
-/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/spsc/Desktop/Projeto/Rastros/git
--- Configuring done
--- Generating done
--- Build files have been written to: /home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug
+Cannot generate into /home/geremias/Desktop/LI2/git/cmake-build-debug
+It is already used for project /home/spsc/Desktop/Projeto/Rastros/git
+
+Please either delete it manually or select another generation directory

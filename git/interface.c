@@ -152,6 +152,7 @@ int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2], a, b, c, d;
     char filename[50];
+    int numj;
     mostrar_tabuleiro(*e);
     mostrar_prompt(e);
     while (acabou(e) != 1) {
@@ -162,6 +163,13 @@ int interpretador(ESTADO *e) {
             adic_num_comandos(e);
             mostrar_tabuleiro(*e);
             mostrar_prompt(e);
+            if (obter_jogador_atual(e)==1) {
+                int numj = obter_numero_de_jogadas(e);
+                char filename [20];
+                sprintf(filename, "pos%d", numj);
+                puts(filename);
+                gravar(e,filename,"w+");
+            }
         }
         else if (sscanf(linha,"%c%c%c%s",&a,&b,&c,&filename)==4 && a == 'g' && b == 'r' && c == ' ') {
             gravar(e,filename,"w+");
@@ -173,10 +181,27 @@ int interpretador(ESTADO *e) {
             adic_num_comandos(e);
         }
         else if (strlen(linha) == 5 && sscanf(linha,"%c%c%c%c",&a,&b,&c,&d)==4 && a == 'm' && b == 'o' && c == 'v' && d == 's'){
-            movs(e);
             adic_num_comandos(e);
+            movs(e);
         }
-        else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
+        else if (sscanf(linha,"%c%c%c%c%d",&a,&b,&c,&d,&numj) && a == 'p' && b == 'o' && c == 's' && d == ' ') {
+            if (numj <= obter_numero_de_jogadas(e)) {
+                for (int i = numj+1; i <= obter_numero_de_jogadas(e); i++) {
+                    sprintf(filename, "pos%d", i);
+                    remove(filename);
+                }
+                adic_num_comandos(e);
+                sprintf(filename, "pos%d", numj);
+                ler(e,filename,"r");
+            }
+        }
+        else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') {
+            for (int i = 1; i <= obter_numero_de_jogadas(e); i++) {
+                sprintf(filename, "pos%d", i);
+                remove(filename);
+                return 1;
+            }
+        }
     }
 
     if (quem_ganhou(e) == 1)
