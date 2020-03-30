@@ -63,4 +63,10 @@ void ler (ESTADO *e, const char *f, const char *mode);
  */
 void gravar_movs (ESTADO *e, FILE *filename);
 
+/**
+ * Função que permite retroceder jogadas
+ * @param e Apontador para o estado
+ * @param p Indica a jogada para onde se quer retroceder
+ */
+void regressa_pos (ESTADO *e, int p);
 #endif //___INTERFACE_H___

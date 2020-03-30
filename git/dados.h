@@ -173,6 +173,10 @@ void start_jogador (ESTADO *e);
  */
 void start_num_jogadas (ESTADO *e);
 
+/**
+ * \brief Função que subtrai jogadas
+ * @param e Apontador para o estado
+ */
 void subt_num_jogadas (ESTADO *e);
 
 #endif //__DADOS_H___
