@@ -71,6 +71,10 @@ void adic_num_jogadas (ESTADO *e) {
     if (j == 2) e->num_jogadas += 1;
 }
 
+void subt_num_jogadas (ESTADO *e) {
+    e->num_jogadas -= 1;
+}
+
 void altera_prompt (ESTADO *e, int nc, int nj, int ja) {
     e->num_jogadas = nj;
     e->num_comandos = nc;

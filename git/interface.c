@@ -148,6 +148,30 @@ void ler (ESTADO *e, const char *filename, const char *mode) {
     fclose(ficheiro);
 }
 
+void regressa_pos (ESTADO *e, int p) {
+     int nj = obter_numero_de_jogadas(e);
+     if (p == 0) inicializar_estado();
+     else if (p < nj){
+         COORDENADA uc = obter_ultima_jogada(e);
+         altera_para_vazio(e,uc);
+         for (; nj >= p; nj--) {
+             JOGADA j = obter_jogada(e, nj-1);
+             COORDENADA j1 = j.jogador1;
+             COORDENADA j2 = j.jogador2;
+             if (nj == p) {
+                 altera_para_branca(e, j2);
+                 atualiza_ultima_jogada(e, j2);
+             } else {
+                 subt_num_jogadas(e);
+                 altera_para_vazio(e, j1);
+                 altera_para_vazio(e, j2);
+             }
+         }
+     }
+}
+
+
+
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2], a, b, c, d;
@@ -163,20 +187,13 @@ int interpretador(ESTADO *e) {
             adic_num_comandos(e);
             mostrar_tabuleiro(*e);
             mostrar_prompt(e);
-            if (obter_jogador_atual(e)==1) {
-                int numj = obter_numero_de_jogadas(e);
-                char filename [20];
-                sprintf(filename, "pos%d", numj);
-                puts(filename);
-                gravar(e,filename,"w+");
-            }
         }
-        else if (sscanf(linha,"%c%c%c%s",&a,&b,&c,&filename)==4 && a == 'g' && b == 'r' && c == ' ') {
+        else if (sscanf(linha,"%c%c%c%[^\n]",&a,&b,&c,filename)==4 && a == 'g' && b == 'r' && c == ' ') {
             gravar(e,filename,"w+");
             printf("Gravado com sucesso.\n");
             adic_num_comandos(e);
         }
-        else if (sscanf(linha,"%c%c%c%c%s",&a,&b,&c,&d,&filename)==5 && a == 'l' && b == 'e' && c == 'r' && d == ' '){
+        else if (sscanf(linha,"%c%c%c%c%[^\n]",&a,&b,&c,&d,filename)==5 && a == 'l' && b == 'e' && c == 'r' && d == ' '){
             ler(e,filename,"r");
             adic_num_comandos(e);
         }
@@ -185,24 +202,15 @@ int interpretador(ESTADO *e) {
             movs(e);
         }
         else if (sscanf(linha,"%c%c%c%c%d",&a,&b,&c,&d,&numj) && a == 'p' && b == 'o' && c == 's' && d == ' ') {
-            if (numj <= obter_numero_de_jogadas(e)) {
-                for (int i = numj+1; i <= obter_numero_de_jogadas(e); i++) {
-                    sprintf(filename, "pos%d", i);
-                    remove(filename);
-                }
-                adic_num_comandos(e);
-                sprintf(filename, "pos%d", numj);
-                ler(e,filename,"r");
+            regressa_pos(e,numj);
+            adic_num_comandos(e);
+            mostrar_tabuleiro(*e);
+            mostrar_prompt(e);
             }
+
+        else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
         }
-        else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') {
-            for (int i = 1; i <= obter_numero_de_jogadas(e); i++) {
-                sprintf(filename, "pos%d", i);
-                remove(filename);
-                return 1;
-            }
-        }
-    }
+
 
     if (quem_ganhou(e) == 1)
         printf("Parabéns jogador 1, és o grande vencedor!");

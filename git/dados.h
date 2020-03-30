@@ -173,4 +173,6 @@ void start_jogador (ESTADO *e);
  */
 void start_num_jogadas (ESTADO *e);
 
+void subt_num_jogadas (ESTADO *e);
+
 #endif //__DADOS_H___
