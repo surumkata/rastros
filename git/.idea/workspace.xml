@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="LIProject" targetName="LIProject" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -10,11 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/interface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/dados.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LIProject.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LIProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +36,7 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+    <option name="clangWarnings" value="-Wno-unused-variable,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wno--Wimplicit-function-declaration" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -94,6 +107,8 @@
       <workItem from="1585162873971" duration="748000" />
       <workItem from="1585323460070" duration="6056000" />
       <workItem from="1585561138299" duration="5255000" />
+      <workItem from="1585764338605" duration="2198000" />
+      <workItem from="1586204653974" duration="4120000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1583930593665</created>
@@ -186,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585330984100</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update documentaçao">
+      <created>1585568805120</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585568805120</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,40 +226,45 @@
     <MESSAGE value="update pagina html (e documentaçao)" />
     <MESSAGE value="comando movs (ainda falta ler o ficheiro com o comando movs)" />
     <MESSAGE value="funçao pos" />
-    <option name="LAST_COMMIT_MESSAGE" value="funçao pos" />
+    <MESSAGE value="update documentaçao" />
+    <option name="LAST_COMMIT_MESSAGE" value="update documentaçao" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="160" y="27" width="1168" height="642" key="CommitChangelistDialog2" timestamp="1585330981879">
-      <screen x="41" y="27" width="1325" height="741" />
+    <state x="588" y="214" width="800" height="677" key="#Intentions" timestamp="1586206221975">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="214" width="800" height="677" key="#Intentions/67.27.1853.1053@67.27.1853.1053" timestamp="1586206221975" />
+    <state x="1001" y="27" width="1168" height="642" key="CommitChangelistDialog2" timestamp="1585568804148">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="640" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585134603207" />
     <state x="160" y="27" width="1168" height="642" key="CommitChangelistDialog2/41.27.1325.741@41.27.1325.741" timestamp="1585330981879" />
     <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1585172769837" />
-    <state x="1001" y="27" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585175502796" />
+    <state x="1001" y="27" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585568804148" />
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583782509720">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1583782509720" />
-    <state width="1807" height="721" key="GridCell.Tab.0.bottom" timestamp="1585568667727">
+    <state width="1807" height="721" key="GridCell.Tab.0.bottom" timestamp="1585568843428">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.bottom/43.27.1323.741@43.27.1323.741" timestamp="1584720051848" />
-    <state width="1807" height="721" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585568667727" />
-    <state width="1807" height="721" key="GridCell.Tab.0.center" timestamp="1585568667726">
+    <state width="1807" height="721" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585568843428" />
+    <state width="1807" height="721" key="GridCell.Tab.0.center" timestamp="1585568843426">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.center/43.27.1323.741@43.27.1323.741" timestamp="1584720051846" />
-    <state width="1807" height="721" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585568667726" />
-    <state width="1807" height="721" key="GridCell.Tab.0.left" timestamp="1585568667726">
+    <state width="1807" height="721" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585568843426" />
+    <state width="1807" height="721" key="GridCell.Tab.0.left" timestamp="1585568843426">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.left/43.27.1323.741@43.27.1323.741" timestamp="1584720051830" />
-    <state width="1807" height="721" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585568667726" />
-    <state width="1807" height="721" key="GridCell.Tab.0.right" timestamp="1585568667727">
+    <state width="1807" height="721" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585568843426" />
+    <state width="1807" height="721" key="GridCell.Tab.0.right" timestamp="1585568843427">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1277" height="270" key="GridCell.Tab.0.right/43.27.1323.741@43.27.1323.741" timestamp="1584720051847" />
-    <state width="1807" height="721" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585568667727" />
+    <state width="1807" height="721" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585568843427" />
     <state x="165" y="85" width="1058" height="622" key="MergeDialog" timestamp="1583932375587">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -255,16 +282,16 @@
     </state>
     <state x="358" y="224" key="com.intellij.ide.util.TipDialog/41.27.1325.741@41.27.1325.741" timestamp="1585561148381" />
     <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1584964354589" />
-    <state x="472" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585172787903">
-      <screen x="43" y="27" width="1323" height="741" />
+    <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586208815460">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1585172787903" />
-    <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585085120112" />
-    <state x="522" y="237" key="run.anything.popup" timestamp="1585172877406">
+    <state x="668" y="438" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586208815460" />
+    <state x="522" y="237" key="run.anything.popup" timestamp="1586207920481">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1583607727682" />
-    <state x="522" y="237" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1585172877406" />
+    <state x="522" y="237" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586207920481" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1584724073085">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

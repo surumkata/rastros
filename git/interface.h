@@ -69,4 +69,7 @@ void gravar_movs (ESTADO *e, FILE *filename);
  * @param p Indica a jogada para onde se quer retroceder
  */
 void regressa_pos (ESTADO *e, int p);
+
+
+
 #endif //___INTERFACE_H___

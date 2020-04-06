@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LIProject.dir/dados.c.o"
   "CMakeFiles/LIProject.dir/interface.c.o"
+  "CMakeFiles/LIProject.dir/listas.c.o"
   "CMakeFiles/LIProject.dir/logica.c.o"
   "CMakeFiles/LIProject.dir/main.c.o"
   "LIProject"

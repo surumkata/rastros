@@ -90,6 +90,12 @@
 		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/interface.h">
 			<Option target="LIProject"/>
 		</Unit>
+		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/listas.c">
+			<Option target="LIProject"/>
+		</Unit>
+		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/listas.h">
+			<Option target="LIProject"/>
+		</Unit>
 		<Unit filename="/home/spsc/Desktop/Projeto/Rastros/git/logica.c">
 			<Option target="LIProject"/>
 		</Unit>

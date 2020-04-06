@@ -177,6 +177,33 @@ interface.c.s:
 	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/interface.c.s
 .PHONY : interface.c.s
 
+listas.o: listas.c.o
+
+.PHONY : listas.o
+
+# target to build an object file
+listas.c.o:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/listas.c.o
+.PHONY : listas.c.o
+
+listas.i: listas.c.i
+
+.PHONY : listas.i
+
+# target to preprocess a source file
+listas.c.i:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/listas.c.i
+.PHONY : listas.c.i
+
+listas.s: listas.c.s
+
+.PHONY : listas.s
+
+# target to generate assembly for a file
+listas.c.s:
+	$(MAKE) -f CMakeFiles/LIProject.dir/build.make CMakeFiles/LIProject.dir/listas.c.s
+.PHONY : listas.c.s
+
 logica.o: logica.c.o
 
 .PHONY : logica.o
@@ -246,6 +273,9 @@ help:
 	@echo "... interface.o"
 	@echo "... interface.i"
 	@echo "... interface.s"
+	@echo "... listas.o"
+	@echo "... listas.i"
+	@echo "... listas.s"
 	@echo "... logica.o"
 	@echo "... logica.i"
 	@echo "... logica.s"
