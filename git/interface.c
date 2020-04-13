@@ -4,6 +4,7 @@
 #include <string.h>
 #include "logica.h"
 #include "dados.h"
+#include "listas.h"
 
 void mostrar_prompt (ESTADO *e){
     int num_comandos = obter_num_comandos(e);
@@ -207,7 +208,12 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(*e);
             mostrar_prompt(e);
             }
-
+        else if (strlen(linha) == 4 && sscanf(linha,"%c%c%c",&a,&b,&c)==3 && a == 'j' && b == 'o' && c == 'g'){
+            LISTA l = obtem_jogadas_possiveis(e);
+            l = melhor_jogada (*e,l,obter_jogador_atual(e));
+            COORDENADA c = *(COORDENADA *) devolve_cabeca(l);
+            printf("Sugiro a jogada %d %d", c.linha , c.coluna);
+        }
         else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
         }
 

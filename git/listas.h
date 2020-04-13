@@ -58,6 +58,7 @@ int lista_esta_vazia(LISTA L);
 
 LISTA obtem_jogadas_possiveis (ESTADO *e);
 
+LISTA melhor_jogada (ESTADO e, LISTA l, int jogador);
 #endif //___LISTAS_H___
 
 

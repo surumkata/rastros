@@ -55,3 +55,28 @@ LISTA obtem_jogadas_possiveis (ESTADO *e) {
     }
     return l;
 }
+
+LISTA melhor_jogada (ESTADO e, LISTA l,int jogador) {
+    if (lista_esta_vazia(l) == 1) {;
+        return NULL;
+    }
+    COORDENADA c1 = *(COORDENADA *) devolve_cabeca(l);
+    ESTADO e1 = e;
+    jogar (&e1,c1);
+    if (acabou(&e1) == 1) {
+        if (quem_ganhou(&e1) == jogador) {
+            l->prox = NULL;
+            return l;
+        }
+        else {
+            l = remove_cabeca(l);
+            return melhor_jogada (e,l,jogador);
+        }
+    }
+    LISTA l1 = obtem_jogadas_possiveis(&e1);
+    if (melhor_jogada(e1,l1,jogador) == NULL) {
+        l = remove_cabeca(l);
+        return melhor_jogada (e,l,jogador);
+    }
+    else return melhor_jogada(e1,l1,jogador);
+}

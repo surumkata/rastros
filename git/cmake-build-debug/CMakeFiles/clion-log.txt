@@ -1,4 +1,4 @@
-Cannot generate into C:\Users\adeli\Rastros\git\cmake-build-debug
-It is already used for project C:\Users\adeli\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\spsc\Desktop\Projeto\Rastros\git
+Cannot generate into /home/geremias/Desktop/LI2/git/cmake-build-debug
+It is already used for project /home/spsc/Desktop/Projeto/Rastros/git
 
 Please either delete it manually or select another generation directory

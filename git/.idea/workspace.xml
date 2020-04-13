@@ -11,8 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listas.c" beforeDir="false" afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listas.h" beforeDir="false" afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,9 +282,10 @@
     </state>
     <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1583607727682" />
     <state x="522" y="237" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586207920481" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1584724073085">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="462" y="189" width="672" height="478" key="search.everywhere.popup" timestamp="1586795182120">
+      <screen x="41" y="27" width="1325" height="741" />
     </state>
+    <state x="462" y="189" width="672" height="478" key="search.everywhere.popup/41.27.1325.741@41.27.1325.741" timestamp="1586795182120" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1584724073085" />
   </component>
 </project>
