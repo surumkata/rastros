@@ -11,12 +11,10 @@ Módulo de listas ligadas do jogo e das funções que o manipulam
 /**
  * \brief Refere-se à estrutura para as listas ligadas.
  */
-typedef struct slist *LISTA;
-
-typedef struct slist {
+typedef struct list{
     void *valor;
-    LISTA prox;
-} Nodo;
+    struct list *prox;
+} *LISTA, Nodo;
 
 /**
  * \brief Função que cria uma lista vazia.
@@ -28,7 +26,7 @@ LISTA criar_lista();
  * \brief Função que insere um valor na cabeça da lista.
  * @param L Lista
  */
-LISTA insere_cabeca(LISTA L, void *valor);
+LISTA insere_cabeca(LISTA l, void* valor);
 
 /**
  * \brief Função que devolve a cabeça da lista.
@@ -58,5 +56,14 @@ LISTA remove_cabeca(LISTA L);
  */
 int lista_esta_vazia(LISTA L);
 
+LISTA obtem_jogadas_possiveis (ESTADO *e);
+
 #endif //___LISTAS_H___
+
+
+
+
+
+
+
 
