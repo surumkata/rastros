@@ -151,17 +151,27 @@ void ler (ESTADO *e, const char *filename, const char *mode) {
 
 void regressa_pos (ESTADO *e, int p) {
      int nj = obter_numero_de_jogadas(e);
-     if (p == 0) inicializar_estado();
-     else if (p < nj){
+     if (p < nj){
          COORDENADA uc = obter_ultima_jogada(e);
          altera_para_vazio(e,uc);
+         if (obter_jogador_atual(e) == 2) atualiza_jog_atual(e);
          for (; nj >= p; nj--) {
              JOGADA j = obter_jogada(e, nj-1);
              COORDENADA j1 = j.jogador1;
              COORDENADA j2 = j.jogador2;
              if (nj == p) {
-                 altera_para_branca(e, j2);
-                 atualiza_ultima_jogada(e, j2);
+                 if (nj == 0) {
+                     COORDENADA inicial;
+                     inicial.linha = 3;
+                     inicial.coluna = 4;
+                     altera_para_branca(e,inicial);
+                     altera_para_vazio(e, j1);
+                     altera_para_vazio(e, j2);
+                 }
+                 else {
+                     altera_para_branca(e, j2);
+                     atualiza_ultima_jogada(e, j2);
+                 }
              } else {
                  subt_num_jogadas(e);
                  altera_para_vazio(e, j1);
@@ -208,20 +218,20 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(*e);
             mostrar_prompt(e);
             }
-        else if (strlen(linha) == 4 && sscanf(linha,"%c%c%c",&a,&b,&c)==3 && a == 'j' && b == 'o' && c == 'g'){
+        /*else if (strlen(linha) == 4 && sscanf(linha,"%c%c%c",&a,&b,&c)==3 && a == 'j' && b == 'o' && c == 'g'){
             LISTA l = obtem_jogadas_possiveis(e);
             l = melhor_jogada (*e,l,obter_jogador_atual(e));
             COORDENADA c = *(COORDENADA *) devolve_cabeca(l);
             printf("Sugiro a jogada %d %d", c.linha , c.coluna);
-        }
+        }*/
         else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
         }
 
 
     if (quem_ganhou(e) == 1)
-        printf("Parabéns jogador 1, és o grande vencedor!");
+        printf("Parabéns jogador 1, és o grande vencedor!\n");
     else
-        printf("Parabéns jogador 2, és o grande vencedor!");
+        printf("Parabéns jogador 2, és o grande vencedor!\n");
     return 1;
 }
 
