@@ -179,6 +179,15 @@ void regressa_pos (ESTADO *e, int p) {
              }
          }
      }
+     else if (p > nj){
+         for (;nj < p;nj++){
+             JOGADA j = obter_jogada(e, nj);
+             COORDENADA j1 = j.jogador1;
+             COORDENADA j2 = j.jogador2;
+             jogar(e,j1);
+             jogar(e,j2);
+         }
+     }
 }
 
 

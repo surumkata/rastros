@@ -26,43 +26,11 @@ dados.h
 listas.h
 /home/spsc/Desktop/Projeto/Rastros/git/listas.h
 
-/home/spsc/Desktop/Projeto/Rastros/git/interface.h
-bits/types/FILE.h
--
-sched.h
--
-
-/home/spsc/Desktop/Projeto/Rastros/git/listas.c
-stdio.h
--
-stdlib.h
--
-listas.h
-/home/spsc/Desktop/Projeto/Rastros/git/listas.h
-logica.h
-/home/spsc/Desktop/Projeto/Rastros/git/logica.h
-
 /home/spsc/Desktop/Projeto/Rastros/git/listas.h
 dados.h
 /home/spsc/Desktop/Projeto/Rastros/git/dados.h
 
-/home/spsc/Desktop/Projeto/Rastros/git/logica.c
-stdio.h
--
-stdlib.h
--
-dados.h
-/home/spsc/Desktop/Projeto/Rastros/git/dados.h
-
 /home/spsc/Desktop/Projeto/Rastros/git/logica.h
 dados.h
 /home/spsc/Desktop/Projeto/Rastros/git/dados.h
-
-/home/spsc/Desktop/Projeto/Rastros/git/main.c
-dados.h
-/home/spsc/Desktop/Projeto/Rastros/git/dados.h
-interface.h
-/home/spsc/Desktop/Projeto/Rastros/git/interface.h
-logica.h
-/home/spsc/Desktop/Projeto/Rastros/git/logica.h
 
