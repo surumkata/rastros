@@ -19,14 +19,19 @@ int jogada_invalida (ESTADO *e, COORDENADA c){
     else return 1;
 }
 
+void aux_jog_poss (COORDENADA *c, int i) {
+    if (i == 0) (*c).linha += 1;
+    if (i == 1) (*c).coluna += 1;
+    if (i == 2 || i == 3) (*c).linha -= 1;
+    if (i == 4 || i == 5) (*c).coluna -= 1;
+    if (i == 6 || i == 7) (*c).linha += 1;
+}
+
+
 int ha_jogadas_possiveis (ESTADO *e){
     COORDENADA c = obter_ultima_jogada(e);
     for(int i = 0; i <= 7; i++) {
-        if (i == 0) c.linha += 1;
-        if (i == 1) c.coluna += 1;
-        if (i == 2 || i == 3) c.linha -= 1;
-        if (i == 4 || i == 5) c.coluna -= 1;
-        if (i == 6 || i == 7) c.linha += 1;
+        aux_jog_poss(&c,i);
         if (jogada_invalida(e, c) == 0) return 1;
     }
     return 0;

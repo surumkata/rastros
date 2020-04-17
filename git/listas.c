@@ -44,11 +44,7 @@ LISTA obtem_jogadas_possiveis (ESTADO *e) {
     LISTA l = criar_lista();
     COORDENADA c = obter_ultima_jogada(e);
     for(int i = 0; i <= 7; i++) {
-        if (i == 0) c.linha += 1;
-        if (i == 1) c.coluna += 1;
-        if (i == 2 || i == 3) c.linha -= 1;
-        if (i == 4 || i == 5) c.coluna -= 1 ;
-        if (i == 6 || i == 7) c.linha += 1;
+        aux_jog_poss (&c,i);
         if (jogada_invalida(e, c) == 0) {
             l = insere_cabeca(l,(void *) &c);
         }
@@ -80,3 +76,4 @@ LISTA melhor_jogada (ESTADO e, LISTA l,int jogador) {
     }
     else return melhor_jogada(e1,l1,jogador);
 }
+

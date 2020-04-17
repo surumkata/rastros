@@ -46,4 +46,6 @@ int ha_jogadas_possiveis (ESTADO *e);
  */
 int quem_ganhou (ESTADO *e);
 
+void aux_jog_poss (COORDENADA *c, int i);
+
 #endif //___LOGICA_H___
