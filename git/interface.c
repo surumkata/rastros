@@ -13,7 +13,7 @@ void mostrar_prompt (ESTADO *e){
     printf("# %d JOG%d N%d\n",num_comandos,jogador,num_jogadas);
 }
 
-void mostrar_tabuleiro(ESTADO e) {
+void mostrar_tabuleiro(ESTADO *e) {
     printf("==========\n");
     for (int lin = 0; lin <= 7; lin++) {
         printf("|");
@@ -21,15 +21,16 @@ void mostrar_tabuleiro(ESTADO e) {
             COORDENADA c;
             c.linha = lin;
             c.coluna = col;
-            if (obter_estado_casa(&e,c)==BRANCA) putchar ('*') ;
+            if (obter_estado_casa(e,c)==BRANCA) putchar ('*') ;
             else if (col==7 && lin==0) putchar ('2');
             else if (col==0 && lin==7) putchar ('1');
-            else if (obter_estado_casa(&e,c)==PRETA) putchar ('#') ;
+            else if (obter_estado_casa(e,c)==PRETA) putchar ('#') ;
             else putchar ('.');
         }
         printf("| %d\n",8-lin);
     }
     printf("==========\n ABCDEFGH\n");
+    mostrar_prompt(e);
 }
 
 void movs (ESTADO *e){
@@ -144,14 +145,13 @@ void ler (ESTADO *e, const char *filename, const char *mode) {
         adic_jogadas(e, cord1);
         atualiza_jog_atual(e);
     }
-    mostrar_tabuleiro(*e);
-    mostrar_prompt(e);
+    mostrar_tabuleiro(e);
     fclose(ficheiro);
 }
 
 void regressa_pos (ESTADO *e, int p) {
      int nj = obter_numero_de_jogadas(e);
-     if (p < nj){
+     if (p <= nj){
          COORDENADA uc = obter_ultima_jogada(e);
          altera_para_vazio(e,uc);
          if (obter_jogador_atual(e) == 2) atualiza_jog_atual(e);
@@ -197,16 +197,14 @@ int interpretador(ESTADO *e) {
     char col[2], lin[2], a, b, c, d;
     char filename[50];
     int numj;
-    mostrar_tabuleiro(*e);
-    mostrar_prompt(e);
+    mostrar_tabuleiro(e);
     while (acabou(e) != 1) {
         if(fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
         if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
             COORDENADA coord = {*col - 'a', '8' - *lin};
             jogar(e, coord);
             adic_num_comandos(e);
-            mostrar_tabuleiro(*e);
-            mostrar_prompt(e);
+            mostrar_tabuleiro(e);
         }
         else if (sscanf(linha,"%c%c%c%[^\n]",&a,&b,&c,filename)==4 && a == 'g' && b == 'r' && c == ' ') {
             gravar(e,filename,"w+");
@@ -224,15 +222,15 @@ int interpretador(ESTADO *e) {
         else if (sscanf(linha,"%c%c%c%c%d",&a,&b,&c,&d,&numj) && a == 'p' && b == 'o' && c == 's' && d == ' ') {
             regressa_pos(e,numj);
             adic_num_comandos(e);
-            mostrar_tabuleiro(*e);
-            mostrar_prompt(e);
+            mostrar_tabuleiro(e);
             }
-        /*else if (strlen(linha) == 4 && sscanf(linha,"%c%c%c",&a,&b,&c)==3 && a == 'j' && b == 'o' && c == 'g'){
+        else if (strlen(linha) == 4 && sscanf(linha,"%c%c%c",&a,&b,&c)==3 && a == 'j' && b == 'o' && c == 'g'){
             LISTA l = obtem_jogadas_possiveis(e);
-            l = melhor_jogada (*e,l,obter_jogador_atual(e));
-            COORDENADA c = *(COORDENADA *) devolve_cabeca(l);
-            printf("Sugiro a jogada %d %d", c.linha , c.coluna);
-        }*/
+            COORDENADA c = heuristica_aleatoria(l);
+            jogar(e,c);
+            adic_num_comandos(e);
+            mostrar_tabuleiro(e);
+        }
         else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
         }
 

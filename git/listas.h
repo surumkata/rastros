@@ -59,6 +59,10 @@ int lista_esta_vazia(LISTA L);
 LISTA obtem_jogadas_possiveis (ESTADO *e);
 
 LISTA melhor_jogada (ESTADO e, LISTA l, int jogador);
+int contaLista (LISTA l);
+LISTA aux_insere_cord (LISTA l, COORDENADA c);
+void imprimeLista (LISTA l);
+COORDENADA heuristica_aleatoria (LISTA l);
 #endif //___LISTAS_H___
 
 

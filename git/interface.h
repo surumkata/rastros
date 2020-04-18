@@ -22,7 +22,7 @@ int interpretador(ESTADO *e);
  * Desenha um '#' para casas pretas, um '*' para casas brancas, um '.' para casas vazias e o numero de jogador nas respetivas casas de vitória.
  * @param e Apontador para o estado
  */
-void mostrar_tabuleiro(ESTADO e);
+void mostrar_tabuleiro(ESTADO *e);
 
 /**
  * \brief Função que mostra o prompt.
