@@ -46,6 +46,10 @@ int ha_jogadas_possiveis (ESTADO *e);
  */
 int quem_ganhou (ESTADO *e);
 
+/**
+ * \brief Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento
+ * @param c Coordenada da jogada anterior
+ */
 void aux_jog_poss (COORDENADA *c, int i);
 
 #endif //___LOGICA_H___

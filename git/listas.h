@@ -56,13 +56,49 @@ LISTA remove_cabeca(LISTA L);
  */
 int lista_esta_vazia(LISTA L);
 
+/**
+ * \brief Função que devolve a lista de jogadas possíveis
+ * @param e Apontador para o estado
+ * @return l Lista com as jogadas possíveis
+ */
 LISTA obtem_jogadas_possiveis (ESTADO *e);
 
+/**
+ * \brief Função que nos devolve uma lista com a melhor jogada possível
+ * @param l Lista
+ * @return l Lista com a melhor jogada
+ */
 LISTA melhor_jogada (ESTADO e, LISTA l, int jogador);
+
+/**
+ * \brief Função conta o número de elementos que estão na lista
+ * @param l Lista
+ * @return número de elementos
+ */
 int contaLista (LISTA l);
+
+/**
+ * \brief Função que insere uma coordenada na lista
+ * @param L Lista
+ * @param c Coordenada
+ */
 LISTA aux_insere_cord (LISTA l, COORDENADA c);
+
+/**
+ * \brief Função que imprime a lista
+ * @param l Lista
+ * @return uma lista
+ */
 void imprimeLista (LISTA l);
+
+/**
+ * \brief Função que indica ao jogador uma jogada aleatória possível quando o mesmo pede ajuda ao computador
+ * @param L Lista de jogadas possíveis
+ * @return c Coordenada de uma jogada possível, sugerida pelo computador
+ */
 COORDENADA heuristica_aleatoria (LISTA l);
+
+
 #endif //___LISTAS_H___
 
 
