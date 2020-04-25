@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gravar',['gravar',['../interface_8h.html#aab0d709d4559d61c9020e745e6eaed54',1,'interface.h']]],
-  ['gravar_5fprompt',['gravar_prompt',['../interface_8h.html#a60be48d26bcb7a94c047404b4a678880',1,'interface.c']]],
-  ['gravar_5ftabuleiro',['gravar_tabuleiro',['../interface_8h.html#a67ab080654cde5e3c4a77a854c9a1d77',1,'interface.h']]]
+  ['contalista',['contaLista',['../listas_8h.html#a892b77ea9361cec7e5ffb49edb7c6b1d',1,'listas.c']]],
+  ['criar_5flista',['criar_lista',['../listas_8h.html#ae3b99323b6f8f35d80bb69ff1a27985e',1,'listas.c']]]
 ];

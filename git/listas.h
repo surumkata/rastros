@@ -98,8 +98,19 @@ void imprimeLista (LISTA l);
  */
 COORDENADA heuristica_aleatoria (LISTA l);
 
+/**
+ * \brief Função que dada uma lista devolve uma coordenada
+ * @param l Lista de jogadas
+ * @return Coordenada
+ */
 COORDENADA devolve_coordenada (LISTA l);
 
+/**
+ * \brief Função que sugere uma jogada utilizando a heurística da distância euclidiana
+ * @param e Apontador para o estado
+ * @param l Lista de jogadas possiveis
+ * @return Jogada sugerida pela heurística
+ */
 COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l);
 #endif //___LISTAS_H___
 

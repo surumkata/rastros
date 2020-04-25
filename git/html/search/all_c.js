@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quem_5fganhou',['quem_ganhou',['../logica_8h.html#a9c92ce22bf35165171ed5c423f0f1c80',1,'logica.c']]]
+  ['proximo',['proximo',['../listas_8h.html#ad9380152361127432c55c1c6067e05ae',1,'listas.c']]]
 ];

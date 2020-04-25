@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['inicializar_5festado',['inicializar_estado',['../dados_8h.html#a7e0c7e26fb685d9ab501e19b05e6954f',1,'dados.c']]],
-  ['interpretador',['interpretador',['../interface_8h.html#a24da95ebeede4a540e37790ce8be359b',1,'interface.c']]]
+  ['gravar',['gravar',['../interface_8h.html#aab0d709d4559d61c9020e745e6eaed54',1,'interface.c']]],
+  ['gravar_5fmovs',['gravar_movs',['../interface_8h.html#acba62bfbce8db70999147c3cedf9d650',1,'interface.c']]],
+  ['gravar_5ftabuleiro',['gravar_tabuleiro',['../interface_8h.html#a67ab080654cde5e3c4a77a854c9a1d77',1,'interface.c']]]
 ];

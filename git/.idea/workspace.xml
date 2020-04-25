@@ -12,9 +12,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas.c" beforeDir="false" afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h__dep__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/interface_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/logica_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/logica_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/files_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/files_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/structESTADO-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/structESTADO.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/dados_8h.tex.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h.tex.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/dados_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h__dep__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/dados_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/interface_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/interface_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/logica_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/logica_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/structESTADO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/structESTADO.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listas.h" beforeDir="false" afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

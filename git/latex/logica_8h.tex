@@ -6,22 +6,22 @@ Include dependency graph for logica.\+h\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}\label{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}} 
 int \hyperlink{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}{jogar} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
 \begin{DoxyCompactList}\small\item\em Função que realiza cada jogada;. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}\label{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}} 
 int \hyperlink{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}{jogada\+\_\+invalida} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
-\begin{DoxyCompactList}\small\item\em Função que verifica todas as formas consideradas como jogadas inválidas. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Função boleana que verifica se uma jogada é inválida. \end{DoxyCompactList}\item 
 int \hyperlink{logica_8h_adc151dff7d3b44007c0dce9f341d3705}{acabou} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Função boleana que verifica se o jogo acabou. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Função boleana que verifica se o jogo acabou. Testa se algum jogador ficou preso, senão testa se algum dos jogadores já chegou às casas a1 ou h8. \end{DoxyCompactList}\item 
 int \hyperlink{logica_8h_ad40643b3522449fe5969d38a3b490a99}{ha\+\_\+jogadas\+\_\+possiveis} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Função que verifica se existem jogadas possiveis. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Função boleana que verifica se existem jogadas possíveis. \end{DoxyCompactList}\item 
 int \hyperlink{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}{quem\+\_\+ganhou} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Função que nos indica quem ganhou. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Função que nos indica que jogador ganhou a partida. Esta função só é chamada tendo a certeza que o jogo acabou. \end{DoxyCompactList}\item 
+void \hyperlink{logica_8h_a99c662c8fa75d51348084f94dc6e12b5}{aux\+\_\+jog\+\_\+poss} (\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} $\ast$c, int i)
+\begin{DoxyCompactList}\small\item\em Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Definição da lógica do jogo e das funções que o manipulam 
+Módulo da lógica do jogo e das funções que o manipulam 
 
 \subsection{Function Documentation}
 \mbox{\Hypertarget{logica_8h_adc151dff7d3b44007c0dce9f341d3705}\label{logica_8h_adc151dff7d3b44007c0dce9f341d3705}} 
@@ -32,9 +32,32 @@ Definição da lógica do jogo e das funções que o manipulam
 
 
 
-Função boleana que verifica se o jogo acabou. 
+Função boleana que verifica se o jogo acabou. Testa se algum jogador ficou preso, senão testa se algum dos jogadores já chegou às casas a1 ou h8. 
 
-Nesta função, o jogador só pode jogar em casas do tabuleiro (linhas 1 a 8 e colunas A a H); e só pode jogar na casa imediatamente a seguir em todas as direções. \mbox{\Hypertarget{logica_8h_ad40643b3522449fe5969d38a3b490a99}\label{logica_8h_ad40643b3522449fe5969d38a3b490a99}} 
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se verdadeiro ou 0 se falso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_a99c662c8fa75d51348084f94dc6e12b5}\label{logica_8h_a99c662c8fa75d51348084f94dc6e12b5}} 
+\index{logica.\+h@{logica.\+h}!aux\+\_\+jog\+\_\+poss@{aux\+\_\+jog\+\_\+poss}}
+\index{aux\+\_\+jog\+\_\+poss@{aux\+\_\+jog\+\_\+poss}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{aux\+\_\+jog\+\_\+poss()}{aux\_jog\_poss()}}
+{\footnotesize\ttfamily void aux\+\_\+jog\+\_\+poss (\begin{DoxyParamCaption}\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} $\ast$}]{c,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Coordenada da jogada anterior \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logica_8h_ad40643b3522449fe5969d38a3b490a99}\label{logica_8h_ad40643b3522449fe5969d38a3b490a99}} 
 \index{logica.\+h@{logica.\+h}!ha\+\_\+jogadas\+\_\+possiveis@{ha\+\_\+jogadas\+\_\+possiveis}}
 \index{ha\+\_\+jogadas\+\_\+possiveis@{ha\+\_\+jogadas\+\_\+possiveis}!logica.\+h@{logica.\+h}}
 \subsubsection{\texorpdfstring{ha\+\_\+jogadas\+\_\+possiveis()}{ha\_jogadas\_possiveis()}}
@@ -42,9 +65,54 @@ Nesta função, o jogador só pode jogar em casas do tabuleiro (linhas 1 a 8 e c
 
 
 
-Função que verifica se existem jogadas possiveis. 
+Função boleana que verifica se existem jogadas possíveis. 
 
-Nesta função, verificamos se algum dos jogadores chega à casa a1 ou h8 (sem determinar quem ganha. \mbox{\Hypertarget{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}\label{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}} 
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se verdadeiro ou 0 se falso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}\label{logica_8h_ad6e795244d42549abf6ce7677c4eeae4}} 
+\index{logica.\+h@{logica.\+h}!jogada\+\_\+invalida@{jogada\+\_\+invalida}}
+\index{jogada\+\_\+invalida@{jogada\+\_\+invalida}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{jogada\+\_\+invalida()}{jogada\_invalida()}}
+{\footnotesize\ttfamily int jogada\+\_\+invalida (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{c }\end{DoxyParamCaption})}
+
+
+
+Função boleana que verifica se uma jogada é inválida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em c} & Coordenada da jogada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se verdadeiro ou 0 se falso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}\label{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}} 
+\index{logica.\+h@{logica.\+h}!jogar@{jogar}}
+\index{jogar@{jogar}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{jogar()}{jogar()}}
+{\footnotesize\ttfamily int jogar (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{c }\end{DoxyParamCaption})}
+
+
+
+Função que realiza cada jogada;. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em c} & Coordenada da jogada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}\label{logica_8h_a9c92ce22bf35165171ed5c423f0f1c80}} 
 \index{logica.\+h@{logica.\+h}!quem\+\_\+ganhou@{quem\+\_\+ganhou}}
 \index{quem\+\_\+ganhou@{quem\+\_\+ganhou}!logica.\+h@{logica.\+h}}
 \subsubsection{\texorpdfstring{quem\+\_\+ganhou()}{quem\_ganhou()}}
@@ -52,6 +120,13 @@ Nesta função, verificamos se algum dos jogadores chega à casa a1 ou h8 (sem d
 
 
 
-Função que nos indica quem ganhou. 
+Função que nos indica que jogador ganhou a partida. Esta função só é chamada tendo a certeza que o jogo acabou. 
 
-Nesta função, verificamos se é possivel avançar uma casa em qualquer das direções. Caso falhe todas as condições da função \char`\"{}ha\+\_\+jogadas\+\_\+possiveis\char`\"{}, o jogo acaba e ganhará o adversário. 
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O vencedor 
+\end{DoxyReturn}
