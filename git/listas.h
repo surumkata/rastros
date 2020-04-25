@@ -98,7 +98,9 @@ void imprimeLista (LISTA l);
  */
 COORDENADA heuristica_aleatoria (LISTA l);
 
+COORDENADA devolve_coordenada (LISTA l);
 
+COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l);
 #endif //___LISTAS_H___
 
 

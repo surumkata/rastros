@@ -231,6 +231,13 @@ int interpretador(ESTADO *e) {
             adic_num_comandos(e);
             mostrar_tabuleiro(e);
         }
+        else if (strlen(linha) == 5 && sscanf(linha,"%c%c%c%c",&a,&b,&c,&d)==4 && a == 'j' && b == 'o' && c == 'g' && d == '2') {
+            LISTA l = obtem_jogadas_possiveis(e);
+            COORDENADA c = heuristica_euclidiana(e, l);
+            jogar(e, c);
+            adic_num_comandos(e);
+            mostrar_tabuleiro(e);
+        }
         else if (strlen(linha) == 2 && sscanf(linha,"%c",&a)==1 && a == 'Q') return 1;
         }
 

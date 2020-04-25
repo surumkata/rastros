@@ -78,9 +78,38 @@ void * procuraNaLista (LISTA l, int p) {
     return devolve_cabeca(l);
 }
 
+COORDENADA devolve_coordenada (LISTA l) {
+    return *(COORDENADA *) devolve_cabeca(l);
+}
+
 COORDENADA heuristica_aleatoria (LISTA l) {
     srand(time(NULL));
     int p = rand () % contaLista(l);
     COORDENADA c = *(COORDENADA *) procuraNaLista(l,p);
     return c;
+}
+
+COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l)  {
+    int valor, melhores_pontos, pontos;
+    COORDENADA c, melhor_jogada;
+
+    if (obter_jogador_atual(e) == 1) {
+        valor = 1;
+        melhores_pontos = 15;
+    }
+    else {
+        valor = -1;
+        melhores_pontos = 1;
+    }
+    while (lista_esta_vazia(l) != 1) {
+        c = devolve_coordenada(l);
+        pontos = ((7-c.linha) + c.coluna) * valor;
+        if (pontos < melhores_pontos) {
+            melhores_pontos = pontos;
+            melhor_jogada = c;
+        }
+        l = remove_cabeca(l);
+
+    }
+    return melhor_jogada;
 }
