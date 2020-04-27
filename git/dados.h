@@ -3,8 +3,10 @@
 Definição do estado e das funções que o manipulam
 */
 
-#ifndef __DADOS_H___
-#define __DADOS_H___
+#ifndef ___DADOS_H___
+#define ___DADOS_H___
+
+#include "listas.h"
 
 /**
 \brief Refere-se ao tipo de uma casa do tabuleiro.
@@ -178,5 +180,12 @@ void start_num_jogadas (ESTADO *e);
  * @param e Apontador para o estado
  */
 void subt_num_jogadas (ESTADO *e);
+
+/**
+ * \brief Função que dada uma lista devolve uma coordenada
+ * @param l Lista de jogadas
+ * @return Coordenada
+ */
+COORDENADA devolve_coordenada (LISTA l);
 
 #endif //__DADOS_H___

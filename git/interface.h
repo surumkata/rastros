@@ -42,34 +42,23 @@ void gravar_tabuleiro(ESTADO *e,FILE *f);
 /**
  * \brief Função que grava um estado do jogo num ficheiro txt.
  * @param e Apontador para o estado
- * @param f Nome do ficheiro
- * @param mode Permissões do ficheiro
+ * @param file_name Nome do ficheiro
  */
-void gravar (ESTADO *e, const char *f, const char *mode);
+void gravar (ESTADO *e, const char *file_name);
 
 /**
  * \brief Função que lê o último estado gravado do jogo de um ficheiro txt.
  * Esta função lê o tabuleiro e o prompt de um ficheiro e atualiza o estado atual com isso.
  * @param e Apontador para o estado
- * @param f Nome do ficheiro
- * @param mode Permissões do ficheiro
+ * @param file_name Nome do ficheiro
  */
-void ler (ESTADO *e, const char *f, const char *mode);
+void ler (ESTADO *e, const char *file_name);
 
 /**
  * \brief Função que grava os movimentos feitos pelos jogadores no ficheiro .txt.
  * @param e Apontador para o estado
- * @param filename Nome do ficheiro
+ * @param file_name Nome do ficheiro
  */
-void gravar_movs (ESTADO *e, FILE *filename);
-
-/**
- * Função que permite retroceder jogadas
- * @param e Apontador para o estado
- * @param p Indica a jogada para onde se quer retroceder
- */
-void regressa_pos (ESTADO *e, int p);
-
-
+void gravar_movs (ESTADO *e, FILE *file_name);
 
 #endif //___INTERFACE_H___

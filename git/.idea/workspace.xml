@@ -13,60 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="95e01cd8-7b93-4f86-833b-8d4ed8c59ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/dados_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/dados_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h__dep__incl.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/dados_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h__dep__incl.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/dados_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/files.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logica_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logica_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/menudata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/files_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/files_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/structESTADO-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/structESTADO.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/annotated.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/dados_8h.tex.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h.tex.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/dados_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h__dep__incl.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/dados_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h__dep__incl.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/files.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/interface_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/interface_8h.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/logica_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/logica_8h.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/refman.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/structESTADO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/structESTADO.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas.c" beforeDir="false" afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listas.h" beforeDir="false" afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/logica.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +100,9 @@
       <workItem from="1587045257545" duration="5754000" />
       <workItem from="1587131275268" duration="4112000" />
       <workItem from="1587227605384" duration="14408000" />
+      <workItem from="1587844110759" duration="885000" />
+      <workItem from="1587931781520" duration="64000" />
+      <workItem from="1587971987911" duration="8700000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1583930593665</created>
@@ -266,11 +223,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587131942025</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="heuristica_euclidiana adicionada">
+      <created>1587825847175</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1587825847175</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="teste" />
@@ -288,18 +252,19 @@
     <MESSAGE value="update documentação listas.h" />
     <MESSAGE value="correçao bugs funçao pos" />
     <MESSAGE value="aux_jog_poss adicionada" />
-    <option name="LAST_COMMIT_MESSAGE" value="aux_jog_poss adicionada" />
+    <MESSAGE value="heuristica_euclidiana adicionada" />
+    <option name="LAST_COMMIT_MESSAGE" value="heuristica_euclidiana adicionada" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="677" key="#Intentions" timestamp="1586206221975">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#Intentions/67.27.1853.1053@67.27.1853.1053" timestamp="1586206221975" />
-    <state x="160" y="27" width="912" height="912" key="CommitChangelistDialog2" timestamp="1587131941099">
+    <state x="160" y="27" width="912" height="912" key="CommitChangelistDialog2" timestamp="1587825846690">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
     <state x="640" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586275832463" />
-    <state x="160" y="27" width="1168" height="642" key="CommitChangelistDialog2/41.27.1325.741@41.27.1325.741" timestamp="1587131941099" />
+    <state x="160" y="27" width="1168" height="642" key="CommitChangelistDialog2/41.27.1325.741@41.27.1325.741" timestamp="1587825846690" />
     <state x="269" y="27" width="860" height="741" key="CommitChangelistDialog2/43.27.1323.741@43.27.1323.741" timestamp="1585172769837" />
     <state x="1001" y="27" width="912" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1587048523896" />
     <state x="689" y="207" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587045311146">
@@ -345,10 +310,10 @@
     </state>
     <state x="358" y="224" key="com.intellij.ide.util.TipDialog/41.27.1325.741@41.27.1325.741" timestamp="1585561148381" />
     <state x="360" y="224" key="com.intellij.ide.util.TipDialog/43.27.1323.741@43.27.1323.741" timestamp="1584964354589" />
-    <state x="471" y="316" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587134146925">
+    <state x="471" y="316" width="448" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587844550168">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
-    <state x="471" y="316" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/41.27.1325.741@41.27.1325.741" timestamp="1587134146925" />
+    <state x="471" y="316" width="448" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/41.27.1325.741@41.27.1325.741" timestamp="1587844550168" />
     <state x="472" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1585172787903" />
     <state x="668" y="438" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1587045712355" />
     <state x="522" y="237" key="run.anything.popup" timestamp="1587054074952">

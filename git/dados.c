@@ -1,6 +1,7 @@
 
 #include <stdlib.h>
 #include "dados.h"
+#include "listas.h"
 
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
@@ -108,4 +109,8 @@ void start_jogador (ESTADO *e){
 
 void start_num_jogadas (ESTADO *e){
     e->num_jogadas=0;
+}
+
+COORDENADA devolve_coordenada (LISTA l) {
+    return *(COORDENADA *) devolve_cabeca(l);
 }

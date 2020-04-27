@@ -7,6 +7,7 @@ Módulo da lógica do jogo e das funções que o manipulam
 #define ___LOGICA_H___
 
 #include "dados.h"
+#include "listas.h"
 
 /**
  * \brief Função que realiza cada jogada;
@@ -52,4 +53,33 @@ int quem_ganhou (ESTADO *e);
  */
 void aux_jog_poss (COORDENADA *c, int i);
 
+/**
+ * \brief Função que sugere uma coordenada aleatória possível
+ * @param L Lista de jogadas possíveis
+ * @return c Coordenada de uma jogada possível, sugerida pelo computador
+ */
+COORDENADA heuristica_aleatoria (LISTA l);
+
+/**
+ * \brief Função que sugere uma coordenada utilizando a distância euclidiana
+ * @param e Apontador para o estado
+ * @param l Lista de jogadas possiveis
+ * @return Jogada sugerida pela heurística
+ */
+COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l);
+
+/**
+ * \brief Função que nos devolve uma lista com as jogadas possíveis
+ * @param e Estado
+ * @return l Lista com as jogadas possíveis.
+ */
+LISTA obtem_jogadas_possiveis (ESTADO *e);
+
+/**
+ * Função que permite retroceder jogadas
+ * @param e Apontador para o estado
+ * @param p Indica a jogada para onde se quer retroceder
+ */
+
+void regressa_pos (ESTADO *e, int p);
 #endif //___LOGICA_H___

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dados.h"
-
+#include "listas.h"
+#include <time.h>
 
 
 int jogada_invalida (ESTADO *e, COORDENADA c){
@@ -61,8 +62,8 @@ int quem_ganhou (ESTADO *e) {
 
 int jogar(ESTADO *e, COORDENADA c) {
     if (jogada_invalida(e,c) != 1) {
-        altera_para_branca(e,c);
         COORDENADA uj = obter_ultima_jogada(e);
+        altera_para_branca(e,c);
         altera_para_preta(e,uj);
         atualiza_ultima_jogada(e,c);
         adic_jogadas(e,c);
@@ -73,4 +74,88 @@ int jogar(ESTADO *e, COORDENADA c) {
     return 1;
 }
 
+COORDENADA heuristica_aleatoria (LISTA l) {
+    srand(time(NULL));
+    int p = rand () % contaLista(l);
+    COORDENADA c = *(COORDENADA *) procuraNaLista(l,p);
+    return c;
+}
 
+COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l)  {
+    int valor, melhores_pontos, pontos;
+    COORDENADA c, melhor_jogada;
+
+    if (obter_jogador_atual(e) == 1) {
+        valor = 1;
+        melhores_pontos = 15;
+    }
+    else {
+        valor = -1;
+        melhores_pontos = 1;
+    }
+    while (lista_esta_vazia(l) != 1) {
+        c = devolve_coordenada(l);
+        pontos = ((7-c.linha) + c.coluna) * valor;
+        if (pontos < melhores_pontos) {
+            melhores_pontos = pontos;
+            melhor_jogada = c;
+        }
+        l = remove_cabeca(l);
+
+    }
+    return melhor_jogada;
+}
+
+LISTA obtem_jogadas_possiveis (ESTADO *e) {
+    LISTA l = criar_lista();
+    COORDENADA c = obter_ultima_jogada(e);
+    COORDENADA v[sizeof(COORDENADA)*8];
+    for(int i = 0; i <= 7; i++) {
+        aux_jog_poss (&c,i);
+        if (jogada_invalida(e, c) == 0) {
+            v[i] = c;
+            l = insere_cabeca(l,(void *) &v[i]);
+        }
+    }
+    return l;
+}
+void regressa_pos (ESTADO *e, int p) {
+    int nj = obter_numero_de_jogadas(e);
+    if (p <= nj){
+        COORDENADA uc = obter_ultima_jogada(e);
+        altera_para_vazio(e,uc);
+        if (obter_jogador_atual(e) == 2) atualiza_jog_atual(e);
+        for (; nj >= p; nj--) {
+            JOGADA j = obter_jogada(e, nj-1);
+            COORDENADA j1 = j.jogador1;
+            COORDENADA j2 = j.jogador2;
+            if (nj == p) {
+                if (nj == 0) {
+                    COORDENADA inicial;
+                    inicial.linha = 3;
+                    inicial.coluna = 4;
+                    altera_para_branca(e,inicial);
+                    altera_para_vazio(e, j1);
+                    altera_para_vazio(e, j2);
+                }
+                else {
+                    altera_para_branca(e, j2);
+                    atualiza_ultima_jogada(e, j2);
+                }
+            } else {
+                subt_num_jogadas(e);
+                altera_para_vazio(e, j1);
+                altera_para_vazio(e, j2);
+            }
+        }
+    }
+    else if (p > nj){
+        for (;nj < p;nj++){
+            JOGADA j = obter_jogada(e, nj);
+            COORDENADA j1 = j.jogador1;
+            COORDENADA j2 = j.jogador2;
+            jogar(e,j1);
+            jogar(e,j2);
+        }
+    }
+}
