@@ -48,14 +48,15 @@ int ha_jogadas_possiveis (ESTADO *e);
 int quem_ganhou (ESTADO *e);
 
 /**
- * \brief Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento.
+ * Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento.
  * @param c Coordenada da jogada anterior.
+ * @param i Indice.
  */
 void aux_jog_poss (COORDENADA *c, int i);
 
 /**
  * \brief Função que sugere uma coordenada aleatória possível.
- * @param L Lista de jogadas possíveis.
+ * @param l Lista de jogadas possíveis.
  * @return c Coordenada de uma jogada possível, sugerida pelo computador.
  */
 COORDENADA heuristica_aleatoria (LISTA l);

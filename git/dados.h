@@ -17,7 +17,9 @@ typedef enum {VAZIO, BRANCA, PRETA} CASA;
  * \brief Refere-se às coordenadas de uma casa do tabuleiro.
  */
 typedef struct
-{ int coluna;
+{ /** refere-se a uma coluna do tabuleiro;*/
+  int coluna;
+  /** refere-sea uma linha do tabuleiro.*/
   int linha; }
   COORDENADA;
 
@@ -25,7 +27,9 @@ typedef struct
  * \brief Referem-se à jogada feita pelo jogador1 e pelo jogador2.
  */
 typedef struct
-{ COORDENADA jogador1;
+{ /** Coordenada do jogador 1;*/
+  COORDENADA jogador1;
+  /** Coordenada do jogador 2.*/
   COORDENADA jogador2; }
   JOGADA;
 

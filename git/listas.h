@@ -12,9 +12,12 @@ Módulo de listas ligadas do jogo e das funções que o manipulam
  * \brief Refere-se à estrutura para as listas ligadas.
  */
 typedef struct list{
+    /** Refere-se ao primeiro elemento da lista. */
     void *valor;
+    /** Refere-se ao resto dos elementos da lista. */
     struct list *prox;
-} *LISTA, Nodo;
+} /** Nome1 para nodo da lista */*LISTA,
+  /** Nome 2 para nodo da lista */ Nodo;
 
 /**
  * \brief Função que cria uma lista vazia.
@@ -23,8 +26,10 @@ typedef struct list{
 LISTA criar_lista();
 
 /**
- * \brief Função que insere um valor na cabeça da lista.
- * @param L Lista.
+ * \brief Função que insere um elemento no início de uma lista.
+ * @param l Lista.
+ * @param valor Elemento a inserir.
+ * @return Lista com o novo elemento inserido.
  */
 LISTA insere_cabeca(LISTA l, void* valor);
 
@@ -59,22 +64,20 @@ int lista_esta_vazia(LISTA L);
 
 /**
  * \brief Função conta o número de elementos que estão na lista.
- * @param l Lista.
+ * @param L Lista.
  * @return Número de elementos.
  */
 int contaLista (LISTA L);
 
 /**
- * \brief Função conta o número de elementos que estão na lista.
- * @param l Lista.
+ * \brief Função que conta o número de elementos que estão na lista.
+ * @param L Lista.
  * @param p Índice da lista.
  * @return Valor do índice p da lista.
  */
 void * procuraNaLista (LISTA L, int p);
 
 #endif //___LISTAS_H___
-
-
 
 
 
