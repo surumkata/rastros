@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['obtem_5fjogadas_5fpossiveis',['obtem_jogadas_possiveis',['../listas_8h.html#a10a279273ae074ed74efcf8ec92c9384',1,'listas.c']]],
+  ['obtem_5fjogadas_5fpossiveis',['obtem_jogadas_possiveis',['../logica_8h.html#a10a279273ae074ed74efcf8ec92c9384',1,'logica.c']]],
   ['obter_5festado_5fcasa',['obter_estado_casa',['../dados_8h.html#a6faa68373203923729ed38657aa0f768',1,'dados.c']]],
   ['obter_5fjogada',['obter_jogada',['../dados_8h.html#a7816cda3e0aa6552634cdec1f0e03b68',1,'dados.c']]],
   ['obter_5fjogador_5fatual',['obter_jogador_atual',['../dados_8h.html#acc6c25533188a99cb69c12e7f2c406ef',1,'dados.c']]],

@@ -18,56 +18,56 @@ typedef struct list{
 
 /**
  * \brief Função que cria uma lista vazia.
- * @return Uma lista l vazia
+ * @return Uma lista l vazia.
  */
 LISTA criar_lista();
 
 /**
  * \brief Função que insere um valor na cabeça da lista.
- * @param L Lista
+ * @param L Lista.
  */
 LISTA insere_cabeca(LISTA l, void* valor);
 
 /**
  * \brief Função que devolve a cabeça da lista.
- * @param L Lista
- * @return Cabeça da lista
+ * @param L Lista.
+ * @return Cabeça da lista.
  */
 void * devolve_cabeca(LISTA L);
 
 /**
  * \brief Função que devolve a cauda da lista.
- * @param L Lista
- * @return Cauda da lista
+ * @param L Lista.
+ * @return Cauda da lista.
  */
 LISTA proximo(LISTA L);
 
 /**
  * \brief Função que remove a cabeça da lista (libertando o espaço ocupado) e devolve a cauda.
- * @param L Lista
- * @return Cauda da lista
+ * @param L Lista.
+ * @return Cauda da lista.
  */
 LISTA remove_cabeca(LISTA L);
 
 /**
  * \brief Função que nos indica se a lista é vazia.
- * @param L Lista
- * @return 1 se verdadeiro ou 0 se falso
+ * @param L Lista.
+ * @return 1 se verdadeiro ou 0 se falso.
  */
 int lista_esta_vazia(LISTA L);
 
 
 /**
- * \brief Função conta o número de elementos que estão na lista
- * @param l Lista
- * @return Número de elementos
+ * \brief Função conta o número de elementos que estão na lista.
+ * @param l Lista.
+ * @return Número de elementos.
  */
 int contaLista (LISTA L);
 
 /**
- * \brief Função conta o número de elementos que estão na lista
- * @param l Lista
- * @param p Índice da lista
+ * \brief Função conta o número de elementos que estão na lista.
+ * @param l Lista.
+ * @param p Índice da lista.
  * @return Valor do índice p da lista.
  */
 void * procuraNaLista (LISTA L, int p);

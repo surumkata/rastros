@@ -12,28 +12,30 @@ int \hyperlink{interface_8h_a24da95ebeede4a540e37790ce8be359b}{interpretador} (\
 void \hyperlink{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\+\_\+tabuleiro} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Função que mostra o tabuleiro. Esta função recebe um estado do jogo e desenha no terminal o tabuleiro. Desenha um \textquotesingle{}\#\textquotesingle{} para casas pretas, um \textquotesingle{}$\ast$\textquotesingle{} para casas brancas, um \textquotesingle{}.\textquotesingle{} para casas vazias e o numero de jogador nas respetivas casas de vitória. \end{DoxyCompactList}\item 
 void \hyperlink{interface_8h_a1fd532d3d252ff42d406a15757e2a401}{mostrar\+\_\+prompt} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Função que mostra o prompt. Esta função recebe um estado do jogo e desenha no terminal o prompt. Desenha \# (numero de comandos efetuados) J\+O\+G(jogador atual) N(numero de jogadas efetuadas) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Função que mostra o prompt. Esta função recebe um estado do jogo e desenha no terminal o prompt. Desenha \# (numero de comandos efetuados) J\+O\+G(jogador atual) N(numero de jogadas efetuadas). \end{DoxyCompactList}\item 
 void \hyperlink{interface_8h_a67ab080654cde5e3c4a77a854c9a1d77}{gravar\+\_\+tabuleiro} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$f)
 \begin{DoxyCompactList}\small\item\em Função que grava o tabuleiro num ficheiro txt. \end{DoxyCompactList}\item 
-void \hyperlink{interface_8h_aab0d709d4559d61c9020e745e6eaed54}{gravar} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, const char $\ast$f, const char $\ast$mode)
+void \hyperlink{interface_8h_aac22d32daeed815fab5c7229ffe10290}{gravar} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, const char $\ast$file\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Função que grava um estado do jogo num ficheiro txt. \end{DoxyCompactList}\item 
-void \hyperlink{interface_8h_a049a847bc63620235b4fc3ff8e1723a2}{ler} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, const char $\ast$f, const char $\ast$mode)
+void \hyperlink{interface_8h_aeacababe295a3821208e90fabc5b3d41}{ler} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, const char $\ast$file\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Função que lê o último estado gravado do jogo de um ficheiro txt. Esta função lê o tabuleiro e o prompt de um ficheiro e atualiza o estado atual com isso. \end{DoxyCompactList}\item 
-void \hyperlink{interface_8h_acba62bfbce8db70999147c3cedf9d650}{gravar\+\_\+movs} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$filename)
+void \hyperlink{interface_8h_ac17633e89b611fc9a5c42117e285fd05}{gravar\+\_\+movs} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$file\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Função que grava os movimentos feitos pelos jogadores no ficheiro .txt. \end{DoxyCompactList}\item 
-void \hyperlink{interface_8h_a0c33d304285c8abd83d4768717a6c247}{regressa\+\_\+pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int p)
-\end{DoxyCompactItemize}
+int \hyperlink{interface_8h_a1aad1cf3e709ab9977b129185f4e02ca}{ler\+\_\+aux\+\_\+pecas\+\_\+pretas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$ficheiro)
+\begin{DoxyCompactList}\small\item\em Função auxiliar da função \char`\"{}ler\char`\"{} que conta o número de peças pretas no tabuleiro. \end{DoxyCompactList}\item 
+void \hyperlink{interface_8h_a674c18b36588630f076a14bd01a6f3d3}{ler\+\_\+aux\+\_\+movs} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$ficheiro, int p)
+\begin{DoxyCompactList}\small\item\em Função auxiliar da função \char`\"{}ler\char`\"{} que lê as jogadas finalizadas (os 2 jogadores jogaram). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Módulo da interface do jogo e das funções que o manipulam 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{interface_8h_aab0d709d4559d61c9020e745e6eaed54}\label{interface_8h_aab0d709d4559d61c9020e745e6eaed54}} 
+\mbox{\Hypertarget{interface_8h_aac22d32daeed815fab5c7229ffe10290}\label{interface_8h_aac22d32daeed815fab5c7229ffe10290}} 
 \index{interface.\+h@{interface.\+h}!gravar@{gravar}}
 \index{gravar@{gravar}!interface.\+h@{interface.\+h}}
 \subsubsection{\texorpdfstring{gravar()}{gravar()}}
-{\footnotesize\ttfamily void gravar (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{const char $\ast$}]{f,  }\item[{const char $\ast$}]{mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void gravar (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{const char $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
 
 
 
@@ -41,18 +43,16 @@ Função que grava um estado do jogo num ficheiro txt.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em f} & Nome do ficheiro \\
-\hline
-{\em mode} & Permissões do ficheiro \\
+{\em file\+\_\+name} & Nome do ficheiro. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{interface_8h_acba62bfbce8db70999147c3cedf9d650}\label{interface_8h_acba62bfbce8db70999147c3cedf9d650}} 
+\mbox{\Hypertarget{interface_8h_ac17633e89b611fc9a5c42117e285fd05}\label{interface_8h_ac17633e89b611fc9a5c42117e285fd05}} 
 \index{interface.\+h@{interface.\+h}!gravar\+\_\+movs@{gravar\+\_\+movs}}
 \index{gravar\+\_\+movs@{gravar\+\_\+movs}!interface.\+h@{interface.\+h}}
 \subsubsection{\texorpdfstring{gravar\+\_\+movs()}{gravar\_movs()}}
-{\footnotesize\ttfamily void gravar\+\_\+movs (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{filename }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void gravar\+\_\+movs (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
 
 
 
@@ -60,9 +60,9 @@ Função que grava os movimentos feitos pelos jogadores no ficheiro .txt.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em filename} & Nome do ficheiro \\
+{\em file\+\_\+name} & Nome do ficheiro. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_a67ab080654cde5e3c4a77a854c9a1d77}\label{interface_8h_a67ab080654cde5e3c4a77a854c9a1d77}} 
@@ -77,9 +77,9 @@ Função que grava o tabuleiro num ficheiro txt.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em f} & Nome do ficheiro \\
+{\em f} & Nome do ficheiro. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_a24da95ebeede4a540e37790ce8be359b}\label{interface_8h_a24da95ebeede4a540e37790ce8be359b}} 
@@ -94,14 +94,14 @@ Função que desenvolve o jogo. Esta função adiciona comandos que auxiliam os 
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{interface_8h_a049a847bc63620235b4fc3ff8e1723a2}\label{interface_8h_a049a847bc63620235b4fc3ff8e1723a2}} 
+\mbox{\Hypertarget{interface_8h_aeacababe295a3821208e90fabc5b3d41}\label{interface_8h_aeacababe295a3821208e90fabc5b3d41}} 
 \index{interface.\+h@{interface.\+h}!ler@{ler}}
 \index{ler@{ler}!interface.\+h@{interface.\+h}}
 \subsubsection{\texorpdfstring{ler()}{ler()}}
-{\footnotesize\ttfamily void ler (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{const char $\ast$}]{f,  }\item[{const char $\ast$}]{mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void ler (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{const char $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
 
 
 
@@ -109,13 +109,50 @@ Função que lê o último estado gravado do jogo de um ficheiro txt. Esta funç
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em f} & Nome do ficheiro \\
-\hline
-{\em mode} & Permissões do ficheiro \\
+{\em file\+\_\+name} & Nome do ficheiro. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a674c18b36588630f076a14bd01a6f3d3}\label{interface_8h_a674c18b36588630f076a14bd01a6f3d3}} 
+\index{interface.\+h@{interface.\+h}!ler\+\_\+aux\+\_\+movs@{ler\+\_\+aux\+\_\+movs}}
+\index{ler\+\_\+aux\+\_\+movs@{ler\+\_\+aux\+\_\+movs}!interface.\+h@{interface.\+h}}
+\subsubsection{\texorpdfstring{ler\+\_\+aux\+\_\+movs()}{ler\_aux\_movs()}}
+{\footnotesize\ttfamily void ler\+\_\+aux\+\_\+movs (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{ficheiro,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar da função \char`\"{}ler\char`\"{} que lê as jogadas finalizadas (os 2 jogadores jogaram). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado. \\
+\hline
+{\em ficheiro} & Apontador para o ficheiro. \\
+\hline
+{\em p} & Número de peças pretas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a1aad1cf3e709ab9977b129185f4e02ca}\label{interface_8h_a1aad1cf3e709ab9977b129185f4e02ca}} 
+\index{interface.\+h@{interface.\+h}!ler\+\_\+aux\+\_\+pecas\+\_\+pretas@{ler\+\_\+aux\+\_\+pecas\+\_\+pretas}}
+\index{ler\+\_\+aux\+\_\+pecas\+\_\+pretas@{ler\+\_\+aux\+\_\+pecas\+\_\+pretas}!interface.\+h@{interface.\+h}}
+\subsubsection{\texorpdfstring{ler\+\_\+aux\+\_\+pecas\+\_\+pretas()}{ler\_aux\_pecas\_pretas()}}
+{\footnotesize\ttfamily int ler\+\_\+aux\+\_\+pecas\+\_\+pretas (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+
+
+Função auxiliar da função \char`\"{}ler\char`\"{} que conta o número de peças pretas no tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado. \\
+\hline
+{\em ficheiro} & Apontador para um ficheiro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Número de peças pretas. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{interface_8h_a1fd532d3d252ff42d406a15757e2a401}\label{interface_8h_a1fd532d3d252ff42d406a15757e2a401}} 
 \index{interface.\+h@{interface.\+h}!mostrar\+\_\+prompt@{mostrar\+\_\+prompt}}
 \index{mostrar\+\_\+prompt@{mostrar\+\_\+prompt}!interface.\+h@{interface.\+h}}
@@ -124,11 +161,11 @@ Função que lê o último estado gravado do jogo de um ficheiro txt. Esta funç
 
 
 
-Função que mostra o prompt. Esta função recebe um estado do jogo e desenha no terminal o prompt. Desenha \# (numero de comandos efetuados) J\+O\+G(jogador atual) N(numero de jogadas efetuadas) 
+Função que mostra o prompt. Esta função recebe um estado do jogo e desenha no terminal o prompt. Desenha \# (numero de comandos efetuados) J\+O\+G(jogador atual) N(numero de jogadas efetuadas). 
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}\label{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}} 
@@ -143,19 +180,6 @@ Função que mostra o tabuleiro. Esta função recebe um estado do jogo e desenh
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{interface_8h_a0c33d304285c8abd83d4768717a6c247}\label{interface_8h_a0c33d304285c8abd83d4768717a6c247}} 
-\index{interface.\+h@{interface.\+h}!regressa\+\_\+pos@{regressa\+\_\+pos}}
-\index{regressa\+\_\+pos@{regressa\+\_\+pos}!interface.\+h@{interface.\+h}}
-\subsubsection{\texorpdfstring{regressa\+\_\+pos()}{regressa\_pos()}}
-{\footnotesize\ttfamily void regressa\+\_\+pos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{p }\end{DoxyParamCaption})}
-
-Função que permite retroceder jogadas 
-\begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
-\hline
-{\em p} & Indica a jogada para onde se quer retroceder \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}

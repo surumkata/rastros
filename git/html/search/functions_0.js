@@ -10,6 +10,6 @@ var searchData=
   ['altera_5ftabuleiro',['altera_tabuleiro',['../dados_8h.html#a8b79b64e344c02f2ae96ceb9f0916825',1,'dados.c']]],
   ['atualiza_5fjog_5fatual',['atualiza_jog_atual',['../dados_8h.html#ab3ce5a0f1ac37547c45141ae9e843da1',1,'dados.c']]],
   ['atualiza_5fultima_5fjogada',['atualiza_ultima_jogada',['../dados_8h.html#ac3e2bb2a82a55bd13aa5cc73d513aad2',1,'dados.c']]],
-  ['aux_5finsere_5fcord',['aux_insere_cord',['../listas_8h.html#a1b6f6f8ab59c7f3256c388c0c485f072',1,'listas.h']]],
-  ['aux_5fjog_5fposs',['aux_jog_poss',['../logica_8h.html#a99c662c8fa75d51348084f94dc6e12b5',1,'logica.c']]]
+  ['aux_5fjog_5fposs',['aux_jog_poss',['../logica_8h.html#a99c662c8fa75d51348084f94dc6e12b5',1,'logica.c']]],
+  ['avanca_5fpos',['avanca_pos',['../logica_8h.html#acc430724fe00a1851fb437c7a6b5a35d',1,'logica.c']]]
 ];

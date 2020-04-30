@@ -134,59 +134,80 @@ void gravar (ESTADO *e, const char *filename)
     gravar_tabuleiro(e,ficheiro);
     gravar_movs (e,ficheiro);
     fclose(ficheiro);
+    printf("Gravado com sucesso.\n");
+}
+
+int ler_aux_pecas_pretas (ESTADO *e, FILE *ficheiro)
+{
+    char d;
+    int p=0;
+    COORDENADA cord;
+
+    for (int lin = 0; lin <=7 ; lin++)
+    {
+        cord.linha=lin;
+        for (int col = 0; col <=8 ; col++)
+        {
+            cord.coluna = col;
+            if (fscanf(ficheiro,"%c",&d) == 1)
+            {
+                if (d != '\n')
+                {
+                    altera_tabuleiro(e,d,cord);
+                    if (d=='#') p++;
+                }
+            }
+        }
+    }
+
+    return p;
+}
+
+void ler_aux_movs (ESTADO *e, FILE *ficheiro, int p)
+{
+    start_num_jogadas (e);
+    start_jogador (e);
+
+    for (int i=0; i<p/2; i++)
+    {
+        int c1l, c2l;
+        char n1, n2, c1c, c2c;
+        if (fscanf (ficheiro, "%c%c: %c%d %c%d\n", &n1, &n2, &c1c, &c1l, &c2c, &c2l) == 6)
+        {
+            COORDENADA cord1, cord2;
+            cord1.linha=8-c1l;
+            cord2.linha=8-c2l;
+            cord1.coluna=(int) c1c-97;
+            adic_jogadas (e, cord1);
+            atualiza_jog_atual(e);
+            cord2.coluna=(int) c2c-97;
+            adic_jogadas (e, cord2);
+            adic_num_jogadas(e);
+            atualiza_jog_atual(e);
+        }
+    }
 }
 
 void ler (ESTADO *e, const char *filename)
 {
     FILE *ficheiro;
     ficheiro = fopen(filename,"r");
-    char d;
-    COORDENADA cord;
-    int p=0;
+    int p = ler_aux_pecas_pretas (e,ficheiro);
+    if (fscanf (ficheiro, "\n") == 0)
+        ler_aux_movs (e,ficheiro,p);
 
-    for (int lin = 0; lin <=7 ; lin++ )
-    {
-        cord.linha=lin;
-        for (int col = 0; col <=8 ; col++)
-        {
-            cord.coluna = col;
-            fscanf(ficheiro,"%c",&d);
-            if (d != '\n')
-            {
-                   altera_tabuleiro(e,d,cord);
-                   if (d=='#') p++;
-            }
-        }
-    }
-    fscanf (ficheiro, "\n");
-    start_num_jogadas (e);
-    start_jogador (e);
-    for (int i=0; i<p/2; i++)
-    {
-        int c1l, c2l;
-        char n1, n2, c1c, c2c;
-        fscanf (ficheiro, "%c%c: %c%d %c%d\n", &n1, &n2, &c1c, &c1l, &c2c, &c2l);
-        COORDENADA cord1, cord2;
-        cord1.linha=8-c1l;
-        cord2.linha=8-c2l;
-        cord1.coluna=(int) c1c-97;
-        adic_jogadas (e, cord1);
-        atualiza_jog_atual(e);
-        cord2.coluna=(int) c2c-97;
-        adic_jogadas (e, cord2);
-        adic_num_jogadas(e);
-        atualiza_jog_atual(e);
-    }
     if (p%2!=0)
     {
         char n1, n2, c1c;
         int c1l;
-        fscanf (ficheiro, "%c%c: %c%d", &n1, &n2, &c1c, &c1l);
-        COORDENADA cord1;
-        cord1.linha=8-c1l;
-        cord1.coluna=(int)c1c-97;
-        adic_jogadas(e, cord1);
-        atualiza_jog_atual(e);
+        if (fscanf (ficheiro, "%c%c: %c%d", &n1, &n2, &c1c, &c1l) == 4)
+        {
+            COORDENADA cord1;
+            cord1.linha=8-c1l;
+            cord1.coluna=(int)c1c-97;
+            adic_jogadas(e, cord1);
+            atualiza_jog_atual(e);
+        }
     }
     mostrar_tabuleiro(e);
     fclose(ficheiro);
@@ -198,7 +219,8 @@ int interpretador(ESTADO *e)
     int numj;
 
     mostrar_tabuleiro(e);
-    while (acabou(e) != 1) {
+    while (acabou(e) != 1)
+    {
         if(fgets(linha, BUF_SIZE, stdin) == NULL)
             return 0;
         if(strlen(linha) == 3 &&
@@ -213,7 +235,6 @@ int interpretador(ESTADO *e)
                  strcmp(cmd,"gr") == 0)
         {
             gravar(e,file_name);
-            printf("Gravado com sucesso.\n");
             adic_num_comandos(e);
         }
         else if (sscanf(linha,"%s%[^\n]",cmd,file_name)==2 &&
@@ -226,14 +247,14 @@ int interpretador(ESTADO *e)
                  sscanf(linha,"%s",cmd)==1 &&
                  strcmp(cmd,"movs") == 0)
         {
-            adic_num_comandos(e);
             movs(e);
+            adic_num_comandos(e);
         }
         else if (strlen(linha) <= 7 &&
                  sscanf(linha,"%s%d",cmd,&numj)==2 &&
                  strcmp(cmd,"pos") == 0)
         {
-            regressa_pos(e,numj);
+            pos(e,numj);
             adic_num_comandos(e);
             mostrar_tabuleiro(e);
             }

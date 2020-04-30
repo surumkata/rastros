@@ -37,7 +37,8 @@ int ha_jogadas_possiveis (ESTADO *e)
 {
     COORDENADA c;
     c = obter_ultima_jogada(e);
-    for(int i = 0; i <= 7; i++) {
+    for (int i = 0; i <= 7; i++)
+    {
         aux_jog_poss(&c,i);
         if (jogada_invalida(e, c) == 0) return 1;
     }
@@ -46,7 +47,8 @@ int ha_jogadas_possiveis (ESTADO *e)
 
 int acabou (ESTADO *e)
 {
-    if (ha_jogadas_possiveis(e) == 1){
+    if (ha_jogadas_possiveis(e) == 1)
+    {
         COORDENADA c1, c2;
         c1.linha = 0; c1.coluna = 7;
         c2.linha = 7; c2.coluna = 0;
@@ -72,7 +74,8 @@ int quem_ganhou (ESTADO *e)
 int jogar(ESTADO *e, COORDENADA c)
 {
     COORDENADA uj;
-    if (jogada_invalida(e,c) != 1) {
+    if (jogada_invalida(e,c) != 1)
+    {
         uj = obter_ultima_jogada(e);
         altera_para_branca(e,c);
         altera_para_preta(e,uj);
@@ -142,48 +145,61 @@ LISTA obtem_jogadas_possiveis (ESTADO *e)
     }
     return l;
 }
-void regressa_pos (ESTADO *e, int p)
-{
-    int nj;
-    COORDENADA uc;
-    nj = obter_numero_de_jogadas(e);
 
-    if (p <= nj){
-        uc = obter_ultima_jogada(e);
-        altera_para_vazio(e,uc);
-        if (obter_jogador_atual(e) == 2) atualiza_jog_atual(e);
-        for (; nj >= p; nj--)
+void retrocede_pos (ESTADO *e, int p, int nj)
+{
+    COORDENADA uc = obter_ultima_jogada(e);
+    altera_para_vazio(e,uc);
+    if (obter_jogador_atual(e) == 2) atualiza_jog_atual(e);
+    for (; nj >= p; nj--)
+    {
+        JOGADA j = obter_jogada(e, nj-1);
+        COORDENADA j1 = j.jogador1;
+        COORDENADA j2 = j.jogador2;
+        if (nj == p)
         {
-            JOGADA j = obter_jogada(e, nj-1);
-            COORDENADA j1 = j.jogador1;
-            COORDENADA j2 = j.jogador2;
-            if (nj == p) {
-                if (nj == 0) {
-                    COORDENADA inicial;
-                    inicial.linha = 3;
-                    inicial.coluna = 4;
-                    altera_para_branca(e,inicial);
-                    altera_para_vazio(e, j1);
-                    altera_para_vazio(e, j2);
-                }
-                else {
-                    altera_para_branca(e, j2);
-                    atualiza_ultima_jogada(e, j2);
-                }
-            } else {
-                subt_num_jogadas(e);
+            if (nj == 0)
+            {
+                COORDENADA inicial;
+                inicial.linha = 3;
+                inicial.coluna = 4;
+                altera_para_branca(e,inicial);
                 altera_para_vazio(e, j1);
                 altera_para_vazio(e, j2);
+                atualiza_ultima_jogada (e,inicial);
+            }
+            else
+            {
+                altera_para_branca(e, j2);
+                atualiza_ultima_jogada(e, j2);
             }
         }
-    }
-    else if (p > nj){
-        for (;nj < p;nj++){
-            JOGADA j = obter_jogada(e, nj);
-            COORDENADA j1 = j.jogador1;
-            COORDENADA j2 = j.jogador2;
-            jogar(e,j1);
-            jogar(e,j2);
+        else
+        {
+            subt_num_jogadas(e);
+            altera_para_vazio(e, j1);
+            altera_para_vazio(e, j2);
         }
     }
+}
+
+void avanca_pos (ESTADO *e, int p, int nj)
+{
+    for (;nj < p;nj++)
+    {
+        JOGADA j = obter_jogada(e, nj);
+        COORDENADA j1 = j.jogador1;
+        COORDENADA j2 = j.jogador2;
+        jogar(e,j1);
+        jogar(e,j2);
+    }
+}
+
+void pos (ESTADO *e, int p)
+{
+    int nj;
+    nj = obter_numero_de_jogadas(e);
+
+    if (p <= nj) retrocede_pos (e, p, nj);
+    else avanca_pos (e, p, nj);
 }

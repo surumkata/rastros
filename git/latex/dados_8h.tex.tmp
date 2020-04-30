@@ -1,7 +1,10 @@
 \hypertarget{dados_8h}{}\section{dados.\+h File Reference}
 \label{dados_8h}\index{dados.\+h@{dados.\+h}}
-This graph shows which files directly or indirectly include this file\+:
+{\ttfamily \#include \char`\"{}listas.\+h\char`\"{}}\newline
+Include dependency graph for dados.\+h\+:
 % FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,7 +69,9 @@ void \hyperlink{dados_8h_ae0aba0d974608a01fbd2aea73dd8e4fb}{start\+\_\+jogador} 
 void \hyperlink{dados_8h_aa037f658813227aa39e51644d38c40a9}{start\+\_\+num\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Função que indica que o numero de jogadas efetuadas no inicio do jogo é 0. \end{DoxyCompactList}\item 
 void \hyperlink{dados_8h_ac70a4181f548f7d0b792a8f01801e151}{subt\+\_\+num\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Função que subtrai jogadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Função que subtrai jogadas. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{dados_8h_a3cea7e3e88f95152889baab72faf9f52}{devolve\+\_\+coordenada} (\hyperlink{listas_8h_ac2a716b9326d8a2883dcbdb96615bb5d}{L\+I\+S\+TA} l)
+\begin{DoxyCompactList}\small\item\em Função que dada uma lista devolve uma coordenada. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -85,9 +90,9 @@ Função que adiciona um movimento às jogadas de cada jogador.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em c} & Coordenada de uma casa \\
+{\em c} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_a529201cee83a853ad0cde90636b502ca}\label{dados_8h_a529201cee83a853ad0cde90636b502ca}} 
@@ -102,7 +107,7 @@ Função que adiciona 1 ao numero de comandos efetuadas.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_adf016fda6e3978dd7f9e21105b32fdd2}\label{dados_8h_adf016fda6e3978dd7f9e21105b32fdd2}} 
@@ -117,7 +122,7 @@ Função que adiciona 1 ao numero de jogadas efetuadas.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_ab974dc49b63aad6277920854e65de3c8}\label{dados_8h_ab974dc49b63aad6277920854e65de3c8}} 
@@ -132,9 +137,9 @@ Função que altera o estado de uma casa de uma coordena para branca.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em c} & Coordenada de uma casa \\
+{\em c} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_a7c9818b423bbaec72b31af578a774f1b}\label{dados_8h_a7c9818b423bbaec72b31af578a774f1b}} 
@@ -149,9 +154,9 @@ Função que altera o estado de uma casa de uma coordena para preta.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em c} & Coordenada de uma casa \\
+{\em c} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_a367053e634b44f9f2470b63d73bb8291}\label{dados_8h_a367053e634b44f9f2470b63d73bb8291}} 
@@ -166,9 +171,9 @@ Função que altera o estado de uma casa de uma coordena para vazio.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em c} & Coordenada de uma casa \\
+{\em c} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_a8b79b64e344c02f2ae96ceb9f0916825}\label{dados_8h_a8b79b64e344c02f2ae96ceb9f0916825}} 
@@ -183,11 +188,11 @@ Função que altera o tabuleiro do jogo.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em d} & Caractere que verifica o estado de uma casa \\
+{\em d} & Caractere que verifica o estado de uma casa. \\
 \hline
-{\em cord} & Coordenada de uma casa \\
+{\em cord} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}\label{dados_8h_ab3ce5a0f1ac37547c45141ae9e843da1}} 
@@ -202,7 +207,7 @@ Função que atualiza o jogador atual.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}\label{dados_8h_ac3e2bb2a82a55bd13aa5cc73d513aad2}} 
@@ -217,11 +222,29 @@ Função que atualiza a ultima jogada efetuada.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em c} & Coordenada de uma casa \\
+{\em c} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a3cea7e3e88f95152889baab72faf9f52}\label{dados_8h_a3cea7e3e88f95152889baab72faf9f52}} 
+\index{dados.\+h@{dados.\+h}!devolve\+\_\+coordenada@{devolve\+\_\+coordenada}}
+\index{devolve\+\_\+coordenada@{devolve\+\_\+coordenada}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{devolve\+\_\+coordenada()}{devolve\_coordenada()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} devolve\+\_\+coordenada (\begin{DoxyParamCaption}\item[{\hyperlink{listas_8h_ac2a716b9326d8a2883dcbdb96615bb5d}{L\+I\+S\+TA}}]{l }\end{DoxyParamCaption})}
+
+
+
+Função que dada uma lista devolve uma coordenada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista de jogadas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Coordenada. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}\label{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}} 
 \index{dados.\+h@{dados.\+h}!inicializar\+\_\+estado@{inicializar\+\_\+estado}}
 \index{inicializar\+\_\+estado@{inicializar\+\_\+estado}!dados.\+h@{dados.\+h}}
@@ -233,7 +256,7 @@ Função que atualiza a ultima jogada efetuada.
 Função que inicializa o estado do jogo. 
 
 \begin{DoxyReturn}{Returns}
-Estado inicial do jogo 
+Estado inicial do jogo. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_a6faa68373203923729ed38657aa0f768}\label{dados_8h_a6faa68373203923729ed38657aa0f768}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+estado\+\_\+casa@{obter\+\_\+estado\+\_\+casa}}
@@ -247,13 +270,13 @@ Função que obtém o estado da casa de uma coordenada.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em c} & Coordenada de uma casa \\
+{\em c} & Coordenada de uma casa. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Estado da casa 
+Estado da casa. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_a7816cda3e0aa6552634cdec1f0e03b68}\label{dados_8h_a7816cda3e0aa6552634cdec1f0e03b68}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+jogada@{obter\+\_\+jogada}}
@@ -267,13 +290,13 @@ Função que dá uma jogada.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
-{\em i} & indice do numero de jogadas \\
+{\em i} & indice do numero de jogadas. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Jogada de um jogador 
+Jogada de um jogador. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_acc6c25533188a99cb69c12e7f2c406ef}\label{dados_8h_acc6c25533188a99cb69c12e7f2c406ef}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+jogador\+\_\+atual@{obter\+\_\+jogador\+\_\+atual}}
@@ -287,11 +310,11 @@ Função que obtém o jogador atual.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Jogador atual 
+Jogador atual. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_a38d349b0eab9c1249c89d3d03c6e1269}\label{dados_8h_a38d349b0eab9c1249c89d3d03c6e1269}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+num\+\_\+comandos@{obter\+\_\+num\+\_\+comandos}}
@@ -305,11 +328,11 @@ Função que obtém o numero de comandos efetuados.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Numero de comandos efetuados 
+Numero de comandos efetuados. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_abbfeab93575f20e5867482fd41a71cba}\label{dados_8h_abbfeab93575f20e5867482fd41a71cba}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+numero\+\_\+de\+\_\+jogadas@{obter\+\_\+numero\+\_\+de\+\_\+jogadas}}
@@ -323,11 +346,11 @@ Função que obtém o numero de jogadas.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Numero de jogadas 
+Numero de jogadas. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_a40555aff97afc67bd1866f2785111310}\label{dados_8h_a40555aff97afc67bd1866f2785111310}} 
 \index{dados.\+h@{dados.\+h}!obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}}
@@ -341,11 +364,11 @@ Função que obtém a ultima jogada efetuada.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Coordenada da ultima jogada efetuada 
+Coordenada da ultima jogada efetuada. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{dados_8h_ae0aba0d974608a01fbd2aea73dd8e4fb}\label{dados_8h_ae0aba0d974608a01fbd2aea73dd8e4fb}} 
 \index{dados.\+h@{dados.\+h}!start\+\_\+jogador@{start\+\_\+jogador}}
@@ -359,7 +382,7 @@ Função que indica que o primeiro jogador a jogar é o jogador1.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_aa037f658813227aa39e51644d38c40a9}\label{dados_8h_aa037f658813227aa39e51644d38c40a9}} 
@@ -374,7 +397,7 @@ Função que indica que o numero de jogadas efetuadas no inicio do jogo é 0.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_ac70a4181f548f7d0b792a8f01801e151}\label{dados_8h_ac70a4181f548f7d0b792a8f01801e151}} 
@@ -389,6 +412,6 @@ Função que subtrai jogadas.
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em e} & Apontador para o estado. \\
 \hline
 \end{DoxyParams}

@@ -65,6 +65,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dados_8h_source.html">dados.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="listas_8h_source.html">listas.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for logica.h:</div>
 <div class="dyncontent">
@@ -77,7 +78,7 @@ Include dependency graph for logica.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac313d7e553b1e2b5f266acb9bfff8141"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#ac313d7e553b1e2b5f266acb9bfff8141">jogar</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, <a class="el" href="structCOORDENADA.html">COORDENADA</a> c)</td></tr>
-<tr class="memdesc:ac313d7e553b1e2b5f266acb9bfff8141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que realiza cada jogada;.  <a href="#ac313d7e553b1e2b5f266acb9bfff8141">More...</a><br /></td></tr>
+<tr class="memdesc:ac313d7e553b1e2b5f266acb9bfff8141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que realiza cada jogada.  <a href="#ac313d7e553b1e2b5f266acb9bfff8141">More...</a><br /></td></tr>
 <tr class="separator:ac313d7e553b1e2b5f266acb9bfff8141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6e795244d42549abf6ce7677c4eeae4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#ad6e795244d42549abf6ce7677c4eeae4">jogada_invalida</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, <a class="el" href="structCOORDENADA.html">COORDENADA</a> c)</td></tr>
 <tr class="memdesc:ad6e795244d42549abf6ce7677c4eeae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função boleana que verifica se uma jogada é inválida.  <a href="#ad6e795244d42549abf6ce7677c4eeae4">More...</a><br /></td></tr>
@@ -94,6 +95,23 @@ Functions</h2></td></tr>
 <tr class="memitem:a99c662c8fa75d51348084f94dc6e12b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a99c662c8fa75d51348084f94dc6e12b5">aux_jog_poss</a> (<a class="el" href="structCOORDENADA.html">COORDENADA</a> *c, int i)</td></tr>
 <tr class="memdesc:a99c662c8fa75d51348084f94dc6e12b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento.  <a href="#a99c662c8fa75d51348084f94dc6e12b5">More...</a><br /></td></tr>
 <tr class="separator:a99c662c8fa75d51348084f94dc6e12b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ed037ae0c3789846ffba0385953ee6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a39ed037ae0c3789846ffba0385953ee6">heuristica_aleatoria</a> (<a class="el" href="listas_8h.html#ac2a716b9326d8a2883dcbdb96615bb5d">LISTA</a> l)</td></tr>
+<tr class="memdesc:a39ed037ae0c3789846ffba0385953ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que sugere uma coordenada aleatória possível.  <a href="#a39ed037ae0c3789846ffba0385953ee6">More...</a><br /></td></tr>
+<tr class="separator:a39ed037ae0c3789846ffba0385953ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74589c3afa1f5b7217905e5d728b02a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#ab74589c3afa1f5b7217905e5d728b02a">heuristica_euclidiana</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, <a class="el" href="listas_8h.html#ac2a716b9326d8a2883dcbdb96615bb5d">LISTA</a> l)</td></tr>
+<tr class="memdesc:ab74589c3afa1f5b7217905e5d728b02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que sugere uma coordenada utilizando a distância euclidiana.  <a href="#ab74589c3afa1f5b7217905e5d728b02a">More...</a><br /></td></tr>
+<tr class="separator:ab74589c3afa1f5b7217905e5d728b02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a279273ae074ed74efcf8ec92c9384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="listas_8h.html#ac2a716b9326d8a2883dcbdb96615bb5d">LISTA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a10a279273ae074ed74efcf8ec92c9384">obtem_jogadas_possiveis</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a10a279273ae074ed74efcf8ec92c9384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que nos devolve uma lista com as jogadas possíveis.  <a href="#a10a279273ae074ed74efcf8ec92c9384">More...</a><br /></td></tr>
+<tr class="separator:a10a279273ae074ed74efcf8ec92c9384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc430724fe00a1851fb437c7a6b5a35d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#acc430724fe00a1851fb437c7a6b5a35d">avanca_pos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int p, int nj)</td></tr>
+<tr class="memdesc:acc430724fe00a1851fb437c7a6b5a35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que avança para uma certa jogada.  <a href="#acc430724fe00a1851fb437c7a6b5a35d">More...</a><br /></td></tr>
+<tr class="separator:acc430724fe00a1851fb437c7a6b5a35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015e2537434fd4d83369789b47e76470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a015e2537434fd4d83369789b47e76470">retrocede_pos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int p, int nj)</td></tr>
+<tr class="memdesc:a015e2537434fd4d83369789b47e76470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que retrocede para uma certa jogada.  <a href="#a015e2537434fd4d83369789b47e76470">More...</a><br /></td></tr>
+<tr class="separator:a015e2537434fd4d83369789b47e76470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d78f72fe53cd097e58de391efa7a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#ae2d78f72fe53cd097e58de391efa7a0e">pos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int p)</td></tr>
+<tr class="separator:ae2d78f72fe53cd097e58de391efa7a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Módulo da lógica do jogo e das funções que o manipulam </p>
@@ -154,7 +172,51 @@ Functions</h2></td></tr>
 <p>Função auxiliar que anda à volta da jogada anterior e vê as jogadas possíveis naquele momento. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>Coordenada da jogada anterior </td></tr>
+    <tr><td class="paramname">c</td><td>Coordenada da jogada anterior. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc430724fe00a1851fb437c7a6b5a35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc430724fe00a1851fb437c7a6b5a35d">&#9670;&nbsp;</a></span>avanca_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void avanca_pos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que avança para uma certa jogada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+    <tr><td class="paramname">p</td><td>Indica a jogada para onde se quer avançar. </td></tr>
+    <tr><td class="paramname">nj</td><td>Número de jogadas existentes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -180,11 +242,76 @@ Functions</h2></td></tr>
 <p>Função boleana que verifica se existem jogadas possíveis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 se verdadeiro ou 0 se falso </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 se verdadeiro ou 0 se falso. </dd></dl>
+
+</div>
+</div>
+<a id="a39ed037ae0c3789846ffba0385953ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ed037ae0c3789846ffba0385953ee6">&#9670;&nbsp;</a></span>heuristica_aleatoria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> heuristica_aleatoria </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="listas_8h.html#ac2a716b9326d8a2883dcbdb96615bb5d">LISTA</a>&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que sugere uma coordenada aleatória possível. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">L</td><td>Lista de jogadas possíveis. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>c Coordenada de uma jogada possível, sugerida pelo computador. </dd></dl>
+
+</div>
+</div>
+<a id="ab74589c3afa1f5b7217905e5d728b02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74589c3afa1f5b7217905e5d728b02a">&#9670;&nbsp;</a></span>heuristica_euclidiana()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> heuristica_euclidiana </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="listas_8h.html#ac2a716b9326d8a2883dcbdb96615bb5d">LISTA</a>&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que sugere uma coordenada utilizando a distância euclidiana. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+    <tr><td class="paramname">l</td><td>Lista de jogadas possiveis. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Jogada sugerida pela heurística. </dd></dl>
 
 </div>
 </div>
@@ -217,12 +344,12 @@ Functions</h2></td></tr>
 <p>Função boleana que verifica se uma jogada é inválida. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
-    <tr><td class="paramname">c</td><td>Coordenada da jogada </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+    <tr><td class="paramname">c</td><td>Coordenada da jogada. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 se verdadeiro ou 0 se falso </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 se verdadeiro ou 0 se falso. </dd></dl>
 
 </div>
 </div>
@@ -252,11 +379,73 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Função que realiza cada jogada;. </p>
+<p>Função que realiza cada jogada. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
-    <tr><td class="paramname">c</td><td>Coordenada da jogada </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+    <tr><td class="paramname">c</td><td>Coordenada da jogada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10a279273ae074ed74efcf8ec92c9384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a279273ae074ed74efcf8ec92c9384">&#9670;&nbsp;</a></span>obtem_jogadas_possiveis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="listas_8h.html#ac2a716b9326d8a2883dcbdb96615bb5d">LISTA</a> obtem_jogadas_possiveis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que nos devolve uma lista com as jogadas possíveis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>l Lista com as jogadas possíveis. </dd></dl>
+
+</div>
+</div>
+<a id="ae2d78f72fe53cd097e58de391efa7a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d78f72fe53cd097e58de391efa7a0e">&#9670;&nbsp;</a></span>pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função que permite ir para uma certa jogada. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+    <tr><td class="paramname">p</td><td>Indica a jogada para onde se quer ir. </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,11 +471,55 @@ Functions</h2></td></tr>
 <p>Função que nos indica que jogador ganhou a partida. Esta função só é chamada tendo a certeza que o jogo acabou. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>O vencedor </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>O vencedor. </dd></dl>
+
+</div>
+</div>
+<a id="a015e2537434fd4d83369789b47e76470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015e2537434fd4d83369789b47e76470">&#9670;&nbsp;</a></span>retrocede_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrocede_pos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que retrocede para uma certa jogada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado. </td></tr>
+    <tr><td class="paramname">p</td><td>Indica a jogada para onde se quer retroceder. </td></tr>
+    <tr><td class="paramname">nj</td><td>Número de jogadas existentes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
