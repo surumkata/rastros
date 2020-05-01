@@ -1,0 +1,3 @@
+/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/spsc/Desktop/Projeto/Rastros/git/cmake-build-debug/CMakeFiles/LIProject.dir

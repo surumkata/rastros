@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/spsc/Desktop/Projeto/Rastros/git/dados.c
+stdlib.h
+-
+dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
+
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
+
+/home/spsc/Desktop/Projeto/Rastros/git/interface.c
+stdio.h
+-
+string.h
+-
+logica.h
+/home/spsc/Desktop/Projeto/Rastros/git/logica.h
+dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
+listas.h
+/home/spsc/Desktop/Projeto/Rastros/git/listas.h
+
+/home/spsc/Desktop/Projeto/Rastros/git/listas.h
+dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
+
+/home/spsc/Desktop/Projeto/Rastros/git/logica.h
+dados.h
+/home/spsc/Desktop/Projeto/Rastros/git/dados.h
+

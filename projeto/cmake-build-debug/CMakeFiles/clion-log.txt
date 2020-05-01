@@ -1,0 +1,4 @@
+Cannot generate into /home/spsc/Desktop/LI2PL4G1/git/cmake-build-debug
+It is already used for project /home/spsc/Desktop/Projeto/Rastros/git
+
+Please either delete it manually or select another generation directory
