@@ -1,5 +1,5 @@
 # Rastros
-MIEI
+- MIEI
 - Laboratórios de informática II
 
 Turno: PL4
