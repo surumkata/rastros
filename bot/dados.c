@@ -1,4 +1,7 @@
-
+/**
+@file dados.c
+Definição do estado e das funções que o manipulam
+*/
 #include <stdlib.h>
 #include "dados.h"
 #include "listas.h"
@@ -99,14 +102,6 @@ void adic_num_jogadas (ESTADO *e)
 void subt_num_jogadas (ESTADO *e)
 {
     e->num_jogadas -= 1;
-}
-
-void altera_prompt (ESTADO *e, int nc, int nj, int ja)
-{
-    e->num_jogadas = nj;
-    e->num_comandos = nc;
-    e->jogador_atual = ja;
-
 }
 
 void altera_tabuleiro (ESTADO *e, char d, COORDENADA cord)

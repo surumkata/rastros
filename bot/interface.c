@@ -1,3 +1,7 @@
+/**
+@file interface.c
+Módulo da interface do jogo e das funções que o manipulam
+*/
 #define BUF_SIZE 1024
 
 #include <stdio.h>

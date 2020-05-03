@@ -25,7 +25,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>refere-sea uma linha do tabuleiro. </para>        </detaileddescription>
+<para>refere-se a uma linha do tabuleiro. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="dados.h" line="23" column="1" bodyfile="dados.h" bodystart="23" bodyend="-1"/>

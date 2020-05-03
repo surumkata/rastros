@@ -35,7 +35,6 @@
     <member refid="dados_8c_1a529201cee83a853ad0cde90636b502ca" kind="function"><name>adic_num_comandos</name></member>
     <member refid="dados_8c_1adf016fda6e3978dd7f9e21105b32fdd2" kind="function"><name>adic_num_jogadas</name></member>
     <member refid="dados_8c_1ac70a4181f548f7d0b792a8f01801e151" kind="function"><name>subt_num_jogadas</name></member>
-    <member refid="dados_8c_1a2d40d1243c5ac1599f97749ebbde79c4" kind="function"><name>altera_prompt</name></member>
     <member refid="dados_8c_1a8b79b64e344c02f2ae96ceb9f0916825" kind="function"><name>altera_tabuleiro</name></member>
     <member refid="dados_8c_1ab03cfde6979803378703a5144c17b0ab" kind="function"><name>adic_jogadas</name></member>
     <member refid="dados_8c_1a7816cda3e0aa6552634cdec1f0e03b68" kind="function"><name>obter_jogada</name></member>
@@ -90,6 +89,7 @@
     <member refid="interface_8h_1a67ab080654cde5e3c4a77a854c9a1d77" kind="function"><name>gravar_tabuleiro</name></member>
     <member refid="interface_8h_1aac22d32daeed815fab5c7229ffe10290" kind="function"><name>gravar</name></member>
     <member refid="interface_8h_1aeacababe295a3821208e90fabc5b3d41" kind="function"><name>ler</name></member>
+    <member refid="interface_8h_1a8d63019a8176de612e33bf8c72121760" kind="function"><name>movs</name></member>
     <member refid="interface_8h_1ac17633e89b611fc9a5c42117e285fd05" kind="function"><name>gravar_movs</name></member>
     <member refid="interface_8h_1a1aad1cf3e709ab9977b129185f4e02ca" kind="function"><name>ler_aux_pecas_pretas</name></member>
     <member refid="interface_8h_1a674c18b36588630f076a14bd01a6f3d3" kind="function"><name>ler_aux_movs</name></member>
@@ -146,9 +146,5 @@
   </compound>
   <compound refid="main_8c" kind="file"><name>main.c</name>
     <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="README_8md" kind="file"><name>README.md</name>
-  </compound>
-  <compound refid="md_README" kind="page"><name>md_README</name>
   </compound>
 </doxygenindex>

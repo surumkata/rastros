@@ -1,3 +1,7 @@
+/**
+@file logica.c
+Módulo da lógica do jogo e das funções que o manipulam
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include "dados.h"

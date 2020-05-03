@@ -10,31 +10,45 @@
     <includedby refid="logica_8c" local="yes">logica.c</includedby>
     <includedby refid="main_8c" local="yes">main.c</includedby>
     <incdepgraph>
-      <node id="6">
-        <label>listas.h</label>
-        <link refid="listas_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
       <node id="5">
         <label>dados.h</label>
         <link refid="dados_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="8">
+      <node id="6">
         <label>listas.h</label>
         <link refid="listas_8h"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="9">
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="11">
+        <label>interface.c</label>
+        <link refid="interface_8c"/>
+      </node>
+      <node id="14">
+        <label>logica.c</label>
+        <link refid="logica_8c"/>
+      </node>
+      <node id="10">
         <label>logica.h</label>
         <link refid="logica_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dados.c</label>
+        <link refid="dados_8c"/>
       </node>
       <node id="7">
         <label>dados.h</label>
@@ -42,6 +56,32 @@
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>listas.c</label>
+        <link refid="listas_8c"/>
+      </node>
+      <node id="9">
+        <label>listas.h</label>
+        <link refid="listas_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -109,7 +149,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="63" column="1" bodyfile="dados.c" bodystart="6" bodyend="23"/>
+        <location file="dados.h" line="63" column="1" bodyfile="dados.c" bodystart="9" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -135,7 +175,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="70" column="1" bodyfile="dados.c" bodystart="25" bodyend="28"/>
+        <location file="dados.h" line="70" column="1" bodyfile="dados.c" bodystart="28" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1abbfeab93575f20e5867482fd41a71cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -161,7 +201,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="77" column="1" bodyfile="dados.c" bodystart="30" bodyend="33"/>
+        <location file="dados.h" line="77" column="1" bodyfile="dados.c" bodystart="33" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a6faa68373203923729ed38657aa0f768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
@@ -198,7 +238,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="85" column="1" bodyfile="dados.c" bodystart="35" bodyend="42"/>
+        <location file="dados.h" line="85" column="1" bodyfile="dados.c" bodystart="38" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a40555aff97afc67bd1866f2785111310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -224,7 +264,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="92" column="1" bodyfile="dados.c" bodystart="44" bodyend="47"/>
+        <location file="dados.h" line="92" column="1" bodyfile="dados.c" bodystart="47" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1ab974dc49b63aad6277920854e65de3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -260,7 +300,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="99" column="1" bodyfile="dados.c" bodystart="54" bodyend="57"/>
+        <location file="dados.h" line="99" column="1" bodyfile="dados.c" bodystart="57" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a7c9818b423bbaec72b31af578a774f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -296,7 +336,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="106" column="1" bodyfile="dados.c" bodystart="59" bodyend="62"/>
+        <location file="dados.h" line="106" column="1" bodyfile="dados.c" bodystart="62" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a367053e634b44f9f2470b63d73bb8291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -332,7 +372,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="113" column="1" bodyfile="dados.c" bodystart="64" bodyend="67"/>
+        <location file="dados.h" line="113" column="1" bodyfile="dados.c" bodystart="67" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1ac3e2bb2a82a55bd13aa5cc73d513aad2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -368,7 +408,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="120" column="1" bodyfile="dados.c" bodystart="69" bodyend="72"/>
+        <location file="dados.h" line="120" column="1" bodyfile="dados.c" bodystart="72" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1ab3ce5a0f1ac37547c45141ae9e843da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -393,7 +433,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="126" column="1" bodyfile="dados.c" bodystart="74" bodyend="83"/>
+        <location file="dados.h" line="126" column="1" bodyfile="dados.c" bodystart="77" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a38d349b0eab9c1249c89d3d03c6e1269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -419,7 +459,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="133" column="1" bodyfile="dados.c" bodystart="49" bodyend="52"/>
+        <location file="dados.h" line="133" column="1" bodyfile="dados.c" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1adf016fda6e3978dd7f9e21105b32fdd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -444,7 +484,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="139" column="1" bodyfile="dados.c" bodystart="90" bodyend="97"/>
+        <location file="dados.h" line="139" column="1" bodyfile="dados.c" bodystart="93" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a529201cee83a853ad0cde90636b502ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -469,7 +509,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="145" column="1" bodyfile="dados.c" bodystart="85" bodyend="88"/>
+        <location file="dados.h" line="145" column="1" bodyfile="dados.c" bodystart="88" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a8b79b64e344c02f2ae96ceb9f0916825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -516,7 +556,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="153" column="1" bodyfile="dados.c" bodystart="112" bodyend="121"/>
+        <location file="dados.h" line="153" column="1" bodyfile="dados.c" bodystart="107" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1ab03cfde6979803378703a5144c17b0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -552,7 +592,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="160" column="1" bodyfile="dados.c" bodystart="123" bodyend="133"/>
+        <location file="dados.h" line="160" column="1" bodyfile="dados.c" bodystart="118" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a7816cda3e0aa6552634cdec1f0e03b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
@@ -589,7 +629,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="168" column="1" bodyfile="dados.c" bodystart="135" bodyend="138"/>
+        <location file="dados.h" line="168" column="1" bodyfile="dados.c" bodystart="130" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1ae0aba0d974608a01fbd2aea73dd8e4fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -614,7 +654,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="174" column="1" bodyfile="dados.c" bodystart="140" bodyend="143"/>
+        <location file="dados.h" line="174" column="1" bodyfile="dados.c" bodystart="135" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1aa037f658813227aa39e51644d38c40a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -639,7 +679,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="180" column="1" bodyfile="dados.c" bodystart="145" bodyend="148"/>
+        <location file="dados.h" line="180" column="1" bodyfile="dados.c" bodystart="140" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1ac70a4181f548f7d0b792a8f01801e151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -664,7 +704,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="186" column="1" bodyfile="dados.c" bodystart="99" bodyend="102"/>
+        <location file="dados.h" line="186" column="1" bodyfile="dados.c" bodystart="102" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="dados_8h_1a3cea7e3e88f95152889baab72faf9f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -690,7 +730,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dados.h" line="193" column="1" bodyfile="dados.c" bodystart="150" bodyend="153"/>
+        <location file="dados.h" line="193" column="1" bodyfile="dados.c" bodystart="145" bodyend="148"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -709,14 +749,12 @@
 <codeline lineno="19" refid="structCOORDENADA" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal">{<sp/></highlight></codeline>
 <codeline lineno="21" refid="structCOORDENADA_1adfbc8d4856ce807139fdf62e00aed29a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCOORDENADA_1adfbc8d4856ce807139fdf62e00aed29a" kindref="member">coluna</ref>;</highlight></codeline>
-<codeline lineno="23" refid="structCOORDENADA_1aefe14bcc5a066ac3b21500cc3d28c06f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCOORDENADA_1aefe14bcc5a066ac3b21500cc3d28c06f" kindref="member">linha</ref>;<sp/>}</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structCOORDENADA_1aefe14bcc5a066ac3b21500cc3d28c06f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCOORDENADA_1aefe14bcc5a066ac3b21500cc3d28c06f" kindref="member">linha</ref>;<sp/>}<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29" refid="structJOGADA" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{<sp/></highlight></codeline>
 <codeline lineno="31" refid="structJOGADA_1a93d9306cb0c49b66b7d9a615bffe0149" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="structJOGADA_1a93d9306cb0c49b66b7d9a615bffe0149" kindref="member">jogador1</ref>;</highlight></codeline>
-<codeline lineno="33" refid="structJOGADA_1ab46b16dfbdc7f2af9430c8dcdac0914b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="structJOGADA_1ab46b16dfbdc7f2af9430c8dcdac0914b" kindref="member">jogador2</ref>;<sp/>}</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structJOGADA_1ab46b16dfbdc7f2af9430c8dcdac0914b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="structJOGADA_1ab46b16dfbdc7f2af9430c8dcdac0914b" kindref="member">jogador2</ref>;<sp/>}<sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/><ref refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref>[32];</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
@@ -727,8 +765,7 @@
 <codeline lineno="50" refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref><sp/><ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>;</highlight></codeline>
 <codeline lineno="52" refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref>;</highlight></codeline>
 <codeline lineno="54" refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref>;</highlight></codeline>
-<codeline lineno="56" refid="structESTADO_1abe6faacdd6111160bf9a354f44b95b38" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structESTADO_1abe6faacdd6111160bf9a354f44b95b38" kindref="member">num_comandos</ref>;}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structESTADO_1abe6faacdd6111160bf9a354f44b95b38" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structESTADO_1abe6faacdd6111160bf9a354f44b95b38" kindref="member">num_comandos</ref>;}<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref>;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="dados_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>();</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>

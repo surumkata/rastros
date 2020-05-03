@@ -6,21 +6,33 @@
     <includes local="no">sched.h</includes>
     <includedby refid="main_8c" local="yes">main.c</includedby>
     <incdepgraph>
-      <node id="18">
+      <node id="23">
         <label>bits/types/FILE.h</label>
       </node>
-      <node id="17">
+      <node id="22">
         <label>interface.h</label>
         <link refid="interface_8h"/>
-        <childnode refid="18" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="24">
         <label>sched.h</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="26">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="25">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="interface_8h_1a24da95ebeede4a540e37790ce8be359b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -45,7 +57,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="17" column="1" bodyfile="interface.c" bodystart="216" bodyend="289"/>
+        <location file="interface.h" line="16" column="1" bodyfile="interface.c" bodystart="220" bodyend="293"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -70,7 +82,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="25" column="1" bodyfile="interface.c" bodystart="22" bodyend="44"/>
+        <location file="interface.h" line="22" column="1" bodyfile="interface.c" bodystart="26" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1a1fd532d3d252ff42d406a15757e2a401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -95,7 +107,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="33" column="1" bodyfile="interface.c" bodystart="10" bodyend="20"/>
+        <location file="interface.h" line="28" column="1" bodyfile="interface.c" bodystart="14" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1a67ab080654cde5e3c4a77a854c9a1d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -131,7 +143,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="40" column="1" bodyfile="interface.c" bodystart="110" bodyend="128"/>
+        <location file="interface.h" line="35" column="1" bodyfile="interface.c" bodystart="114" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1aac22d32daeed815fab5c7229ffe10290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -167,7 +179,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="47" column="1" bodyfile="interface.c" bodystart="130" bodyend="138"/>
+        <location file="interface.h" line="42" column="1" bodyfile="interface.c" bodystart="134" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1aeacababe295a3821208e90fabc5b3d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -203,7 +215,32 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="55" column="1" bodyfile="interface.c" bodystart="191" bodyend="214"/>
+        <location file="interface.h" line="49" column="1" bodyfile="interface.c" bodystart="195" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a8d63019a8176de612e33bf8c72121760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void movs</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>movs</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que mostra as jogadas feitas. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="55" column="1" bodyfile="interface.c" bodystart="50" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1ac17633e89b611fc9a5c42117e285fd05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -239,7 +276,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="62" column="1" bodyfile="interface.c" bodystart="78" bodyend="108"/>
+        <location file="interface.h" line="62" column="1" bodyfile="interface.c" bodystart="82" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1a1aad1cf3e709ab9977b129185f4e02ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -276,7 +313,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="70" column="1" bodyfile="interface.c" bodystart="140" bodyend="164"/>
+        <location file="interface.h" line="70" column="1" bodyfile="interface.c" bodystart="144" bodyend="168"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1a674c18b36588630f076a14bd01a6f3d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -323,7 +360,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interface.h" line="78" column="1" bodyfile="interface.c" bodystart="166" bodyend="189"/>
+        <location file="interface.h" line="78" column="1" bodyfile="interface.c" bodystart="170" bodyend="193"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -338,17 +375,19 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bits/types/FILE.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sched.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a24da95ebeede4a540e37790ce8be359b" kindref="member">interpretador</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" kindref="member">mostrar_tabuleiro</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a1fd532d3d252ff42d406a15757e2a401" kindref="member">mostrar_prompt</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a67ab080654cde5e3c4a77a854c9a1d77" kindref="member">gravar_tabuleiro</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,FILE<sp/>*f);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aac22d32daeed815fab5c7229ffe10290" kindref="member">gravar</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aeacababe295a3821208e90fabc5b3d41" kindref="member">ler</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="16"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a24da95ebeede4a540e37790ce8be359b" kindref="member">interpretador</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" kindref="member">mostrar_tabuleiro</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a1fd532d3d252ff42d406a15757e2a401" kindref="member">mostrar_prompt</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a67ab080654cde5e3c4a77a854c9a1d77" kindref="member">gravar_tabuleiro</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,FILE<sp/>*f);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aac22d32daeed815fab5c7229ffe10290" kindref="member">gravar</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aeacababe295a3821208e90fabc5b3d41" kindref="member">ler</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a8d63019a8176de612e33bf8c72121760" kindref="member">movs</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1ac17633e89b611fc9a5c42117e285fd05" kindref="member">gravar_movs</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*file_name);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>

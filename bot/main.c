@@ -1,3 +1,7 @@
+/**
+@file main.c
+Módulo principal do bot do jogo Rastros.
+*/
 #include "dados.h"
 #include "interface.h"
 #include "logica.h"
