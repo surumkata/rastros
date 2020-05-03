@@ -1,3 +1,7 @@
+/**
+@file listas.c
+Módulo de listas ligadas do jogo e das funções que o manipulam
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include "logica.h"

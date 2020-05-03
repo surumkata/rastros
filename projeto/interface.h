@@ -10,24 +10,19 @@ Módulo da interface do jogo e das funções que o manipulam
 #include <sched.h>
 
 /**
- * \brief Função que desenvolve o jogo.
- * Esta função adiciona comandos que auxiliam os jogadores no que toca ao desenvolvimento do jogo.
+ * \brief Função que desenvolve o jogo. Esta função adiciona comandos que auxiliam os jogadores no que toca ao desenvolvimento do jogo.
  * @param e Apontador para o estado.
  */
 int interpretador(ESTADO *e);
 
 /**
- * \brief Função que mostra o tabuleiro.
- * Esta função recebe um estado do jogo e desenha no terminal o tabuleiro.
- * Desenha um '#' para casas pretas, um '*' para casas brancas, um '.' para casas vazias e o numero de jogador nas respetivas casas de vitória.
+ * \brief Função que mostra o tabuleiro. Esta função recebe um estado do jogo e desenha no terminal o tabuleiro. Desenha um '#' para casas pretas, um '*' para casas brancas, um '.' para casas vazias e o numero de jogador nas respetivas casas de vitória.
  * @param e Apontador para o estado.
  */
 void mostrar_tabuleiro(ESTADO *e);
 
 /**
- * \brief Função que mostra o prompt.
- * Esta função recebe um estado do jogo e desenha no terminal o prompt.
- * Desenha # (numero de comandos efetuados) JOG(jogador atual) N(numero de jogadas efetuadas).
+ * \brief Função que mostra o prompt. Esta função recebe um estado do jogo e desenha no terminal o prompt. Desenha # (numero de comandos efetuados) JOG(jogador atual) N(numero de jogadas efetuadas).
  * @param e Apontador para o estado.
  */
 void mostrar_prompt (ESTADO *e);
@@ -47,12 +42,17 @@ void gravar_tabuleiro(ESTADO *e,FILE *f);
 void gravar (ESTADO *e, const char *file_name);
 
 /**
- * \brief Função que lê o último estado gravado do jogo de um ficheiro txt.
- * Esta função lê o tabuleiro e o prompt de um ficheiro e atualiza o estado atual com isso.
+ * \brief Função que lê o último estado gravado do jogo de um ficheiro txt. Esta função lê o tabuleiro e o prompt de um ficheiro e atualiza o estado atual com isso.
  * @param e Apontador para o estado.
  * @param file_name Nome do ficheiro.
  */
 void ler (ESTADO *e, const char *file_name);
+
+/**
+ * \brief Função que mostra as jogadas feitas.
+ * @param e Apontador para o estado.
+ */
+void movs (ESTADO *e);
 
 /**
  * \brief Função que grava os movimentos feitos pelos jogadores no ficheiro .txt.

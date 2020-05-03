@@ -19,9 +19,9 @@ typedef enum {VAZIO, BRANCA, PRETA} CASA;
 typedef struct
 { /** refere-se a uma coluna do tabuleiro;*/
   int coluna;
-  /** refere-sea uma linha do tabuleiro.*/
+  /** refere-se a uma linha do tabuleiro.*/
   int linha; }
-  COORDENADA;
+  /** Refere-se a uma coordenada*/ COORDENADA;
 
 /**
  * \brief Referem-se à jogada feita pelo jogador1 e pelo jogador2.
@@ -31,7 +31,7 @@ typedef struct
   COORDENADA jogador1;
   /** Coordenada do jogador 2.*/
   COORDENADA jogador2; }
-  JOGADA;
+  /** Refere-se a uma jogada*/ JOGADA;
 
 /**
  * \brief Referem-se às jogadas.
@@ -54,7 +54,7 @@ typedef struct
   int jogador_atual;
   /** indica quantos comandos foram efetuados.*/
   int num_comandos;}
-  ESTADO;
+  /** Refere-se a uma Estado*/ ESTADO;
 
 /**
  * \brief Função que inicializa o estado do jogo.

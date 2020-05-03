@@ -17,7 +17,7 @@ typedef struct list{
     /** Refere-se ao resto dos elementos da lista. */
     struct list *prox;
 } /** Nome1 para nodo da lista */*LISTA,
-  /** Nome 2 para nodo da lista */ Nodo;
+  /** Nome2 para nodo da lista */ Nodo;
 
 /**
  * \brief Função que cria uma lista vazia.

@@ -25,8 +25,7 @@ int jogar(ESTADO *e, COORDENADA c);
 int jogada_invalida (ESTADO *e, COORDENADA c);
 
 /**
- * \brief Função boleana que verifica se o jogo acabou.
- * Testa se algum jogador ficou preso, senão testa se algum dos jogadores já chegou às casas a1 ou h8.
+ * \brief Função boleana que verifica se o jogo acabou. Testa se algum jogador ficou preso, senão testa se algum dos jogadores já chegou às casas a1 ou h8.
  * @param e Apontador para o estado
  * @return 1 se verdadeiro ou 0 se falso
  */
@@ -40,8 +39,7 @@ int acabou (ESTADO *e);
 int ha_jogadas_possiveis (ESTADO *e);
 
 /**
- * \brief Função que nos indica que jogador ganhou a partida.
- * Esta função só é chamada tendo a certeza que o jogo acabou.
+ * \brief Função que nos indica que jogador ganhou a partida. Esta função só é chamada tendo a certeza que o jogo acabou.
  * @param e Apontador para o estado.
  * @return O vencedor.
  */
