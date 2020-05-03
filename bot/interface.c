@@ -33,9 +33,9 @@ void gravar_movs (ESTADO *e, FILE *filename)
         jgd = obter_jogada(e, n);
         c1 = jgd.jogador1;
         if (n < 9)
-            fprintf(filename,"0%d: %c%d \n", n+1, (char) (97+c1.coluna), (8 - c1.linha));
+            fprintf(filename,"0%d: %c%d", n+1, (char) (97+c1.coluna), (8 - c1.linha));
         else
-            fprintf(filename,"%d: %c%d \n", n+1, (char) (97+c1.coluna), (8 - c1.linha));
+            fprintf(filename,"%d: %c%d", n+1, (char) (97+c1.coluna), (8 - c1.linha));
     }
 }
 
@@ -132,7 +132,7 @@ void ler (ESTADO *e, const char *filename)
     {
         char n1, n2, c1c;
         int c1l;
-        if (fscanf (ficheiro, "%c%c: %c%d", &n1, &n2, &c1c, &c1l) == 4)
+        if (fscanf (ficheiro, "%c%c: %c%d\n", &n1, &n2, &c1c, &c1l) == 4)
         {
             COORDENADA cord1;
             cord1.linha=8-c1l;
