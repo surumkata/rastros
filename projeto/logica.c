@@ -67,9 +67,9 @@ int acabou (ESTADO *e)
 int quem_ganhou (ESTADO *e)
 {
     COORDENADA c;
-    c.linha = 0; c.coluna = 7;
-    if (obter_estado_casa(e,c)==BRANCA) return 1;
     c.linha = 7; c.coluna = 0;
+    if (obter_estado_casa(e,c)==BRANCA) return 1;
+    c.linha = 0; c.coluna = 7;
     if (obter_estado_casa(e,c)==BRANCA) return 2;
     if (obter_jogador_atual(e)==1) return 1;
     else return 2;
