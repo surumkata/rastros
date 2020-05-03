@@ -58,7 +58,6 @@ int jogar(ESTADO *e, COORDENADA c)
         adic_num_jogadas(e);
         atualiza_jog_atual(e);
     }
-    else printf ("Jogada inválida, tenta outra vez!\n");
     return 1;
 }
 
@@ -73,27 +72,30 @@ COORDENADA heuristica_aleatoria (LISTA l)
     return c;
 }
 
-COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l)
-{
+COORDENADA heuristica_euclidiana (ESTADO *e, LISTA l) {
     int valor, melhores_pontos, pontos;
     COORDENADA c, melhor_jogada;
 
-    if (obter_jogador_atual(e) == 1)
-    {
+    if (obter_jogador_atual(e) == 1) {
         valor = 1;
         melhores_pontos = 15;
     }
-    else
-    {
+    else {
         valor = -1;
         melhores_pontos = 1;
     }
-    while (lista_esta_vazia(l) != 1)
-    {
+    while (lista_esta_vazia(l) != 1) {
         c = devolve_coordenada(l);
         pontos = ((7-c.linha) + c.coluna) * valor;
-        if (pontos < melhores_pontos)
-        {
+        if (pontos == melhores_pontos) {
+            srand(time(NULL));
+            int p = rand () % 2;
+            if (p == 1) {
+                melhores_pontos = pontos;
+                melhor_jogada = c;
+            }
+        }
+        if (pontos < melhores_pontos) {
             melhores_pontos = pontos;
             melhor_jogada = c;
         }

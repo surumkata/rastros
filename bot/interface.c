@@ -62,11 +62,10 @@ void gravar_tabuleiro(ESTADO *e,FILE *filename)
 void gravar (ESTADO *e, const char *filename)
 {
     FILE *ficheiro;
-    ficheiro = fopen(filename,"w+");
+    ficheiro = fopen(filename,"w");
     gravar_tabuleiro(e,ficheiro);
     gravar_movs (e,ficheiro);
     fclose(ficheiro);
-    printf("Gravado com sucesso.\n");
 }
 
 int ler_aux_pecas_pretas (ESTADO *e, FILE *ficheiro)
